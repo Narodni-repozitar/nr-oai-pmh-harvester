@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://invenio.nusl.cz/css/oai2.xsl.v1.0" ?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2020-11-06T10:43:39Z</responseDate><request verb="GetRecord" metadataPrefix="marcxml" identifier="oai:invenio.nusl.cz:333449">http://invenio.nusl.cz/oai2d</request><GetRecord>
+<record><header><identifier>oai:invenio.nusl.cz:333449</identifier><datestamp>2017-06-27T12:57:37Z</datestamp><setSpec>global</setSpec><setSpec>openaire</setSpec><setSpec>etds</setSpec></header><metadata><marc:record xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd" type="Bibliographic">
+     <marc:leader>00000coc  2200000uu 4500</marc:leader>
+  <marc:controlfield tag="001">333449</marc:controlfield>
+  <marc:controlfield tag="005">20170627145737.0</marc:controlfield>
+  <marc:datafield tag="035" ind1=" " ind2=" ">
+    <marc:subfield code="a">oai:dspace.cuni.cz:20.500.11956/64309</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="041" ind1="0" ind2="7">
+    <marc:subfield code="a">cze</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="046" ind1=" " ind2=" ">
+    <marc:subfield code="k">2015-06-23</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="245" ind1="0" ind2="0">
+    <marc:subfield code="a">Politika, média, manipulace. Politické zpravodajství, publicistika a pragmatická lingvistika.</marc:subfield>
+    <marc:subfield code="b">Politics, media and manipulation: politics news and pragmaticlinguistics</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="502" ind1=" " ind2=" ">
+    <marc:subfield code="c">Univerzita Karlova</marc:subfield>
+    <marc:subfield code="b">Mgr.</marc:subfield>
+    <marc:subfield code="d">2015</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="520" ind1=" " ind2=" ">
+    <marc:subfield code="a">The master's thesis Politics, Media and Manipulation: Political Journalism and Pragmatic Linguistics examines contemporary Czech publicized political communication using pragmatic analysis. It focuses on topics like power, ideology and self-presentation of the political participants in the media. It is also concerned with the framing of media communication and with the communication strategies that the political participants and journalists use. The research was conducted with the use of quantitative pragmatic analysis. Each sample was examined from many different angles. In this thesis, pragmatic phenomenon are examined like the function of the statements, speech acts, intertextuality, conversational maxims, the use and violation of speech etiquette, presupposition, conversational implicatures, deixis, and reference. The semiotic analysis and the examination of the context, from which the analyzed media texts originated, is involved as well. Journalistic texts from different types of media from the time of the first Czech direct presidential election have been chosen as samples for the analysis. The goal of the thesis is to design a complex pragmatic analysis and describe the used communication strategies of the participants.</marc:subfield>
+    <marc:subfield code="9">eng</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="520" ind1=" " ind2=" ">
+    <marc:subfield code="a">Diplomová práce Politika, média, manipulace. Politické zpravodajství, publicistika a pragmatická lingvistika zkoumá současnou českou medializovanou politickou komunikaci pomocí pragmatické analýzy. Zaměřuje se na témata moci, ideologie a sebeprezentace politických aktérů v médiích. Zabývá se rámováním jejich komunikace médii a komunikačními strategiemi, které oni i mediální pracovníci používají. Výzkum je realizován pomocí kvalitativní pragmatické analýzy, každý vzorek je zkoumán z mnoha různých úhlů. V práci jsou zkoumány pragmatické fenomény, jako jsou intertextualita, funkce výpovědí a používání řečových aktů, konverzační maximy, používání a porušování řečové etikety, presupozice, konverzační implikatury, deixe a reference. Prostor je věnován také sémiotické analýze a analýze kontextu, ve kterém daný text vznikl. Jako vzorek byly vybrány zpravodajské a publicistické texty z různých typů českých médií z období kampaně k první přímé prezidentské volbě v ČR (tedy za období září 2012 až leden 2013). Cílem práce je navrhnout komplexní pragmatickou analýzu a popsat používané komunikační strategie aktérů.</marc:subfield>
+    <marc:subfield code="9">cze</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="586" ind1=" " ind2=" ">
+    <marc:subfield code="a">obhájeno</marc:subfield>
+    <marc:subfield code="b">successfully defended</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">Politická komunikace</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">pragmatická lingvistika</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">politická žurnalistika</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">funkce výpovědí</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">řečové akty</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">intertextualita</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">konverzační maximy</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1=" " ind2=" ">
+    <marc:subfield code="a">sémiotika</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">Political communication</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">pragmatic linguistic</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">political journalism</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">functions of the statements</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">speech acts</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">intertextuality</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">conversational maxims</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="653" ind1="0" ind2=" ">
+    <marc:subfield code="a">semiotics</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="710" ind1="2" ind2=" ">
+    <marc:subfield code="a">Univerzita Karlova</marc:subfield>
+    <marc:subfield code="9">cze</marc:subfield>
+    <marc:subfield code="b">Katedra mediálních studií</marc:subfield>
+    <marc:subfield code="g">Fakulta sociálních věd</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="710" ind1="2" ind2=" ">
+    <marc:subfield code="a">Charles University</marc:subfield>
+    <marc:subfield code="9">eng</marc:subfield>
+    <marc:subfield code="b">Department of Media Studies</marc:subfield>
+    <marc:subfield code="g">Faculty of Social Sciences</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="720" ind1=" " ind2=" ">
+    <marc:subfield code="a">Zicháčková, Adéla</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="720" ind1=" " ind2=" ">
+    <marc:subfield code="i">Šoltys, Otakar</marc:subfield>
+    <marc:subfield code="e">advisor</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="720" ind1=" " ind2=" ">
+    <marc:subfield code="i">Jirák, Jan</marc:subfield>
+    <marc:subfield code="e">referee</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="856" ind1="4" ind2="0">
+    <marc:subfield code="z">Odkaz na původní záznam</marc:subfield>
+    <marc:subfield code="u">http://hdl.handle.net/20.500.11956/64309</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="856" ind1="4" ind2="0">
+    <marc:subfield code="u">http://www.nusl.cz/ntk/nusl-333449</marc:subfield>
+    <marc:subfield code="z">PID NUŠL</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="909" ind1="C" ind2="O">
+    <marc:subfield code="o">oai:invenio.nusl.cz:333449</marc:subfield>
+    <marc:subfield code="p">etds</marc:subfield>
+    <marc:subfield code="p">openaire</marc:subfield>
+    <marc:subfield code="p">global</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="980" ind1=" " ind2=" ">
+    <marc:subfield code="a">diplomove_prace</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="996" ind1=" " ind2=" ">
+    <marc:subfield code="a">Dostupné v digitálním repozitáři UK.</marc:subfield>
+    <marc:subfield code="b">Available in the Charles University Digital Repository.</marc:subfield>
+    <marc:subfield code="9">1</marc:subfield>
+  </marc:datafield>
+  <marc:datafield tag="998" ind1=" " ind2=" ">
+    <marc:subfield code="a">univerzita_karlova_v_praze</marc:subfield>
+  </marc:datafield>
+</marc:record>
+</metadata></record></GetRecord>
+</OAI-PMH>
+
