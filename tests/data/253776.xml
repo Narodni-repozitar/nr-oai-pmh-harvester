@@ -1,0 +1,136 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">253776</controlfield>
+        <controlfield tag="005">20200327143258.0</controlfield>
+        <controlfield tag="008">160803n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+        <datafield tag="041" ind1="0" ind2="7">
+            <subfield code="a">cze</subfield>
+            <subfield code="b">eng</subfield>
+        </datafield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2016-07</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Globální ekonomický výhled - červenec 2016</subfield>
+            <subfield code="b">Global Economy Outlook - July 2016</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="b">Česká národní banka</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">21 s.</subfield>
+        </datafield>
+        <datafield tag="340" ind1=" " ind2=" ">
+            <subfield code="a">text/pdf</subfield>
+        </datafield>
+        <datafield tag="506" ind1=" " ind2=" ">
+            <subfield code="a">Public</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">Červencové vydání měsíčníku Globální ekonomický výhled přináší pravidelný přehled
+                aktuálního a očekávaného vývoje ve vybraných teritoriích se zaměřením na hlavní ekonomické veličiny:
+                inflaci, růst HDP, předstihové ukazatele, úrokové sazby, měnové kurzy a ceny komodit. V tomto čísle je
+                naše pozornost navíc zaostřena na pozorovaný rozdíl mezi inflačními očekáváními odvozenými z tržních
+                instrumentů a těmi získanými z průzkumů mezi experty. Zatímco tržní výhledy naznačují pokles inflačních
+                očekávání ve Spojených státech, z pohledu expertů k ohrožení plnění 2% inflačního cíle Fedu nedochází.
+            </subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">The July issue of Global Economic Outlook presents the regular monthly overview of recent
+                and expected developments in selected territories, focusing on key economic variables: inflation, GDP
+                growth, leading indicators, interest rates, exchange rates and commodity prices. In this issue, we also
+                focus on the observed difference between inflation expectations derived from market instruments and
+                those from surveys of experts. Market outlooks indicate a decline in inflation expectations in the USA,
+                whereas the view of experts is that fulfilment of the Fed’s 2% target is not at risk.
+            </subfield>
+            <subfield code="9">eng</subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+            <subfield code="9">eng</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">inflace</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1478</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">inflation</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">hrubý domácí produkt</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1448</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">gross domestic product</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">komodita</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1322</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">commodity</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">úroková míra</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1611</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">interest rate</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">měnový kurz</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1493</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">exchange rate</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">makroekonomie</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1423</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">macroeconomics</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Česká národní banka</subfield>
+        </datafield>
+        <datafield tag="856" ind1="0" ind2=" ">
+            <subfield code="f">michaela.charvatova@techlib.cz</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="z">PID NUŠL</subfield>
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-253776</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="2">
+            <subfield code="z">Elektronické umístění souboru</subfield>
+            <subfield code="u">http://www.cnb.cz/cs/menova_politika/gev/gev_2016/index.html</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2=" ">
+            <subfield code="y">česká verze</subfield>
+            <subfield code="z">Plný text</subfield>
+            <subfield code="u">http://invenio.nusl.cz/record/253776/files/nusl-253776_1.pdf</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2=" ">
+            <subfield code="y">English version</subfield>
+            <subfield code="z">Plný text</subfield>
+            <subfield code="u">http://invenio.nusl.cz/record/253776/files/nusl-253776_2.pdf</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:253776</subfield>
+            <subfield code="p">openaire</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">DRIVER</subfield>
+            <subfield code="p">base</subfield>
+            <subfield code="p">opengrey</subfield>
+            <subfield code="q">licensed</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">zpravy_o_stavu</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="9">1</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">ceska_narodni_banka</subfield>
+        </datafield>
+    </record>
+</collection>
