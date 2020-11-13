@@ -9,3 +9,11 @@ def find_in_json_list(taxonomy_code: str, field: str, value: str):
         func.jsonb_extract_path(TaxonomyTerm.extra_data, field).op('?')(
             value))
     return sqlalchemy_query
+
+
+def get_query_by_slug(taxonomy_code: str, slug: str):
+    slug = f"*.{slug.lower()}"
+    sqlalchemy_query = current_flask_taxonomies.list_taxonomy(f'{taxonomy_code}')
+    sqlalchemy_query = sqlalchemy_query.filter(
+        TaxonomyTerm.slug.op('~')(slug))
+    return sqlalchemy_query
