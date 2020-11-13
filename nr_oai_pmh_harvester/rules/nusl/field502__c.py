@@ -1,22 +1,13 @@
 from typing import Iterable
 
 from flask_taxonomies.proxies import current_flask_taxonomies
-
-# TODO: https://www.postgresql.org/docs/9.6/functions-json.html, sepsat do Notion nebo článek
 from oarepo_taxonomies.utils import get_taxonomy_json
 from sqlalchemy.orm.exc import MultipleResultsFound
 
 from nr_oai_pmh_harvester.query import find_in_json_list
 
 
-def choose_term(terms, reversed_grantor_array, reversed_level):
-    parent_term = get_institution_term(reversed_grantor_array[reversed_level+1])
-    if not parent_term:
-        return
-    for term in terms:
-        if term.parent.id == parent_term.id:
-            return term
-
+# TODO: https://www.postgresql.org/docs/9.6/functions-json.html, sepsat do Notion nebo článek
 
 def degree_grantor(el, **kwargs):
     if "," in el:
@@ -64,3 +55,12 @@ def get_institution_term(unit, reversed_grantor_array: Iterable = None, reversed
         sqlalchemy_query_formerName = find_in_json_list("institutions", "formerNames", unit)
         term = sqlalchemy_query_formerName.one_or_none()
     return term
+
+
+def choose_term(terms, reversed_grantor_array, reversed_level):
+    parent_term = get_institution_term(reversed_grantor_array[reversed_level + 1], reversed_grantor_array, reversed_level+1)
+    if not parent_term:
+        return
+    for term in terms:
+        if term.parent.id == parent_term.id:
+            return term
