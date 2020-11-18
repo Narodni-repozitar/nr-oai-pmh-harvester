@@ -26,11 +26,15 @@ def get_person(person, contributor_list, creator_list):
             "name": person.get('a'),
         })
     if person.get('i'):
-        contributor_list.append({
+        data_ = {
             "name": person.get('i'),
-            "role": get_taxonomy_json(code="contributor-type",
-                                      slug=get_role(person.get('e')).slug).paginated_data,
-        })
+        }
+        term = get_role(person.get('e'))
+        if term:
+            slug = term.slug
+            role = get_taxonomy_json(code="contributor-type", slug=slug).paginated_data
+            data_["role"] = role
+        contributor_list.append(data_)
 
 
 @lru_cache(maxsize=27)
