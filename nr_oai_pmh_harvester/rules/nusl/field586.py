@@ -5,4 +5,4 @@ def defended(el, **kwargs):
     elif value == "neobhájeno":
         return {"defended": False}
     else:
-        return
+        return {"defended": "Nutná kontrola"}

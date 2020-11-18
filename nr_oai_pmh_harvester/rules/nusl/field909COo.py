@@ -5,8 +5,12 @@ def nusl_oai(el, **kwargs):
     url = el.get("o")
     if url:
         return {
-                "recordIdentifiers": {
-                    "nuslOAI": url
-                }
+            "recordIdentifiers": {
+                "nuslOAI": url
             }
-    return OAITransformer.PROCESSED
+        }
+    return {
+        "recordIdentifiers": {
+            "nuslOAI": ["Nutná kontrola"]
+        }
+    }
