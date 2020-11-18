@@ -1,3 +1,6 @@
+from oarepo_oai_pmh_harvester.transformer import OAITransformer
+
+
 def keyword(el, **kwargs):
     record = kwargs["record"]
     en_keywords = record.get("6530_")
@@ -8,4 +11,7 @@ def keyword(el, **kwargs):
     else:
         for _ in el:
             res.append({"cs": _["a"]})
-    return {"keywords": res}
+    if res:
+        return {"keywords": res}
+    else:
+        return OAITransformer.PROCESSED

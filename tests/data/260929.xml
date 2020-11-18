@@ -1,0 +1,151 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">260929</controlfield>
+        <controlfield tag="005">20200327143300.0</controlfield>
+        <controlfield tag="008">161005n||||||||xx#||||#|||z|#||||||eng||</controlfield>
+        <datafield tag="022" ind1=" " ind2=" ">
+            <subfield code="a">1803-7070</subfield>
+        </datafield>
+        <datafield tag="041" ind1="0" ind2="7">
+            <subfield code="a">eng</subfield>
+        </datafield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2016</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Monetary Policy and Macroprudential Policy</subfield>
+        </datafield>
+        <datafield tag="246" ind1="3" ind2="3">
+            <subfield code="a">Rivals or Teammates?</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="b">Česká národní banka</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">52 s.</subfield>
+        </datafield>
+        <datafield tag="340" ind1=" " ind2=" ">
+            <subfield code="a">text/pdf</subfield>
+        </datafield>
+        <datafield tag="490" ind1="0" ind2=" ">
+            <subfield code="a">Working paper series</subfield>
+            <subfield code="v">6/2016</subfield>
+        </datafield>
+        <datafield tag="506" ind1=" " ind2=" ">
+            <subfield code="a">Public</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">Článek se zabývá situacemi, ve kterých může docházet k interakci (a potenciálnímu
+                konfliktu) mezi měnovou a makroobezřetnostní politikou, a přispívá k diskuzi o jejich koordinaci. S
+                využitím dat pro Českou republiku a pět zemí eurozóny ukazujeme, že měnové zpřísnění má negativní dopad
+                na poměr úvěrů k HDP a rizikově nevážený kapitálový poměr bank (tj. pozitivní dopad na finanční páku
+                bank), přičemž tento efekt výrazně zesiluje od poloviny roku 2011. Tyto výsledky podporují názor, že
+                uvolněná měnová politika přispívá k budování finančních nerovnováh, resp. posouvá úvěrový cyklus směrem
+                nahoru. Na druhé straně, efekt vyššího kapitálového poměru bank je spojen s určitým stupněm nejistoty.
+                Nejen z těchto důvodů je koordinace obou politik nezbytná, aby bylo možné předejít jejich nežádoucí
+                kombinaci, která by zabránila účinnému dosažení hlavních cílů obou politik.
+            </subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">This paper sheds some light on situations in which monetary and macroprudential policies
+                may interact (and potentially get into conflict) and contributes to the discussion about the
+                coordination of those policies. Using data for the Czech Republic and five euro area countries we show
+                that monetary tightening has a negative impact on the credit-to-GDP ratio and the non-risk-weighted bank
+                capital ratio (i.e. a positive impact on bank leverage), while these effects have strengthened
+                considerably since mid-2011. This supports the view that accommodative monetary policy contributes to a
+                build-up of financial vulnerabilities, i.e. it boosts the credit cycle. On the other hand, the effect of
+                the higher bank capital ratio is associated with some degree of uncertainty. For these and other
+                reasons, coordination of the two policies is necessary to avoid an undesirable policy mix preventing
+                effective achievement of the main objectives in the two policy areas.
+            </subfield>
+            <subfield code="9">eng</subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+            <subfield code="9">eng</subfield>
+        </datafield>
+        <datafield tag="598" ind1=" " ind2=" ">
+            <subfield code="a">Cílem publikací České národní banky z řady Working Papers je informovat o výsledcích
+                výzkumných projektů ČNB a dalších výzkumných aktivit zaměstnanců ČNB i externích spolupracovníků. Řada
+                Working Papers má za cíl uveřejňovat původní výzkum relevantní pro centrální banky. Publikace z řady
+                Working Papers jsou mezinárodně oponovány. Oponentní řízení jsou organizována samostatným odborem
+                ekonomického výzkumu ČNB. Zveřejňování publikací z této řady má podnítit diskuzi. Jejich obsah vyjadřuje
+                názory autorů, a nemusí tedy vyjadřovat oficiální stanovisko České národní banky.
+            </subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">monetární politika</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1477</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">monetary policy</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">makroekonomie</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1423</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">macroeconomics</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">Bayesovský odhad</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">finanční stabilita</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">makroobezřetnostní politika</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">Bayesian estimation</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">financial stability</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">macroprudential policy</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Malovaná, Simona</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Frait, Jan</subfield>
+        </datafield>
+        <datafield tag="856" ind1="0" ind2=" ">
+            <subfield code="f">michaela.charvatova@techlib.cz</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="z">PID NUŠL</subfield>
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-260929</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="2">
+            <subfield code="z">Elektronické umístění souboru</subfield>
+            <subfield code="u">http://www.cnb.cz/cs/vyzkum/vyzkum_publikace/cnb_wp/2016/cnbwp_2016_06.html</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2=" ">
+            <subfield code="z">Plný text</subfield>
+            <subfield code="u">http://invenio.nusl.cz/record/260929/files/nusl-260929_1.pdf</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:260929</subfield>
+            <subfield code="p">openaire</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">DRIVER</subfield>
+            <subfield code="p">base</subfield>
+            <subfield code="p">opengrey</subfield>
+            <subfield code="q">licensed</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">studie</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="9">1</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">ceska_narodni_banka</subfield>
+        </datafield>
+    </record>
+</collection>

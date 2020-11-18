@@ -7,21 +7,30 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 def people(el, **kwargs):
     creator = []
     contributor = []
-    for person in el:
-        if person.get('a'):
-            creator.append({
-                "name": person.get('a'),
-            })
-        if person.get('i'):
-            contributor.append({
-                "name": person.get('i'),
-                "role": get_taxonomy_json(code="contributor-type",
-                                          slug=get_role(person.get('e')).slug).paginated_data,
-            })
-    return {
-        "creator": creator,
-        "contributor": contributor
-    }
+    res = {}
+    if isinstance(el, (list, tuple)):
+        for person in el:
+            get_person(person, contributor, creator)
+    if isinstance(el, dict):
+        get_person(el, contributor, creator)
+    if creator:
+        res["creator"] = creator
+    if contributor:
+        res["contributor"] = contributor
+    return res
+
+
+def get_person(person, contributor_list, creator_list):
+    if person.get('a'):
+        creator_list.append({
+            "name": person.get('a'),
+        })
+    if person.get('i'):
+        contributor_list.append({
+            "name": person.get('i'),
+            "role": get_taxonomy_json(code="contributor-type",
+                                      slug=get_role(person.get('e')).slug).paginated_data,
+        })
 
 
 @lru_cache(maxsize=27)

@@ -92,7 +92,7 @@ def provider_mapping():
         "ostravska_univerzita": "61988987",
         "pamatnik_narodniho_pisemnictvi": "00023311",
         "parazitologicky_ustav": "60077344-pau",
-        "parlamentni_institut": "00006572",
+        "parlamentni_institut": "parlamentni_institut",
         "prague_college": "27164004",
         "psychologicky_ustav": "68081740",
         "sdruzeni_pro_integraci_a_migraci": "26612933",

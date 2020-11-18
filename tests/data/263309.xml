@@ -1,0 +1,107 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">263309</controlfield>
+        <controlfield tag="005">20200327143311.0</controlfield>
+        <controlfield tag="008">170222n||||||||xx#||||#|||z|#||||||eng||</controlfield>
+        <datafield tag="022" ind1=" " ind2=" ">
+            <subfield code="a">1803-7089</subfield>
+        </datafield>
+        <datafield tag="856" ind1="0" ind2=" ">
+            <subfield code="f">petra.cernohlavkova@techlib.cz</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-263309</subfield>
+            <subfield code="z">PID NUŠL</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="2">
+            <subfield code="u">http://www.cnb.cz/en/research/research_publications/erb/index.html</subfield>
+            <subfield code="z">Elektronické umístění souboru</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2=" ">
+            <subfield code="u">http://invenio.nusl.cz/record/263309/files/nusl-263309_1.pdf</subfield>
+            <subfield code="z">Plný text</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:263309</subfield>
+            <subfield code="p">openaire</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">DRIVER</subfield>
+            <subfield code="p">base</subfield>
+            <subfield code="p">opengrey</subfield>
+            <subfield code="q">licensed</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1479</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="a">fiskální politika</subfield>
+            <subfield code="j">fiscal policy</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1477</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="a">monetární politika</subfield>
+            <subfield code="j">monetary policy</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1423</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="a">makroekonomie</subfield>
+            <subfield code="j">macroeconomics</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">32 s.</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">firemni_tisk</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="9">1</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">ceska_narodni_banka</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Economic Research Bulletin (2016, No.2)</subfield>
+        </datafield>
+        <datafield tag="246" ind1="3" ind2="0">
+            <subfield code="n">Volume 14, Number 2, November 2016</subfield>
+            <subfield code="p">Financial Cycles and Macroprudential and Monetary Policies</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="9">eng</subfield>
+            <subfield code="a">Issues connected with the financial cycle have gained prominence in recent decades, as
+                they form the key component of the time dimension of the newly formed macroprudential policies. Analysis
+                of the financial cycle covers a combination of purely theoretical models (explaining different channels
+                of propagation of the financial cycle to the real economy) and practical applications estimating the
+                financial cycle (directly applicable to macroprudential policies such as the setting of countercyclical
+                capital buffers). Financial cycle issues also influence the debate of the interaction between monetary
+                and macroprudential policies. This edition of the Bulletin presents four articles that address financial
+                cycle issues. Two of them are theoretical, one is purely empirical and one covers issues related to the
+                interaction of the different policies conducted within the central bank.
+            </subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="9">cze</subfield>
+            <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="9">eng</subfield>
+            <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Česká národní banka</subfield>
+        </datafield>
+        <datafield tag="506" ind1=" " ind2=" ">
+            <subfield code="a">Public</subfield>
+        </datafield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2016</subfield>
+        </datafield>
+        <datafield tag="041" ind1="0" ind2="7">
+            <subfield code="a">eng</subfield>
+        </datafield>
+        <datafield tag="340" ind1=" " ind2=" ">
+            <subfield code="a">text/pdf</subfield>
+        </datafield>
+    </record>
+</collection>

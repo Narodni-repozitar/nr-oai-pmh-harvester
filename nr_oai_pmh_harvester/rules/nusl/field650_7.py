@@ -1,29 +1,34 @@
+from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from oarepo_taxonomies.utils import get_taxonomy_json
 
 from nr_oai_pmh_harvester.query import get_query_by_slug
 
 
 def subject(el, **kwargs):
-    res = []
+    res = {}
+    subjects = []
     keywords = []
     if isinstance(el, (list, tuple)):
         for _ in el:
-            res, keywords = get_subject_keyword(_, keywords, res)
+            subjects, keywords = get_subject_keyword(_, keywords, subjects)
     if isinstance(el, dict):
-        res, keywords = get_subject_keyword(el, keywords, res)
-    return {
-        "subject": res,
-        "keywords": keywords
-    }
+        subjects, keywords = get_subject_keyword(el, keywords, subjects)
+    if subjects:
+        res["subjects"] = subjects
+    if keywords:
+        res["keywords"] = keywords
+    if res:
+        return res
+    else:
+        return OAITransformer.PROCESSED
 
-
-def get_subject_keyword(_, keywords, res):
+def get_subject_keyword(_, keywords, subjects):
     subject = get_subject(_)
     if subject:
-        res += subject
+        subjects += subject
     else:
         keywords += get_keyword(_)
-    return res, keywords
+    return subjects, keywords
 
 
 def get_subject(el):

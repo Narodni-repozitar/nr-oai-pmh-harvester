@@ -17,3 +17,12 @@ def get_query_by_slug(taxonomy_code: str, slug: str):
     sqlalchemy_query = sqlalchemy_query.filter(
         TaxonomyTerm.slug.op('~')(slug))
     return sqlalchemy_query
+
+
+def find_in_title(field: str, taxonomy_code: str, first_lang: str = "cs", second_lang: str = "en"):
+    sqlalchemy_query = current_flask_taxonomies.list_taxonomy(taxonomy_code)
+    sqlalchemy_query = current_flask_taxonomies.apply_term_query(sqlalchemy_query,
+                                                                 f'title.{first_lang}:"{field}" OR '
+                                                                 f'title.{second_lang}:"{field}"',
+                                                                 taxonomy_code)
+    return sqlalchemy_query

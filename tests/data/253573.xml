@@ -1,0 +1,135 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">253573</controlfield>
+        <controlfield tag="005">20200327143257.0</controlfield>
+        <controlfield tag="008">160707n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+        <datafield tag="041" ind1="0" ind2="7">
+            <subfield code="a">cze</subfield>
+        </datafield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2006-07</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Rozsah poslanecké imunity ve vybraných státech</subfield>
+            <subfield code="b">Immunity of Members of Parliament in Selscted States</subfield>
+        </datafield>
+        <datafield tag="246" ind1="3" ind2="3">
+            <subfield code="a">Studie č. 1.175</subfield>
+            <subfield code="b">Study 1.175</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="b">Kancelář Poslanecké sněmovny</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">11 st.</subfield>
+        </datafield>
+        <datafield tag="340" ind1=" " ind2=" ">
+            <subfield code="a">text/pdf</subfield>
+        </datafield>
+        <datafield tag="506" ind1=" " ind2=" ">
+            <subfield code="a">Public</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">V obecném úvodu je popsán institut parlamentní imunity jako jeden z nástrojů ochrany
+                nerušené činnosti zákonodárného sboru. Jeho historické kořeny sahají již do středověku, kde bylo
+                nezbytné chránit nově se vytvářející stavovská shromáždění před zásahy tehdy mocných panovníků. Postupem
+                historického vývoje se institut rozpadl na dvě rozdílné a přesto propojené části, na neodpovědnost
+                poslanců a na jejich nestíhatelnost. Zatímco neodpovědnost chrání proti stíhání za hlasování a některé
+                projevy, které v parlamentu činí, často v rámci výkonu svých povinností, nestíhatelnost zabezpečuje, že
+                je poslanec chráněn před zákonným stíháním trestného činu, správního deliktu či občanskoprávního aktu.
+                Zatímco právní úprava neodpovědnosti je ve zkoumaných zemích více či méně obdobná (doba jejího trvání
+                bývá neomezená, možnost jejího odejmutí je ve většině případů vyloučena), je právní úprava
+                nestíhatelnosti značně odlišná. Jednotlivé úpravy (až na drobné výjimky) spojují dvě věci. První z nich
+                je prolomení imunity ve smyslu nestíhatelnosti poslance v případě, že je přistižen při činu (někdy úplné
+                jindy částečné), druhou je stanovení doby, na kterou se nestíhatelnost vztahuje (jde v naprosté většině
+                případů jen o dobu výkonu mandátu poslance). Jsou však i takové země, které nestíhatelnost neupravují a
+                staví tak poslance ve vztahu k trestnímu a příp. i správnímu stíhání naroveň běžnému občanovi. S
+                jednotlivými právními úpravami rozsahu poslanecké imunity, které ve zkoumaných zemích platí, se může
+                čtenář seznámit v přehledné tabulce.
+            </subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="540" ind1=" " ind2=" ">
+            <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+            <subfield code="9">eng</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">parlament</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH8390</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">parliament</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">imunita</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH778</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">immunity</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">poslanec</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">trestní</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">stíhání</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">parliament</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">immunity</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">MP's</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">criminal</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">prosecution</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Medková, Eva</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Nemeth, Marek</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Syllová, Jindřiška</subfield>
+        </datafield>
+        <datafield tag="856" ind1="0" ind2=" ">
+            <subfield code="f">cizkovam@psp.cz</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="z">PID NUŠL</subfield>
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-253573</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2=" ">
+            <subfield code="z">Plný text</subfield>
+            <subfield code="u">http://invenio.nusl.cz/record/253573/files/nusl-253573_1.pdf</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:253573</subfield>
+            <subfield code="p">openaire</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">DRIVER</subfield>
+            <subfield code="p">base</subfield>
+            <subfield code="p">opengrey</subfield>
+            <subfield code="q">licensed</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">studie</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="9">1</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">parlamentni_institut</subfield>
+        </datafield>
+    </record>
+</collection>
