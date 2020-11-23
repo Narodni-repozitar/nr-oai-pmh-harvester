@@ -1,4 +1,10 @@
+from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_taxonomies.utils import get_taxonomy_json
+
+
+@rule("nusl", "marcxml", "/04107", phase="pre")
+def call_language(el, **kwargs):
+    language(el, **kwargs)
 
 
 def language(el, **kwargs):

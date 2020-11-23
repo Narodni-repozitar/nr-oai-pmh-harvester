@@ -23,8 +23,8 @@ def test_uk_bachelor_thesis(app, db, file_name):
     from nr_oai_pmh_harvester.rules.nusl.field046__j import date_modified
     from nr_oai_pmh_harvester.rules.nusl.field046__k import date_issued
     from nr_oai_pmh_harvester.rules.nusl.field24500 import title
-    from nr_oai_pmh_harvester.rules.nusl.field24630 import titleAlternate_2
-    from nr_oai_pmh_harvester.rules.nusl.field24633 import titleAlternate
+    from nr_oai_pmh_harvester.rules.nusl.field24630 import title_alternate_2
+    from nr_oai_pmh_harvester.rules.nusl.field24633 import title_alternate
     from nr_oai_pmh_harvester.rules.nusl.field260__b import publisher
     from nr_oai_pmh_harvester.rules.nusl.field300 import extent
     from nr_oai_pmh_harvester.rules.nusl.field336__a import certified_methodologies
@@ -145,7 +145,7 @@ def test_uk_bachelor_thesis(app, db, file_name):
             "pre": issn
         },
         "/24633": {
-            "pre": titleAlternate
+            "pre": title_alternate
         },
         "/4900_": {
             "pre": series
@@ -154,7 +154,7 @@ def test_uk_bachelor_thesis(app, db, file_name):
             "pre": note
         },
         "/24630": {
-            "pre": titleAlternate_2
+            "pre": title_alternate_2
         },
         "/656_7/a": {
             "pre": studyfield

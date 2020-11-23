@@ -1,8 +1,14 @@
+from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from oarepo_taxonomies.utils import get_taxonomy_json
 from slugify import slugify
 
 from nr_oai_pmh_harvester.query import find_in_json_list, find_in_title
+
+
+@rule("nusl", "marcxml", "/656_7/a", phase="pre")
+def call_studyfield(el, **kwargs):
+    studyfield(el, **kwargs)
 
 
 def studyfield(el, **kwargs):

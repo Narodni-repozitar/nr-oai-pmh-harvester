@@ -1,4 +1,10 @@
+from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
+
+
+@rule("nusl", "marcxml", "/4900_", phase="pre")
+def call_series(el, **kwargs):
+    series(el, **kwargs)
 
 
 def series(el, **kwargs):

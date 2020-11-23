@@ -1,4 +1,10 @@
+from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
+
+
+@rule("nusl", "marcxml", "/653__", phase="pre")
+def call_keyword(el, **kwargs):
+    keyword(el, **kwargs)
 
 
 def keyword(el, **kwargs):

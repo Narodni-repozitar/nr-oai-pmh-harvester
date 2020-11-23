@@ -1,3 +1,11 @@
+from oarepo_oai_pmh_harvester.decorators import rule
+
+
+@rule("nusl", "marcxml", "/022__/a", phase="pre")
+def call_issn(el, **kwargs):
+    issn(el, **kwargs)
+
+
 def issn(el, **kwargs):
     return {
         "workIdentifiers": {

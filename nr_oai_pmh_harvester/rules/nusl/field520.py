@@ -1,5 +1,12 @@
 from nr_oai_pmh_harvester.rules.nusl.field04107 import get_language_taxonomy
 
+from oarepo_oai_pmh_harvester.decorators import rule
+
+
+@rule("nusl", "marcxml", "/520__", phase="pre")
+def call_abstract(el, **kwargs):
+    abstract(el, **kwargs)
+
 
 def abstract(el, **kwargs):
     res = {}

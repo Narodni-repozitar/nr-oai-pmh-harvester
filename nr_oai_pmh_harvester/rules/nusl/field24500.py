@@ -1,4 +1,10 @@
 import pycountry
+from oarepo_oai_pmh_harvester.decorators import rule
+
+
+@rule("nusl", "marcxml", "/24500", phase="pre")
+def call_title(el, **kwargs):
+    title(el, **kwargs)
 
 
 def title(el, **kwargs):
@@ -6,14 +12,6 @@ def title(el, **kwargs):
 
 
 def get_title(el, kwargs, field="title", first_lang_field="a", second_lang_field="b"):
-    # record = kwargs["record"]
-    # lang = record["04107"]["a"]
-    # py_lang = pycountry.languages.get(alpha_3=lang) or pycountry.languages.get(bibliographic=lang)
-    # res = {
-    #     field: {
-    #         py_lang.alpha_2: el[first_lang_field]
-    #     }
-    # }
     res = {
         field: get_title_dict(kwargs, el[first_lang_field])
     }

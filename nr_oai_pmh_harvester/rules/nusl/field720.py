@@ -1,7 +1,13 @@
 from functools import lru_cache
 
 from flask_taxonomies.proxies import current_flask_taxonomies
+from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_taxonomies.utils import get_taxonomy_json
+
+
+@rule("nusl", "marcxml", "/720__", phase="pre")
+def call_people(el, **kwargs):
+    people(el, **kwargs)
 
 
 def people(el, **kwargs):

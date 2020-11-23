@@ -1,4 +1,10 @@
+from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
+
+
+@rule("nusl", "marcxml", "/7731_", phase="pre")
+def call_related_item(el, **kwargs):
+    related_item(el, **kwargs)
 
 
 def related_item(el, **kwargs):

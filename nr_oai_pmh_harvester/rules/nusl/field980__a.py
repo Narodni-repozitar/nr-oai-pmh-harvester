@@ -3,6 +3,13 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 from nr_oai_pmh_harvester.query import find_in_json_list
 
+from oarepo_oai_pmh_harvester.decorators import rule
+
+
+@rule("nusl", "marcxml", "/980__/a", phase="pre")
+def call_resource_type(el, **kwargs):
+    resource_type(el, **kwargs)
+
 
 def resource_type(el, **kwargs):
     if el == "metodiky":

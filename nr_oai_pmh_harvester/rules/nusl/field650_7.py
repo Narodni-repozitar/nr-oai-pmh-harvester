@@ -3,6 +3,13 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 from nr_oai_pmh_harvester.query import get_query_by_slug
 
+from oarepo_oai_pmh_harvester.decorators import rule
+
+
+@rule("nusl", "marcxml", "/650_7", phase="pre")
+def call_subject(el, **kwargs):
+    subject(el, **kwargs)
+
 
 def subject(el, **kwargs):
     res = {}
@@ -21,6 +28,7 @@ def subject(el, **kwargs):
         return res
     else:
         return OAITransformer.PROCESSED
+
 
 def get_subject_keyword(_, keywords, subjects):
     subject = get_subject(_)

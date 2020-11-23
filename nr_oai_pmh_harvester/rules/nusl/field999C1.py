@@ -1,6 +1,12 @@
+from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_taxonomies.utils import get_taxonomy_json
 
 from nr_oai_pmh_harvester.query import get_query_by_slug
+
+
+@rule("nusl", "marcxml", "/999C1", phase="pre")
+def call_funding_reference(el, **kwargs):
+    funding_reference(el, **kwargs)
 
 
 def funding_reference(el, **kwargs):

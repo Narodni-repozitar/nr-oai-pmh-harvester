@@ -6,6 +6,13 @@ from sqlalchemy.orm.exc import MultipleResultsFound
 
 from nr_oai_pmh_harvester.query import find_in_json_list
 
+from oarepo_oai_pmh_harvester.decorators import rule
+
+
+@rule("nusl", "marcxml", "/502__/c", phase="pre")
+def call_degree_grantor(el, **kwargs):
+    degree_grantor(el, **kwargs)
+
 
 # TODO: https://www.postgresql.org/docs/9.6/functions-json.html, sepsat do Notion nebo článek
 

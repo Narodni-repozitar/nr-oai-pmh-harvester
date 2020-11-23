@@ -1,4 +1,9 @@
-from oarepo_oai_pmh_harvester.transformer import OAITransformer
+from oarepo_oai_pmh_harvester.decorators import rule
+
+
+@rule("nusl", "marcxml", "/909CO", phase="pre")
+def call_nusl_oai(el, **kwargs):
+    nusl_oai(el, **kwargs)
 
 
 def nusl_oai(el, **kwargs):
