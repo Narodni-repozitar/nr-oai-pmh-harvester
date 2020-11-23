@@ -6,41 +6,7 @@ import pytest
 from lxml import etree
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
-from nr_oai_pmh_harvester.parser import marcxml_parser
-from nr_oai_pmh_harvester.rules.nusl.field001 import control_number
-from nr_oai_pmh_harvester.rules.nusl.field020 import isbn
-from nr_oai_pmh_harvester.rules.nusl.field022__a import issn
-from nr_oai_pmh_harvester.rules.nusl.field035 import original_record_oai
-from nr_oai_pmh_harvester.rules.nusl.field04107 import language
-from nr_oai_pmh_harvester.rules.nusl.field046__j import date_modified
-from nr_oai_pmh_harvester.rules.nusl.field046__k import date_issued
-from nr_oai_pmh_harvester.rules.nusl.field24500 import title
-from nr_oai_pmh_harvester.rules.nusl.field24630 import titleAlternate_2
-from nr_oai_pmh_harvester.rules.nusl.field24633 import titleAlternate
-from nr_oai_pmh_harvester.rules.nusl.field260__b import publisher
-from nr_oai_pmh_harvester.rules.nusl.field300 import extent
-from nr_oai_pmh_harvester.rules.nusl.field336__a import certified_methodologies
-from nr_oai_pmh_harvester.rules.nusl.field4900 import series
-from nr_oai_pmh_harvester.rules.nusl.field502__c import degree_grantor
-from nr_oai_pmh_harvester.rules.nusl.field520 import abstract
-from nr_oai_pmh_harvester.rules.nusl.field540 import rights
-from nr_oai_pmh_harvester.rules.nusl.field586 import defended
-from nr_oai_pmh_harvester.rules.nusl.field598__a import note
-from nr_oai_pmh_harvester.rules.nusl.field650_7 import subject
-from nr_oai_pmh_harvester.rules.nusl.field653 import keyword
-from nr_oai_pmh_harvester.rules.nusl.field656_7a import studyfield
-from nr_oai_pmh_harvester.rules.nusl.field7102 import degree_grantor_2
-from nr_oai_pmh_harvester.rules.nusl.field7112 import events
-from nr_oai_pmh_harvester.rules.nusl.field720 import people
-from nr_oai_pmh_harvester.rules.nusl.field7731 import related_item
-from nr_oai_pmh_harvester.rules.nusl.field85640 import original_record_id
-from nr_oai_pmh_harvester.rules.nusl.field85642u import external_location
-from nr_oai_pmh_harvester.rules.nusl.field909COo import nusl_oai
-from nr_oai_pmh_harvester.rules.nusl.field970__a import catalogue_sys_no
-from nr_oai_pmh_harvester.rules.nusl.field980__a import resource_type
-from nr_oai_pmh_harvester.rules.nusl.field996 import accessibility
-from nr_oai_pmh_harvester.rules.nusl.field998 import provider
-from nr_oai_pmh_harvester.rules.nusl.field999C1 import funding_reference
+
 from nr_oai_pmh_harvester.utils import transform_to_dict
 
 
@@ -48,6 +14,43 @@ from nr_oai_pmh_harvester.utils import transform_to_dict
                          ["416174", "253605", "260929", "253573", "263309", "18", "261117",
                           "253576"])
 def test_uk_bachelor_thesis(app, db, file_name):
+    from nr_oai_pmh_harvester.parser import marcxml_parser
+    from nr_oai_pmh_harvester.rules.nusl.field001 import control_number
+    from nr_oai_pmh_harvester.rules.nusl.field020 import isbn
+    from nr_oai_pmh_harvester.rules.nusl.field022__a import issn
+    from nr_oai_pmh_harvester.rules.nusl.field035 import original_record_oai
+    from nr_oai_pmh_harvester.rules.nusl.field04107 import language
+    from nr_oai_pmh_harvester.rules.nusl.field046__j import date_modified
+    from nr_oai_pmh_harvester.rules.nusl.field046__k import date_issued
+    from nr_oai_pmh_harvester.rules.nusl.field24500 import title
+    from nr_oai_pmh_harvester.rules.nusl.field24630 import titleAlternate_2
+    from nr_oai_pmh_harvester.rules.nusl.field24633 import titleAlternate
+    from nr_oai_pmh_harvester.rules.nusl.field260__b import publisher
+    from nr_oai_pmh_harvester.rules.nusl.field300 import extent
+    from nr_oai_pmh_harvester.rules.nusl.field336__a import certified_methodologies
+    from nr_oai_pmh_harvester.rules.nusl.field4900 import series
+    from nr_oai_pmh_harvester.rules.nusl.field502__c import degree_grantor
+    from nr_oai_pmh_harvester.rules.nusl.field520 import abstract
+    from nr_oai_pmh_harvester.rules.nusl.field540 import rights
+    from nr_oai_pmh_harvester.rules.nusl.field586 import defended
+    from nr_oai_pmh_harvester.rules.nusl.field598__a import note
+    from nr_oai_pmh_harvester.rules.nusl.field650_7 import subject
+    from nr_oai_pmh_harvester.rules.nusl.field653 import keyword
+    from nr_oai_pmh_harvester.rules.nusl.field656_7a import studyfield
+    from nr_oai_pmh_harvester.rules.nusl.field7102 import degree_grantor_2
+    from nr_oai_pmh_harvester.rules.nusl.field7112 import events
+    from nr_oai_pmh_harvester.rules.nusl.field720 import people
+    from nr_oai_pmh_harvester.rules.nusl.field7731 import related_item
+    from nr_oai_pmh_harvester.rules.nusl.field85640 import original_record_id
+    from nr_oai_pmh_harvester.rules.nusl.field85642u import external_location
+    from nr_oai_pmh_harvester.rules.nusl.field909COo import nusl_oai
+    from nr_oai_pmh_harvester.rules.nusl.field970__a import catalogue_sys_no
+    from nr_oai_pmh_harvester.rules.nusl.field980__a import resource_type
+    from nr_oai_pmh_harvester.rules.nusl.field996 import accessibility
+    from nr_oai_pmh_harvester.rules.nusl.field998 import provider
+    from nr_oai_pmh_harvester.rules.nusl.field999C1 import funding_reference
+
+
     this_directory = pathlib.Path(__file__).parent.absolute()
     response_path = this_directory / "data" / f"{file_name}.xml"
     with open(str(response_path), "r") as f:
@@ -166,10 +169,14 @@ def test_uk_bachelor_thesis(app, db, file_name):
             "pre": catalogue_sys_no
         },
     }
-    transformer = OAITransformer(rules=rules, unhandled_paths=set(
-        ['/leader', '/005', '/008', '020__/q', '/0248_', '/246__', '/340__', '/500__', '/502__/a', '/502__/b',
-         '/502__/d', '/502__/g', '/506__', '/6530_', '/6557_', '/655_7', "/656_7/2", '/8560_',
-         '/85642/z', '/8564_', '/909CO/p', '999c1', '/999C2','FFT_0']))
+    transformer = OAITransformer(rules=rules, unhandled_paths={'/leader', '/005', '/008', '020__/q',
+                                                               '/0248_', '/246__', '/340__',
+                                                               '/500__', '/502__/a', '/502__/b',
+                                                               '/502__/d', '/502__/g', '/506__',
+                                                               '/6530_', '/6557_', '/655_7',
+                                                               "/656_7/2", '/8560_', '/85642/z',
+                                                               '/8564_', '/909CO/p', '999c1',
+                                                               '/999C2', 'FFT_0'})
     transformed = transformer.transform(parsed)
     print(10 * "\n", "RECORD")
     print(json.dumps(transformed, ensure_ascii=False))

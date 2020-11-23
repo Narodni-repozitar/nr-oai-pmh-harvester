@@ -36,17 +36,21 @@ def app():
         DEBUG=True,
         SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://oarepo:oarepo@localhost/oarepo',
         OAREPO_OAI_PROVIDERS={
-            "uk": {
-                "description": "Univerzita Karlova",
+            "nusl": {
+                "description": "NUŠL",
                 "synchronizers": [
                     {
-                        "name": "xoai",
-                        "oai_endpoint": "https://dspace.cuni.cz/oai/nusl",
-                        "set": "nusl_set",
-                        "metadata_prefix": "xoai",
-                        "unhandled_paths": ["/dc/unhandled"],
+                        "name": "marcxml",
+                        "oai_endpoint": "http://invenio.nusl.cz/oai2d/",
+                        "set": "global",
+                        "metadata_prefix": "marcxml",
+                        "unhandled_paths": ['/leader', '/005', '/008', '020__/q', '/0248_',
+                                            '/246__', '/340__', '/500__', '/502__/a', '/502__/b',
+                                            '/502__/d', '/502__/g', '/506__', '/6530_', '/6557_',
+                                            '/655_7', "/656_7/2", '/8560_',
+                                            '/85642/z', '/8564_', '/909CO/p', '999c1', '/999C2',
+                                            'FFT_0'],
                         "default_endpoint": "recid",
-                        # "use_default_endpoint": True,
                         "endpoint_mapping": {
                             "field_name": "doc_type",
                             "mapping": {
@@ -101,3 +105,18 @@ def xml():
         tree = etree.parse(f)
         root = tree.getroot()
     return root
+
+
+@pytest.fixture()
+def load_entry_points():
+    import pkg_resources
+    distribution = pkg_resources.Distribution(__file__)
+    entry_point = pkg_resources.EntryPoint.parse('parsers = nr_oai_pmh_harvester.parser',
+                                                 dist=distribution)
+    entry_point2 = pkg_resources.EntryPoint.parse(
+        'field001 = nr_oai_pmh_harvester.rules.nusl.field001', dist=distribution)
+    distribution._ep_map = {
+        'oarepo_oai_pmh_harvester.parsers': {'parsers': entry_point},
+        'oarepo_oai_pmh_harvester.rules': {'field001': entry_point2}
+    }
+    pkg_resources.working_set.add(distribution)
