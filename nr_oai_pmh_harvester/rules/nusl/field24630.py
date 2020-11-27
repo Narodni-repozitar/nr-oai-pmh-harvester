@@ -6,7 +6,7 @@ from nr_oai_pmh_harvester.rules.nusl.field24500 import get_title_dict
 
 @rule("nusl", "marcxml", "/24630", phase="pre")
 def call_title_alternate_2(el, **kwargs):
-    title_alternate_2(el, **kwargs)
+    return title_alternate_2(el, **kwargs)
 
 
 def title_alternate_2(el, **kwargs):

@@ -4,7 +4,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/24500", phase="pre")
 def call_title(el, **kwargs):
-    title(el, **kwargs)
+    return title(el, **kwargs)
 
 
 def title(el, **kwargs):
@@ -17,7 +17,7 @@ def get_title(el, kwargs, field="title", first_lang_field="a", second_lang_field
     }
     if lang2 := el.get(second_lang_field):
         res[field]["en"] = lang2
-    return res
+    return {field: [res[field]]}
 
 
 def get_title_dict(kwargs, value):

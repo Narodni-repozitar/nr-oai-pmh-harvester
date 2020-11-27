@@ -3,7 +3,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/586__", phase="pre")
 def call_defended(el, **kwargs):
-    defended(el, **kwargs)
+    return defended(el, **kwargs)
 
 
 def defended(el, **kwargs):

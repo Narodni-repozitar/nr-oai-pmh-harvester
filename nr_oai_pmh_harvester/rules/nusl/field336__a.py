@@ -5,7 +5,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/336__/a", phase="pre")
 def call_certified_methodologies(el, **kwargs):
-    certified_methodologies(el, **kwargs)
+    return certified_methodologies(el, **kwargs)
 
 
 def certified_methodologies(el, **kwargs):

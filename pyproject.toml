@@ -10,20 +10,60 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-oarepo-oai-pmh-harvester = "^2.0.0-alpha.6"
+oarepo-oai-pmh-harvester = "^2.0.0-alpha.10"
 oarepo = { version = "^3.3", optional = true }
 pytest = { version = "^5.0.0", optional = true }
 pytest-cov = { version = "^2.10.1", optional = true }
 xmltodict = "^0.12.0"
-nr-taxonomies = {git = "https://github.com/Narodni-repozitar/nr-taxonomies.git", optional = true, branch = "master"}
+nr-taxonomies = { git = "https://github.com/Narodni-repozitar/nr-taxonomies.git", branch = "master" }
+nr-common = { git = "https://github.com/Narodni-repozitar/nr-common.git", branch = "master" }
+nr-theses = { git = "https://github.com/Narodni-repozitar/nr-theses.git", branch = "master" }
+nr-Nresults = { git = "https://github.com/Narodni-repozitar/nr-Nresults.git", branch = "master" }
+nr-events = { git = "https://github.com/Narodni-repozitar/nr-events.git", branch = "master" }
 oarepo-taxonomies = "^2.5.2"
 
 [tool.poetry.extras]
-tests = ["oarepo", "pytest", "pytest-cov", "nr-taxonomies"]
+tests = ["oarepo", "pytest", "pytest-cov"]
 
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.parsers"]
 "parsers" = "nr_oai_pmh_harvester.parser"
 
+[tool.poetry.plugins."oarepo_oai_pmh_harvester.mappings"]
+"nusl" = "nr_oai_pmh_harvester.endpoint_handlers"
+
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.rules"]
 "field001" = "nr_oai_pmh_harvester.rules.nusl.field001"
+"field020" = "nr_oai_pmh_harvester.rules.nusl.field020"
+"field022" = "nr_oai_pmh_harvester.rules.nusl.field022__a"
+"field035" = "nr_oai_pmh_harvester.rules.nusl.field035"
+"field046__j" = "nr_oai_pmh_harvester.rules.nusl.field046__j"
+"field046__k" = "nr_oai_pmh_harvester.rules.nusl.field046__k"
+"field260__b" = "nr_oai_pmh_harvester.rules.nusl.field260__b"
+"field300" = "nr_oai_pmh_harvester.rules.nusl.field300"
+"field336__a" = "nr_oai_pmh_harvester.rules.nusl.field336__a"
+"field502__c" = "nr_oai_pmh_harvester.rules.nusl.field502__c"
+"field520" = "nr_oai_pmh_harvester.rules.nusl.field520"
+"field540" = "nr_oai_pmh_harvester.rules.nusl.field540"
+"field586" = "nr_oai_pmh_harvester.rules.nusl.field586"
+"field598__a" = "nr_oai_pmh_harvester.rules.nusl.field598__a"
+"field650_7" = "nr_oai_pmh_harvester.rules.nusl.field650_7"
+"field653" = "nr_oai_pmh_harvester.rules.nusl.field653"
+"field656_7a" = "nr_oai_pmh_harvester.rules.nusl.field656_7a"
+"field720" = "nr_oai_pmh_harvester.rules.nusl.field720"
+"field909COo" = "nr_oai_pmh_harvester.rules.nusl.field909COo"
+"field970__a" = "nr_oai_pmh_harvester.rules.nusl.field970__a"
+"field980__a" = "nr_oai_pmh_harvester.rules.nusl.field980__a"
+"field996" = "nr_oai_pmh_harvester.rules.nusl.field996"
+"field998" = "nr_oai_pmh_harvester.rules.nusl.field998"
+"field999C1" = "nr_oai_pmh_harvester.rules.nusl.field999C1"
+"field04107" = "nr_oai_pmh_harvester.rules.nusl.field04107"
+"field4900" = "nr_oai_pmh_harvester.rules.nusl.field4900"
+"field7102" = "nr_oai_pmh_harvester.rules.nusl.field7102"
+"field7112" = "nr_oai_pmh_harvester.rules.nusl.field7112"
+"field7731" = "nr_oai_pmh_harvester.rules.nusl.field7731"
+"field24500" = "nr_oai_pmh_harvester.rules.nusl.field24500"
+"field24630" = "nr_oai_pmh_harvester.rules.nusl.field24630"
+"field24633" = "nr_oai_pmh_harvester.rules.nusl.field24633"
+"field85640" = "nr_oai_pmh_harvester.rules.nusl.field85640"
+"field85642u" = "nr_oai_pmh_harvester.rules.nusl.field85642u"
 

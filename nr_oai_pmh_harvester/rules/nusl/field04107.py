@@ -4,7 +4,7 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 @rule("nusl", "marcxml", "/04107", phase="pre")
 def call_language(el, **kwargs):
-    language(el, **kwargs)
+    return language(el, **kwargs)
 
 
 def language(el, **kwargs):
@@ -17,7 +17,7 @@ def language(el, **kwargs):
         else:
             data.extend(get_language_taxonomy(secondary_lang))
     return {
-        "languages": data
+        "language": data
     }
 
 

@@ -8,7 +8,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/650_7", phase="pre")
 def call_subject(el, **kwargs):
-    subject(el, **kwargs)
+    return subject(el, **kwargs)
 
 
 def subject(el, **kwargs):
@@ -21,7 +21,7 @@ def subject(el, **kwargs):
     if isinstance(el, dict):
         subjects, keywords = get_subject_keyword(el, keywords, subjects)
     if subjects:
-        res["subjects"] = subjects
+        res["subject"] = subjects
     if keywords:
         res["keywords"] = keywords
     if res:

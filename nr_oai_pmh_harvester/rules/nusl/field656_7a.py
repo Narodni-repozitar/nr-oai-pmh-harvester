@@ -8,7 +8,7 @@ from nr_oai_pmh_harvester.query import find_in_json_list, find_in_title
 
 @rule("nusl", "marcxml", "/656_7/a", phase="pre")
 def call_studyfield(el, **kwargs):
-    studyfield(el, **kwargs)
+    return studyfield(el, **kwargs)
 
 
 def studyfield(el, **kwargs):

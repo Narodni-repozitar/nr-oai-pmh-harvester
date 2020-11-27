@@ -3,7 +3,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/970__/a", phase="pre")
 def call_nusl_oai(el, **kwargs):
-    catalogue_sys_no(el, **kwargs)
+    return catalogue_sys_no(el, **kwargs)
 
 
 def catalogue_sys_no(el, **kwargs):

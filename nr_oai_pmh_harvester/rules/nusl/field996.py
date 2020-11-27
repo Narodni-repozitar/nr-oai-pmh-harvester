@@ -4,7 +4,7 @@ from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
 @rule("nusl", "marcxml", "/996__", phase="pre")
 def call_accessibility(el, **kwargs):
-    accessibility(el, **kwargs)
+    return accessibility(el, **kwargs)
 
 
 def accessibility(el, **kwargs):

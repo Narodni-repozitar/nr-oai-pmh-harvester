@@ -2,9 +2,9 @@ from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_taxonomies.utils import get_taxonomy_json
 
 
-@rule("nusl", "marcxml", "/980__/a", phase="pre")
+@rule("nusl", "marcxml", "/998__/a", phase="pre")
 def call_provider(el, **kwargs):
-    provider(el, **kwargs)
+    return provider(el, **kwargs)
 
 
 def provider(el, **kwargs):
@@ -23,6 +23,8 @@ def provider_mapping():
         "archeologicky_ustav_brno": "68081758",
         "archeologicky_ustav_praha": "67985912",
         "archip": "28881699",
+        "archiv_ing_arch_jana_moucky": "moucka",
+        "archiv_doc_jiri_soucek": "soucek",
         "arnika": "26543281",
         "astronomicky_ustav": "67985815",
         "biofyzikalni_ustav": "68081707",

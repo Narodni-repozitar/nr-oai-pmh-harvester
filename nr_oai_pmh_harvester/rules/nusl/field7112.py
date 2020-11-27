@@ -7,7 +7,7 @@ from nr_oai_pmh_harvester.query import get_query_by_slug
 
 @rule("nusl", "marcxml", "/7112_", phase="pre")
 def call_events(el, **kwargs):
-    events(el, **kwargs)
+    return events(el, **kwargs)
 
 
 def events(el, **kwargs):

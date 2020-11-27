@@ -4,7 +4,7 @@ from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
 @rule("nusl", "marcxml", "/85640", phase="pre")
 def call_original_record_id(el, **kwargs):
-    original_record_id(el, **kwargs)
+    return original_record_id(el, **kwargs)
 
 
 def original_record_id(el, **kwargs):

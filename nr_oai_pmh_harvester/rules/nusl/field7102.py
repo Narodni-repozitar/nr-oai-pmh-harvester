@@ -6,7 +6,7 @@ from nr_oai_pmh_harvester.rules.nusl.field502__c import get_institution_term
 
 @rule("nusl", "marcxml", "/7102_", phase="pre")
 def call_degree_grantor_2(el, **kwargs):
-    degree_grantor_2(el, **kwargs)
+    return degree_grantor_2(el, **kwargs)
 
 
 def degree_grantor_2(el, **kwargs):

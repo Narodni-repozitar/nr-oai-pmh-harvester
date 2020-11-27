@@ -18,8 +18,14 @@ from invenio_records_rest import InvenioRecordsREST
 from invenio_records_rest.utils import PIDConverter
 from invenio_search import InvenioSearch
 from lxml import etree
+from nr_common.ext import NRCommon
+from nr_events import NREvents
+from nr_nresults import NRNresults
+from nr_theses import NRTheses
 from oarepo_oai_pmh_harvester.ext import OArepoOAIClient
+from oarepo_records_draft.ext import RecordsDraft
 from oarepo_taxonomies.ext import OarepoTaxonomies
+from oarepo_validate.ext import OARepoValidate
 from sqlalchemy_utils import database_exists, create_database
 
 
@@ -50,13 +56,7 @@ def app():
                                             '/655_7', "/656_7/2", '/8560_',
                                             '/85642/z', '/8564_', '/909CO/p', '999c1', '/999C2',
                                             'FFT_0'],
-                        "default_endpoint": "recid",
-                        "endpoint_mapping": {
-                            "field_name": "doc_type",
-                            "mapping": {
-                                "record": "recid"
-                            }
-                        }
+                        "default_endpoint": "common",
                     }
                 ]
             },
@@ -80,6 +80,12 @@ def app():
     app.url_map.converters['pid'] = PIDConverter
     OarepoTaxonomies(app)
     OArepoOAIClient(app)
+    OARepoValidate(app)
+    RecordsDraft(app)
+    NRCommon(app)
+    NRTheses(app)
+    NRNresults(app)
+    NREvents(app)
 
     app_loaded.send(app, app=app)
 
@@ -94,6 +100,7 @@ def db(app):
     """Database fixture."""
     if not database_exists(str(db_.engine.url)):
         create_database(str(db_.engine.url))
+    db_.create_all()
     yield db_
 
 
