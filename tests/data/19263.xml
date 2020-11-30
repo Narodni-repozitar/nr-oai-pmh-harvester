@@ -1,0 +1,115 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">19263</controlfield>
+        <controlfield tag="005">20200327100540.0</controlfield>
+        <datafield tag="041" ind1="0" ind2="7">
+            <subfield code="a">eng</subfield>
+        </datafield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2003</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Lasers with thin strained InAs layers in GaAs absorption and electroluminescence
+            </subfield>
+            <subfield code="b">Lasery s tenkými InAs vrstvami v GaAs - absorpce a elektroluminiscence</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">2 s.</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">Příspěvek obsahuje elektroluminiscenční, fotoabsorpční a polarizační vlastnosti
+                polovodičových laserů s tenkými napjatými vrstvami InAs v GaAs při zvýšených teplotách (nad
+                25.sup.o./sup. C). Tyto lasery vykazují vysokou účinnost zářivé rekombinace, nízkou prahovou proudovou
+                hustotu a široký obor pracovních teplot
+            </subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">Contribution presents the electroluminescence, photoabsorption and polarization
+                properties of semiconductor lasers with thin strained InAs layers in GaAs at elevated temperature (above
+                25.sup.o./sup.C). The lasers exhibit high optical recombination efficiency, low threshold current
+                density and wide temperature operation range
+            </subfield>
+            <subfield code="9">eng</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">elektroluminiscence</subfield>
+            <subfield code="2">PSH</subfield>
+            <subfield code="j">electroluminescence</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH3336</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">strained quantum well</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">InAs</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">GaAs</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">polarisation</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">electroluminescence</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">photoabsorption</subfield>
+        </datafield>
+        <datafield tag="655" ind1="7" ind2=" ">
+            <subfield code="a">Příspěvky z konference</subfield>
+            <subfield code="2">NUŠL typ dokumentu</subfield>
+        </datafield>
+        <datafield tag="711" ind1="2" ind2=" ">
+            <subfield code="a">International Student Conference on Electrical Engineering /7./</subfield>
+            <subfield code="c">Praha (CZ)</subfield>
+            <subfield code="d">2003-05-22</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Mačkal, Adam</subfield>
+        </datafield>
+        <datafield tag="773" ind1="1" ind2=" ">
+            <subfield code="t">Proceedings of the International Student Conference on Electrical Engineering</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="z">Odkaz na původní záznam</subfield>
+            <subfield code="u">http://hdl.handle.net/11104/0007549</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-19263</subfield>
+            <subfield code="z">PID NUŠL</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:19263</subfield>
+            <subfield code="p">opengrey</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">licensed</subfield>
+        </datafield>
+        <datafield tag="970" ind1=" " ind2=" ">
+            <subfield code="a">0100041</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">prispevky_z_konference</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="a">Dokument je dostupný v příslušném ústavu Akademie věd ČR.</subfield>
+            <subfield code="b">Fulltext is available at the institute of the Academy of Sciences.</subfield>
+            <subfield code="9">0</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">fyzikalni_ustav</subfield>
+        </datafield>
+        <datafield tag="999" ind1="C" ind2="1">
+            <subfield code="a">IAA1010318</subfield>
+        </datafield>
+        <datafield tag="999" ind1="C" ind2="1">
+            <subfield code="a">CEZ:AV0Z1010914</subfield>
+        </datafield>
+        <datafield tag="999" ind1="C" ind2="1">
+            <subfield code="a">CEZ:MSM 212300014</subfield>
+        </datafield>
+        <datafield tag="999" ind1="C" ind2="2">
+            <subfield code="a">GA AV ČR</subfield>
+        </datafield>
+    </record>
+</collection>

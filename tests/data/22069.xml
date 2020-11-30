@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">22069</controlfield>
+  <controlfield tag="005">20200420154027.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="b">sla</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2001</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Etnické stereotypy z pohledu různých vědních oborů</subfield>
+    <subfield code="b">Ethnic stereotypes for collaboration of several science disciplines</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">123 s.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Etnické stereotypy z pohledu psychologie, religionistiky, etnologie, žurnalistiky.</subfield>
+    <subfield code="9">sla</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Ethnic stereotypes from the point of view of psychology, science on the religion, journalism, pedagogy, ethnology.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">ethnic strereotypes</subfield>
+  </datafield>
+  <datafield tag="655" ind1="7" ind2=" ">
+    <subfield code="a">Sborníky</subfield>
+    <subfield code="2">NUŠL typ dokumentu</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Etnické stereotypy z pohledu různých vědních oborů.</subfield>
+    <subfield code="c">Brno (CZ)</subfield>
+    <subfield code="d">2000-10-23</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Toncrová, Marta</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Uhlíková, Lucie</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://hdl.handle.net/11104/0035209</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-22069</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:22069</subfield>
+    <subfield code="p">global</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">0137450</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">sborniky</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dokument je dostupný v příslušném ústavu Akademie věd ČR.</subfield>
+    <subfield code="b">Fulltext is available at the institute of the Academy of Sciences.</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">etnologicky_ustav</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="1">
+    <subfield code="a">IAA0058801</subfield>
+    <subfield code="b">GA AV ČR</subfield>
+  </datafield>
+</record>
+</collection>

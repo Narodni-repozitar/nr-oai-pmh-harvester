@@ -1,0 +1,89 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+<controlfield tag="001">2737</controlfield>
+<controlfield tag="005">20170629111637.0</controlfield>
+<datafield tag="041" ind1="0" ind2="7">
+<subfield code="a">cze</subfield>
+</datafield>
+<datafield tag="046" ind1=" " ind2=" ">
+<subfield code="k">2007-12-30</subfield>
+<subfield code="j">2013-06-11</subfield>
+</datafield>
+<datafield tag="245" ind1="0" ind2="0">
+<subfield code="a">Výběr vhodného search enginu pro společnost LMC s.r.o.</subfield>
+<subfield code="b">Choose of good search engine for company LMC s.r.o.</subfield>
+</datafield>
+<datafield tag="260" ind1=" " ind2=" ">
+<subfield code="b">Vysoká škola ekonomická v Praze</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+<subfield code="a">2008-01-24</subfield>
+<subfield code="b">Bc.</subfield>
+<subfield code="c">Vysoká škola ekonomická v Praze</subfield>
+<subfield code="g">Bakalářský studijní program</subfield>
+</datafield>
+<datafield tag="520" ind1=" " ind2=" ">
+<subfield code="a">Cílem této práce je doporučit optimální řešení search enginu pro společnost LMC s.r.o. (dále jen LMC), která je provozovatelem pracovních serverů. Dílčí cíle: ? Popsat současné využití search enginu ve společnosti LMC. ? Představit principy současných web search enginů. ? Provést analýzu současných řešení na trhu a vybrat taková, která jsou vhodná pro vyhledávání na pracovních serverech. ? Zhodnotit jednotlivé varianty search enginů na základě předem stanovených metrik a stanovit optimální řešení pro společnost LMC. Text práce je rozdělen do 7 částí. První část práce se zabývá představením společnosti LMC a popisem různých typů vyhledávání, které ve svých službách nabízí. Druhá část popisuje požadavky, které odrážejí představu společnosti LMC vzhledem k předpokládanému vývoji. Třetí část je zaměřena na principy fungování současných search enginů, jejich architekturu, analýzu vstupních dat, tvorbu indexů a následné vyhodnocení vstupních dotazů. Obsahem čtvrté části je představit vhodné varianty řešení search enginů dostupných na trhu, a to jak v komerční sféře, tak ve formě open source projektů. V páté části práce jsou definovány metriky pro vyhodnocení jednotlivých variant. Šestá část představuje úvod do problematiky porovnávání výkonnosti jednotlivých variant search enginů. Poslední sedmá část se zabývá vyhodnocením jednotlivých řešení pomocí stanovených metrik a doporučení vhodného řešení pro služby nabízené společností LMC.</subfield>
+<subfield code="9">cze</subfield>
+</datafield>
+<datafield tag="650" ind1="1" ind2="7">
+<subfield code="a">optimalita</subfield>
+<subfield code="j">optimality</subfield>
+<subfield code="0">http://psh.ntkcz.cz/skos/PSH7697</subfield>
+<subfield code="2">PSH</subfield>
+</datafield>
+<datafield tag="650" ind1="1" ind2="7">
+<subfield code="a">části</subfield>
+<subfield code="j">pieces</subfield>
+<subfield code="0">http://psh.ntkcz.cz/skos/PSH7997</subfield>
+<subfield code="2">PSH</subfield>
+</datafield>
+<datafield tag="653" ind1="0" ind2=" ">
+<subfield code="a">Index, Search engine, Metrics, E-recruitment, Outsourcing, Algorithm</subfield>
+</datafield>
+<datafield tag="653" ind1=" " ind2=" ">
+<subfield code="a">Index, Search engine, Metrika, E-recruitment, Outsourcing, Algoritmus</subfield>
+</datafield>
+<datafield tag="656" ind1=" " ind2="7">
+<subfield code="a">Aplikovaná informatika/Podnikové informační systémy</subfield>
+</datafield>
+<datafield tag="720" ind1=" " ind2=" ">
+<subfield code="a">Möhwald, David</subfield>
+</datafield>
+<datafield tag="720" ind1=" " ind2=" ">
+<subfield code="i">Šubrta, Václav</subfield>
+<subfield code="e">advisor</subfield>
+</datafield>
+<datafield tag="720" ind1=" " ind2=" ">
+<subfield code="i">Vronková, Lada</subfield>
+<subfield code="e">referee</subfield>
+</datafield>
+<datafield tag="856" ind1="4" ind2="0">
+<subfield code="u">http://www.vse.cz/vskp/eid/4892</subfield>
+<subfield code="z">Odkaz na původní záznam</subfield>
+</datafield>
+<datafield tag="856" ind1="4" ind2="0">
+<subfield code="u">http://www.nusl.cz/ntk/nusl-2737</subfield>
+<subfield code="z">PID NUŠL</subfield>
+</datafield>
+<datafield tag="909" ind1="C" ind2="O">
+<subfield code="o">oai:invenio.nusl.cz:2737</subfield>
+<subfield code="p">openaire</subfield>
+<subfield code="p">global</subfield>
+<subfield code="p">opengrey</subfield>
+<subfield code="p">licensed</subfield>
+<subfield code="q">etds</subfield>
+</datafield>
+<datafield tag="980" ind1=" " ind2=" ">
+<subfield code="a">bakalarske_prace</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+<subfield code="a">Dostupné v digitálním repozitáři VŠE.</subfield>
+<subfield code="b">Available in the digital repository of the University of Economics, Prague.</subfield>
+<subfield code="9">1</subfield>
+</datafield>
+<datafield tag="998" ind1=" " ind2=" ">
+<subfield code="a">vysoka_skola_ekonomicka_v_praze</subfield>
+</datafield>
+</record>
+</collection>

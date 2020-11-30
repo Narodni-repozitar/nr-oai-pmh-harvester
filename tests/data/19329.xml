@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">19329</controlfield>
+  <controlfield tag="005">20200327100544.0</controlfield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2003</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Soaresova kritika Arriagova pojetÃ­ nekoneÄna</subfield>
+    <subfield code="b">Soares' Criticism of Arriaga's Conception of the Infinite</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">13 s.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">ProslulÃ½ Å¡panÄlskÃ½ teolog a filosof Rodrigo de Arriaga, pÅ¯sobÃ­cÃ­ v 17. st. po dlouhou dobu v Praze, patÅil k pÅednÃ­m stoupencÅ¯m nÃ¡zoru o moÅ¾nosti aktuÃ¡lnÃ­ho nekoneÄna v oblasti stvoÅenÃ­. SvÃ© pojetÃ­ tÃ©to problematiky vyloÅ¾il na nÄkolika mÃ­stech svÃ©ho dÃ­la Cursus Philosophicus. Jeho vÃ½klad podrobil kritice ArriagÅ¯v souÄasnÃ­k, vÃ½znamnÃ½ portugalskÃ½ teolog a filosof (stejnÄ jako Arriaga pÅÃ­sluÅ¡nÃ­k jesuitskÃ©ho ÅÃ¡du) Franciscus Soares, pÅ¯sobÃ­cÃ­ v CoimbÅe a EvoÅe. Tuto kritiku pÅedloÅ¾il ve svÃ©m dÃ­le nazvanÃ©m rovnÄÅ¾ Cursus Philosophicus. V prvnÃ­ ÄÃ¡sti pÅÃ­spÄvku je podÃ¡n struÄnÃ½ pÅehled vÃ½voje nÃ¡zorÅ¯ o nekoneÄnu ve filosofii a teologii od antiky aÅ¾ do poÄÃ¡tku novovÄku. Ve druhÃ© ÄÃ¡sti jsou shrnuty zÃ¡kladnÃ­ myÅ¡lenky o nekoneÄnu z uvedenÃ©ho Arriagova spisu.TÅetÃ­ a zÃ¡vÄreÄnÃ¡ ÄÃ¡st pÅÃ­spÄvku se zabÃ½vÃ¡ SoaresovÃ½m pojetÃ­m nekoneÄna a kritikou Arriagovy koncepce tÃ©to problematiky.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">The famous Spanish theologian and philosopher Rodrigo de Arriaga, who lived and worked for a long time in Prague in the 17th century, was one of the leading proponents of the conception of the possibility of topical infinity in the sphere of creation. He explained his concept of this topic or problem in some places of his work Cursus Philosophicus. His explanation underwent criticism by Arriaga's contemporary, the important Portugal theologian and philosopher Franciscus Soares, working in Coimbra and in Evora. The first part of this contribution contains a short overview of the development of views about the infinity in philosophy and theology since antiquity to the beginnings of the mod ern times. In the second part there are summarized the basic thoughts about the infinity in the mentioned Arriaga's work. The third and final part of the contribution deals with Soares' conception of the infinity and the criticism of Arriaga's conception of this problem.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="650" ind1="1" ind2="7">
+    <subfield code="a">ÄÃ¡sti</subfield>
+    <subfield code="j">pieces</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH7997</subfield>
+    <subfield code="2">PSH</subfield>
+  </datafield>
+  <datafield tag="650" ind1="1" ind2="7">
+    <subfield code="a">filozofie "jÃ¡"</subfield>
+    <subfield code="j">Ich-philosophy</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH2603</subfield>
+    <subfield code="2">PSH</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">infinity in philosophy and theology</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">Jesuit order</subfield>
+  </datafield>
+  <datafield tag="655" ind1="7" ind2=" ">
+    <subfield code="a">PÅÃ­spÄvky z konference</subfield>
+    <subfield code="2">NUÅ L typ dokumentu</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Barocco in Italia, Barocco in Boemia, nomini, idee, forme d'arte a confronto</subfield>
+    <subfield code="c">Praha (CZ)</subfield>
+    <subfield code="d">1999-04-19 / 1999-04-21</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">MrÃ¡z, Milan</subfield>
+  </datafield>
+  <datafield tag="773" ind1="1" ind2=" ">
+    <subfield code="z">80-7007-176-1</subfield>
+    <subfield code="t">Baroko v ItÃ¡lii - baroko v ÄechÃ¡ch. SetkÃ¡vÃ¡nÃ­ osobnostÃ­, idejÃ­ a umÄleckÃ½ch forem</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na pÅ¯vodnÃ­ zÃ¡znam</subfield>
+    <subfield code="u">http://hdl.handle.net/11104/0008650</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-19329</subfield>
+    <subfield code="z">PID NUÅ L</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:19329</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">licensed</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">0101212</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dokument je dostupnÃ½ v pÅÃ­sluÅ¡nÃ©m Ãºstavu Akademie vÄd ÄR.</subfield>
+    <subfield code="b">Fulltext is available at the institute of the Academy of Sciences.</subfield>
+    <subfield code="9">0</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">filosoficky_ustav</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="1">
+    <subfield code="a">CEZ:AV0Z9009908</subfield>
+  </datafield>
+</record>
+</collection>

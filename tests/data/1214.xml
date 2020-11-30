@@ -1,0 +1,102 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">1214</controlfield>
+        <controlfield tag="005">20170629111552.0</controlfield>
+        <datafield tag="041" ind1="0" ind2="7">
+            <subfield code="a">cze</subfield>
+        </datafield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2007-04-27</subfield>
+            <subfield code="j">2012-04-30</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Ekonomické souvislosti současného reprodukčního procesu obyvatelstva ve světě</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="b">Vysoká škola ekonomická v Praze</subfield>
+        </datafield>
+        <datafield tag="502" ind1=" " ind2=" ">
+            <subfield code="a">2007-05-29</subfield>
+            <subfield code="b">Ing.</subfield>
+            <subfield code="c">Vysoká škola ekonomická v Praze</subfield>
+            <subfield code="g">Magisterský studijní program</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">První kapitola je věnovaná současnému vývoji světové populace a jeho dopady na světovou
+                ekonomiku. Další část je zaměřená na reprodukční proces obyvatelstva ve světě. Třetí část je věnována
+                vývoji porodnosti v rozvojových ekonomikách. Zde jsou podrobněji rozebírány nejproblematičtější regiony
+                Afriky a Asie. V Poslední části je analyzoán vliv ekonomických faktorů ovlivňujících klesající přirozený
+                přírůstek obyvatelstva v rozvinutých zemích.
+            </subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="650" ind1="1" ind2="7">
+            <subfield code="a">reprodukce obyvatelstva</subfield>
+            <subfield code="j">reproduction of population</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH4416</subfield>
+            <subfield code="2">PSH</subfield>
+        </datafield>
+        <datafield tag="650" ind1="1" ind2="7">
+            <subfield code="a">ekonomická reprodukce</subfield>
+            <subfield code="j">economic reproduction</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1293</subfield>
+            <subfield code="2">PSH</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">fertilita</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">věková struktura</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">ekonomické důsledky současného reprodukčního procesu</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">ekonomické faktory ovlivňující reprodukci obyvatelstva</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">Reprodukce obyvatelstva</subfield>
+        </datafield>
+        <datafield tag="656" ind1=" " ind2="7">
+            <subfield code="a">Mezinárodní ekonomické vztahy/Mezinárodní obchod</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Zozulynets, Lidiya</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="i">Vošta, Milan</subfield>
+            <subfield code="e">advisor</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="i">Kašpar, Václav</subfield>
+            <subfield code="e">referee</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.vse.cz/vskp/eid/2188</subfield>
+            <subfield code="z">Odkaz na původní záznam</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-1214</subfield>
+            <subfield code="z">PID NUŠL</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:1214</subfield>
+            <subfield code="p">etds</subfield>
+            <subfield code="p">openaire</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">opengrey</subfield>
+            <subfield code="p">licensed</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">diplomove_prace</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="a">Dostupné v digitálním repozitáři VŠE.</subfield>
+            <subfield code="b">Available in the digital repository of the University of Economics, Prague.</subfield>
+            <subfield code="9">1</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">vysoka_skola_ekonomicka_v_praze</subfield>
+        </datafield>
+    </record>
+</collection>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">25735</controlfield>
+  <controlfield tag="005">20200420154112.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">1993</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Responses of neurons in the colliculus inferior of the guinea pig to vocalization sounds</subfield>
+  </datafield>
+  <datafield tag="655" ind1="7" ind2=" ">
+    <subfield code="a">Příspěvky z konference</subfield>
+    <subfield code="2">NUŠL typ dokumentu</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Fyziologické dny</subfield>
+    <subfield code="c">Bratislava (SR)</subfield>
+    <subfield code="d">1993-02-10 / 1993-02-12</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Aitkin, L.</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Syka, Josef</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Popelář, Jiří</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Kvašňák, Eugen</subfield>
+  </datafield>
+  <datafield tag="773" ind1="1" ind2=" ">
+    <subfield code="x">0862-8408</subfield>
+    <subfield code="t">Physiological Research</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://hdl.handle.net/11104/0069506</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-25735</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:25735</subfield>
+    <subfield code="p">global</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">0172467</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dokument je dostupný v příslušném ústavu Akademie věd ČR.</subfield>
+    <subfield code="b">Fulltext is available at the institute of the Academy of Sciences.</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">ustav_experimentalni_mediciny</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="1">
+    <subfield code="a">IA73906</subfield>
+    <subfield code="b">GA AV ČR</subfield>
+  </datafield>
+</record>
+</collection>

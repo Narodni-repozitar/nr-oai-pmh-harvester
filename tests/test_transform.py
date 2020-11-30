@@ -6,13 +6,13 @@ import pytest
 from lxml import etree
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
-
 from nr_oai_pmh_harvester.utils import transform_to_dict
 
 
 @pytest.mark.parametrize("file_name",
                          ["416174", "253605", "260929", "253573", "263309", "18", "261117",
-                          "253576"])
+                          "253576", "1214", "2737", "11720", "19263", "19317", "19329", "19535",
+                          "20925", "20926", "22069", "25735", "26388"])
 def test_uk_bachelor_thesis(app, db, file_name):
     from nr_oai_pmh_harvester.parser import marcxml_parser
     from nr_oai_pmh_harvester.rules.nusl.field001 import control_number
@@ -49,7 +49,6 @@ def test_uk_bachelor_thesis(app, db, file_name):
     from nr_oai_pmh_harvester.rules.nusl.field996 import accessibility
     from nr_oai_pmh_harvester.rules.nusl.field998 import provider
     from nr_oai_pmh_harvester.rules.nusl.field999C1 import funding_reference
-
 
     this_directory = pathlib.Path(__file__).parent.absolute()
     response_path = this_directory / "data" / f"{file_name}.xml"

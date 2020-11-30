@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">20926</controlfield>
+  <controlfield tag="005">20200420154012.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">1998</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Nové mladopaleolitické stanice v jižní části Moravského krasu</subfield>
+    <subfield code="b">New Upper Paleolithic sites in the Southern part of the Moravian Karst</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">7 s.</subfield>
+  </datafield>
+  <datafield tag="655" ind1="7" ind2=" ">
+    <subfield code="a">Příspěvky z konference</subfield>
+    <subfield code="2">NUŠL typ dokumentu</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Mezinárodní škola ochrany přírody krasových oblastí /5./</subfield>
+    <subfield code="c">Blansko, Katowice (CZ, PL)</subfield>
+    <subfield code="d">1997-09-10 / 1997-09-12</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Škrdla, Petr</subfield>
+  </datafield>
+  <datafield tag="773" ind1="1" ind2=" ">
+    <subfield code="t">Těžba vápenců a chráněné krajinné oblasti. Sborník referátů</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://hdl.handle.net/11104/0020406</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-20926</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:20926</subfield>
+    <subfield code="p">global</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">0122122</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dokument je dostupný v příslušném ústavu Akademie věd ČR.</subfield>
+    <subfield code="b">Fulltext is available at the institute of the Academy of Sciences.</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">archeologicky_ustav_brno</subfield>
+  </datafield>
+</record>
+</collection>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">26388</controlfield>
+  <controlfield tag="005">20200327100826.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2000</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="b">Carbon and phosphorus redistribution in welded joints of carbon steels CSN(412050+0.1</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">6 s.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Difuzní vzorky byly izometricky žíhány v teplotním intervalu 500 až 1100řC děleném po 50řC. Koncentrace P, C, Cr a Ni byla měřena pomocí rtg mikroanalýzy. Byly vypočteny koeficienty difuze P, C, Cr a Ni a termodynamické interakční parametry. Na svarovém rozhraní byla pozorována difuze fosforu proti směru koncentračního gradientu.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">The diffusion specimens were isothermally annealed in the temperature range of 500 to 1100řC intervals. The concentration of P, C, Cr and Ni were measured by applying X-ray energy dispersion anlysis. The diffusion coefficients of P, C, Cr and Ni and thermodynamic interaction parameters were calculated. The uphill diffusion of phosphorus was observed on welding interface.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="655" ind1="7" ind2=" ">
+    <subfield code="a">Příspěvky z konference</subfield>
+    <subfield code="2">NUŠL typ dokumentu</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">METAL 2000 - Mezinárodní metalurgická konference /9./</subfield>
+    <subfield code="c">Ostrava (CZ)</subfield>
+    <subfield code="d">2000-05-16 / 2000-05-18</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Million, Bořivoj</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Stránský, K.</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Michalička, Petr</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Foret, R.</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Rek, A.</subfield>
+  </datafield>
+  <datafield tag="773" ind1="1" ind2=" ">
+    <subfield code="t">METAL 2000 - 9. mezinárodní metalurgická konference</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://hdl.handle.net/11104/0074367</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-26388</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:26388</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">licensed</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">0177442</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dokument je dostupný v příslušném ústavu Akademie věd ČR.</subfield>
+    <subfield code="b">Fulltext is available at the institute of the Academy of Sciences.</subfield>
+    <subfield code="9">0</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">ustav_fyziky_materialu</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="1">
+    <subfield code="a">GA106/98/1367</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="1">
+    <subfield code="a">GA106/00/0855</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="2">
+    <subfield code="a">GA ČR</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="2">
+    <subfield code="a">GA ČR</subfield>
+  </datafield>
+</record>
+</collection>

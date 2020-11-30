@@ -1,0 +1,100 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">11720</controlfield>
+        <controlfield tag="005">20170629112035.0</controlfield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2009-01-16</subfield>
+            <subfield code="j">2012-04-30</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Obraz Američana a USA v komunistické propagandě 1951-1952</subfield>
+            <subfield code="b">The Picture of Americans and The United States of America at Comunistic Propagandism in
+                the period of 1951-1952
+            </subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="b">Vysoká škola ekonomická v Praze</subfield>
+        </datafield>
+        <datafield tag="502" ind1=" " ind2=" ">
+            <subfield code="a">2009-06-15</subfield>
+            <subfield code="b">Bc.</subfield>
+            <subfield code="c">Vysoká škola ekonomická v Praze</subfield>
+            <subfield code="g">Bakalářský studijní program</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">V první kapitole jsou popsány mezistátní vztahy Československa a Spojených států v letech
+                1918 - 1952. Ve druhé kapitole je popsán československý stalinismus a úloha propagandy v komunistickém
+                totalitním režimu. Ve třetí kapitole je pak popsána situace ve Spojených státech a tehdejší americké
+                pojetí demokracie. Hlavní částí práce je pak analýza dobového tisku a porovnání zdeformovaných informací
+                s realitou.
+            </subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">In the first chapter are described the international relations between Czechoslovakia and
+                United States of America in the period of 1918-1952. Second chapter, deal with the situation in
+                Czechoslovakia, with Stalinism and with the function of communistic propagandism in totalitarian regime.
+                In the third chapter is defined situation in the US and then conception of democracy. Main part of the
+                work is devoted to analysis of contemporary press.
+            </subfield>
+            <subfield code="9">eng</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">Stalinism</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">United States of America</subfield>
+        </datafield>
+        <datafield tag="653" ind1="0" ind2=" ">
+            <subfield code="a">Propagandism</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">stalinismus</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">propaganda</subfield>
+        </datafield>
+        <datafield tag="653" ind1=" " ind2=" ">
+            <subfield code="a">Spojené státy</subfield>
+        </datafield>
+        <datafield tag="656" ind1=" " ind2="7">
+            <subfield code="a">Politologie/Politologie</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Brejchová, Pavla</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="i">Rataj, Jan</subfield>
+            <subfield code="e">advisor</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="i">Houda, Přemysl</subfield>
+            <subfield code="e">referee</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.vse.cz/vskp/eid/15750</subfield>
+            <subfield code="z">Odkaz na původní záznam</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-11720</subfield>
+            <subfield code="z">PID NUŠL</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:11720</subfield>
+            <subfield code="p">openaire</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">licensed</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">bakalarske_prace</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="a">Dostupné v digitálním repozitáři VŠE.</subfield>
+            <subfield code="b">Available in the digital repository of the University of Economics, Prague.</subfield>
+            <subfield code="9">1</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">vysoka_skola_ekonomicka_v_praze</subfield>
+        </datafield>
+    </record>
+</collection>
