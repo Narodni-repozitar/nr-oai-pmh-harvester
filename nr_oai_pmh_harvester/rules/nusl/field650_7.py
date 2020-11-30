@@ -57,6 +57,8 @@ def get_psh(el):
     slug = url.split("/")[-1].lower()
     query = get_query_by_slug("subjects", slug)
     term = query.one_or_none()
+    if not term:
+        return
     return get_taxonomy_json(code="subjects", slug=term.slug).paginated_data
 
 
@@ -64,6 +66,8 @@ def get_czmesh(el):
     slug = el.get("7").lower()
     query = get_query_by_slug("subjects", slug)
     term = query.one_or_none()
+    if not term:
+        return
     return get_taxonomy_json(code="subjects", slug=term.slug).paginated_data
 
 

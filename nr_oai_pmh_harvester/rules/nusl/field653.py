@@ -12,11 +12,17 @@ def keyword(el, **kwargs):
     en_keywords = record.get("6530_")
     res = []
     if en_keywords:
-        for cze, eng in zip(el, en_keywords):
-            res.append({"cs": cze["a"], "eng": eng["a"]})
+        if isinstance(el, (tuple, list)):
+            for cz, en in zip(el, en_keywords):
+                res.append({"cs": cz["a"], "en": en["a"]})
+        if isinstance(el, dict):
+            res.append({"cs": el["a"], "en": en_keywords["a"]})
     else:
-        for _ in el:
-            res.append({"cs": _["a"]})
+        if isinstance(el, (tuple, list)):
+            for cz in el:
+                res.append({"cs": cz["a"]})
+        if isinstance(el, dict):
+            res.append({"cs": el["a"]})
     if res:
         return {"keywords": res}
     else:

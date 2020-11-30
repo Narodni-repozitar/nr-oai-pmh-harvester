@@ -10,14 +10,26 @@ def call_funding_reference(el, **kwargs):
 
 
 def funding_reference(el, **kwargs):
+    res = []
+    if isinstance(el, (tuple, list)):
+        for _ in el:
+            res.append(get_funder(_))
+    if isinstance(el, dict):
+        res = res.append(get_funder(el))
+    return {
+        "fundingReference": res
+    }
+
+
+def get_funder(el):
     res = {}
     project_id = el.get("a")
     if project_id:
         res["projectID"] = project_id
-        res["funder"] = get_funder_from_id(project_id) or "Chyba v parsování, nutné opavit v draftu"
-    return {
-        "fundingReference": res
-    }
+        funder = get_funder_from_id(project_id)
+        if funder:
+            res["funder"] = funder
+    return res
 
 
 def get_funder_from_id(funder_id: str):

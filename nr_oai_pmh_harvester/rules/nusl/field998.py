@@ -1,4 +1,5 @@
 from oarepo_oai_pmh_harvester.decorators import rule
+from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from oarepo_taxonomies.utils import get_taxonomy_json
 
 
@@ -8,9 +9,12 @@ def call_provider(el, **kwargs):
 
 
 def provider(el, **kwargs):
+    slug = provider_mapping().get(el)
+    if not slug:
+        return OAITransformer.PROCESSED
     return {
         "provider": get_taxonomy_json(code="institutions",
-                                      slug=provider_mapping().get(el)).paginated_data
+                                      slug=slug).paginated_data
     }
 
 
@@ -124,7 +128,7 @@ def provider_mapping():
         "ustav_chemickych_procesu": "67985858",
         "ustav_dejin_umeni": "68378033",
         "ustav_experimentalni_botaniky": "61389030",
-        "ustav_experimentalni_mediciny, farmakologicky_ustav": "68378041",
+        "ustav_experimentalni_mediciny": "68378041",
         "ustav_fotoniky_a_elektroniky": "67985882",
         "ustav_fyzikalni_chemie_j_heyrovskeho": "61388955",
         "ustav_fyziky_atmosfery": "68378289",

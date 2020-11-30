@@ -1,6 +1,8 @@
+from invenio_db import db
 from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from oarepo_taxonomies.utils import get_taxonomy_json
+from sqlalchemy.exc import ProgrammingError
 
 from nr_oai_pmh_harvester.query import get_query_by_slug
 
@@ -39,7 +41,11 @@ def parse_place(place: str):
     place = place_array[0].strip()
     if place:
         res["place"] = place
-    term = get_query_by_slug(taxonomy_code="countries", slug=country).one_or_none()
+    try:
+        term = get_query_by_slug(taxonomy_code="countries", slug=country).one_or_none()
+    except ProgrammingError:
+        db.session.commit()
+        return res
     if term:
         res["country"] = get_taxonomy_json(code="countries", slug=term.slug).paginated_data
     return res
