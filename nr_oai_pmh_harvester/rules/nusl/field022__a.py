@@ -9,6 +9,6 @@ def call_issn(el, **kwargs):
 def issn(el, **kwargs):
     return {
         "workIdentifiers": {
-            "issn": el
+            "issn": [el]
         }
     }

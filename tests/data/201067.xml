@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">201067</controlfield>
+  <controlfield tag="005">20200327143229.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2015</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Souborný katalog Virtuální polytechnické knihovny</subfield>
+    <subfield code="b">The union catalog of Virtual Polytechnic Library</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">7 s.</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Licence Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">License: Creative Commons Attribution-NonCommercial-NoDerivs 4.0</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">katalogy</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH6494</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">catalogues</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">meziknihovní výpůjční služby</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH6508</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">interlibrary circulation services</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Virtuální polytechnická knihovna</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">Virtual Polytechnic Library</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Nové trendy v meziknihovních výpůjčních službách (MVS), nové funkce Virtuální polytechnické knihovny (VPK) a novinky Centrálního portálu knihoven (CPK)</subfield>
+    <subfield code="c">Praha (CZ)</subfield>
+    <subfield code="d">2015-11-24</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Nové trendy v meziknihovních výpůjčních službách (MVS), nové funkce Virtuální polytechnické knihovny (VPK) a novinky Centrálního portálu knihoven (CPK)</subfield>
+    <subfield code="c">Praha (CZ)</subfield>
+    <subfield code="d">2016-05-17</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Chára, Luboš</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-201067</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/201067/files/idr-968_1.pdf</subfield>
+    <subfield code="z">Prezentace</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:201067</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">opengrey</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">narodni_technicka_knihovna</subfield>
+  </datafield>
+</record>
+</collection>

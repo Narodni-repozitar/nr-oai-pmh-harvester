@@ -9,6 +9,6 @@ def call_isbn(el, **kwargs):
 def isbn(el, **kwargs):
     return {
         "workIdentifiers": {
-            "isbn": el
+            "isbn": [el]
         }
     }

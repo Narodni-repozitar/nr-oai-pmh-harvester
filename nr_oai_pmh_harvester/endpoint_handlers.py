@@ -2,6 +2,10 @@ from oarepo_oai_pmh_harvester.decorators import endpoint_handler
 
 
 @endpoint_handler("nusl", "marcxml")
+def call_nusl_handler(data):
+    return nusl_handler(data)
+
+
 def nusl_handler(data):
     resource_type_array = data.get("resourceType")
     resource_type_array = [_ for _ in resource_type_array if _["is_ancestor"] is False]
@@ -15,9 +19,11 @@ def nusl_handler(data):
 def get_model_by_slug(slug):
     mapping = {
         "conference-materials": "events",
+        "conference-papers": "events",
         "exhibition-catalogues-and-guides": "events",
         "business-trip-reports": "events",
         "press-releases": "events",
+        'conference-proceedings': "events",
         "bachelor-theses": "theses",
         "master-theses": "theses",
         "rigorous-theses": "theses",

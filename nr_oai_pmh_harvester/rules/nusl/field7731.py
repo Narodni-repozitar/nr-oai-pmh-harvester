@@ -8,27 +8,38 @@ def call_related_item(el, **kwargs):
 
 
 def related_item(el, **kwargs):
+    res = []
+    if isinstance(el, dict):
+        res.append(get_related_item(el))
+    if isinstance(el, (list, tuple)):
+        for _ in el:
+            res.append(get_related_item(_))
+    if res:
+        return {"relatedItem": res}
+    else:
+        return OAITransformer.PROCESSED
+
+
+def get_related_item(el):
     res = {}
     item_isbn = el.get("z")
     if item_isbn:
-        res["itemISBN"] = item_isbn
+        res["itemISBN"] = [item_isbn]
     item_title = el.get("t")
     if item_title:
         res["itemTitle"] = item_title
     item_issn = el.get("x")
     if item_issn:
-        res["itemISSN"] = item_issn
+        res["itemISSN"] = [item_issn]
     item_volume_issue = el.get("g")
     if item_volume_issue:
         item_volume_issue_parsed = parse_item_issue(item_volume_issue)
         if item_volume_issue_parsed:
             res.update(item_volume_issue_parsed)
         else:
-            return {"relatedItem": "Warning: bad record"}
+            return "Warning: bad record"
     if res:
-        return {"relatedItem": res}
-    else:
-        return OAITransformer.PROCESSED
+        return res
 
 
 def parse_item_issue(text: str):

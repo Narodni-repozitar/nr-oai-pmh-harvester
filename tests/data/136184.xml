@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">136184</controlfield>
+  <controlfield tag="005">20200327143133.0</controlfield>
+  <controlfield tag="008">130121n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2011</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Fundamentální a technická analýza – jejich využívání v pozičním obchodování</subfield>
+    <subfield code="b">Fundamental and Technical Analyses – Their Use in Position Trading</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Vysoká škola finanční a správní</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">VATAHA, Jiří. Fundamentální a technická analýza – jejich využívání v pozičním obchodování. In Finanční trhy a jejich regulace v podmínkách doznívání světové finanční krize. Praha: Vysoká škola finanční a správní, 2011. ISBN 978-80-7408-050-0.</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">cenový index</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">price index</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1575</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">úroková míra</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">interest rate</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1611</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">tržní ceny</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">market prices</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1334</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">deriváty</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">derivatives (chemistry)</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH5501</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">dávky v nezaměstnanosti</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">commodity channel index</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">commodity channel index</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">price index</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">interest rate</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">derivatives</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">market prices</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Finanční trhy a jejich regulace v podmínkách doznívání světové finanční krize</subfield>
+    <subfield code="c">Praha</subfield>
+    <subfield code="d">2011</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Vataha, Jiří</subfield>
+  </datafield>
+  <datafield tag="773" ind1="1" ind2=" ">
+    <subfield code="z">978-80-7408-050-0</subfield>
+  </datafield>
+  <datafield tag="773" ind1="1" ind2=" ">
+    <subfield code="t">Finanční trhy a jejich regulace v podmínkách doznívání světové finanční krize</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-136184</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">marketa.holendova@vsfs.cz</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/136184/files/nusl-136184_1.pdf</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:136184</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">base</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="q">licensed</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">vysoka_skola_financni_a_spravni</subfield>
+  </datafield>
+</record>
+</collection>

@@ -56,12 +56,12 @@ version = "1.5"
 
 [[package]]
 category = "main"
-description = "Disable App Nap on OS X 10.9"
+description = "Disable App Nap on macOS >= 10.9"
 marker = "sys_platform == \"darwin\""
 name = "appnope"
 optional = true
 python-versions = "*"
-version = "0.1.0"
+version = "0.1.2"
 
 [[package]]
 category = "main"
@@ -2187,14 +2187,13 @@ version = "1.0.0a1"
 reference = "743e09e0394126300d4a4c1aeae18e6409d96ace"
 type = "git"
 url = "https://github.com/Narodni-repozitar/nr-cli.git"
-
 [[package]]
 category = "main"
 description = ""
 name = "nr-common"
 optional = false
 python-versions = "^3.8"
-version = "3.0.0a19"
+version = "3.0.0a21"
 
 [package.dependencies]
 idutils = "^1.1.8"
@@ -2214,10 +2213,9 @@ docs = ["sphinx (^1.5.1)"]
 tests = ["oarepo (^3.3)", "pytest (^5.0.0)", "pytest-cov (^2.10.1)"]
 
 [package.source]
-reference = "c6f0d3204a8ed9904596bd8d6d71fa69a71422a6"
+reference = "15fba2e8776b975ca52239ad02f2205c98d1da92"
 type = "git"
 url = "https://github.com/Narodni-repozitar/nr-common.git"
-
 [[package]]
 category = "main"
 description = ""
@@ -2243,7 +2241,6 @@ tests = ["oarepo (^3.3)", "pytest (^5.0.0)", "pytest-cov (^2.10.1)"]
 reference = "c9241e14dc6d8e700b60381f1ea92fa1c1997a79"
 type = "git"
 url = "https://github.com/Narodni-repozitar/nr-events.git"
-
 [[package]]
 category = "main"
 description = ""
@@ -2269,7 +2266,6 @@ tests = ["oarepo (^3.3)", "pytest (^5.0.0)", "pytest-cov (^2.10.1)"]
 reference = "141abaf014c72551ada50230c0687f9b05d08420"
 type = "git"
 url = "https://github.com/Narodni-repozitar/nr-Nresults.git"
-
 [[package]]
 category = "main"
 description = ""
@@ -2290,7 +2286,6 @@ tests = ["oarepo (^3.3.0)", "pytest (^5.0.0)", "pytest-cov (^2.10.1)"]
 reference = "caa08b8b919e76e0ddd69c9f7c171b26c5fd89e8"
 type = "git"
 url = "https://github.com/Narodni-repozitar/nr-taxonomies.git"
-
 [[package]]
 category = "main"
 description = ""
@@ -2318,7 +2313,6 @@ tests = ["oarepo (^3.3)", "pytest (^5.0.0)"]
 reference = "1f0c1e553a0eea65b15434d85925542e8b2d0a82"
 type = "git"
 url = "https://github.com/Narodni-repozitar/nr-theses.git"
-
 [[package]]
 category = "main"
 description = "NumPy is the fundamental package for array computing with Python."
@@ -2565,7 +2559,7 @@ description = "oarepo OAI-PMH converter."
 name = "oarepo-oai-pmh-harvester"
 optional = false
 python-versions = "*"
-version = "2.0.0a13"
+version = "2.0.0a15"
 
 [package.dependencies]
 click = "*"
@@ -3541,8 +3535,8 @@ apipkg = [
     {file = "apipkg-1.5.tar.gz", hash = "sha256:37228cda29411948b422fae072f57e31d3396d2ee1c9783775980ee9c9990af6"},
 ]
 appnope = [
-    {file = "appnope-0.1.0-py2.py3-none-any.whl", hash = "sha256:5b26757dc6f79a3b7dc9fab95359328d5747fcb2409d331ea66d0272b90ab2a0"},
-    {file = "appnope-0.1.0.tar.gz", hash = "sha256:8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71"},
+    {file = "appnope-0.1.2-py2.py3-none-any.whl", hash = "sha256:93aa393e9d6c54c5cd570ccadd8edad61ea0c4b9ea7a01409020c9aa019eb442"},
+    {file = "appnope-0.1.2.tar.gz", hash = "sha256:dd83cd4b5b460958838f6eb3000c660b1f9caf2a5b1de4264e941512f603258a"},
 ]
 arrow = [
     {file = "arrow-0.17.0-py2.py3-none-any.whl", hash = "sha256:e098abbd9af3665aea81bdd6c869e93af4feb078e98468dd351c383af187aac5"},
@@ -4307,8 +4301,8 @@ oarepo-multilingual = [
     {file = "oarepo_multilingual-2.4.0.tar.gz", hash = "sha256:8492b7b335a7189033424cd47df4f32ede31aa17dea81347ade0b3315f98c1e8"},
 ]
 oarepo-oai-pmh-harvester = [
-    {file = "oarepo-oai-pmh-harvester-2.0.0a13.tar.gz", hash = "sha256:669c9e9e0bc20615861d34c37034b4d4a7b1ed8eddc076f968e8fe80c9465bc2"},
-    {file = "oarepo_oai_pmh_harvester-2.0.0a13-py3-none-any.whl", hash = "sha256:aa4afe69d0d2224f499b0ac6b45bb6fa75d8639cfd94714b6c80f05a4f684203"},
+    {file = "oarepo-oai-pmh-harvester-2.0.0a15.tar.gz", hash = "sha256:3d701de3f88e4ba82bc766e13f189aa6bcf4d2626e3c8d356f3ec019e51a1978"},
+    {file = "oarepo_oai_pmh_harvester-2.0.0a15-py3-none-any.whl", hash = "sha256:710438795211fe8ef3b630e92d53a720ae91388fea3bc5abb1ad1df65dcd6b97"},
 ]
 oarepo-records-draft = [
     {file = "oarepo-records-draft-5.0.0a23.tar.gz", hash = "sha256:2b500b95b7bf33bf5a7e8e9996d8da535665e02ad017cb5a9f35b613215623f6"},

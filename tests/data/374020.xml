@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">374020</controlfield>
+  <controlfield tag="005">20200327143345.0</controlfield>
+  <controlfield tag="008">180328n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">stazista.nusl@gmail.com</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-374020</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="2">
+    <subfield code="u">https://www.czso.cz/csu/czso/informacni-ekonomika-v-cislech-2016</subfield>
+    <subfield code="z">Elektronické umístění souboru</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/374020/files/nusl-374020_1.pdf</subfield>
+    <subfield code="y">česká verze</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/374020/files/nusl-374020_2.pdf</subfield>
+    <subfield code="y">English version</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:374020</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">base</subfield>
+    <subfield code="p">opengrey</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">analyzy</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">93 s.</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">cesky_statisticky_urad</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Informační ekonomika v číslech - 2017</subfield>
+    <subfield code="b">Information economy in figures - 2017</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Český statistický úřad</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Základní datový přehled o rozvoji informační a digitální ekonomiky v České republice v porovnání s ostatními státy EU. Publikace zahrnuje především údaje o investicích, produkci a zahraničním obchodu v oblasti informačních a komunikačních technologií včetně údajů o ICT odbornících a ICT sektoru. Publikace obsahuje v tabulkové části podrobné údaje za roky 2014 až 2016 a v části grafické celou dostupnou časovou řadu.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">Basic overview of the state and development of the digital and information economy in the following areas: ICT Specialists, ICT Investment, Research and Development of ICT products, External Trade with ICT goods and services, ICT Sector.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">978-80-250-2823-0</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">978-80-250-2824</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1424</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">ekonomika</subfield>
+    <subfield code="j">economy</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH12314</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">výpočetní technika</subfield>
+    <subfield code="j">computer technology</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH6548</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">informatika</subfield>
+    <subfield code="j">informatics</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1502</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">mezinárodní obchod</subfield>
+    <subfield code="j">international trade</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2017</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Český statistický úřad</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+    <subfield code="b">eng</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+</record>
+</collection>

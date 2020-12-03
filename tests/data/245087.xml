@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">245087</controlfield>
+  <controlfield tag="005">20200409122843.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2012</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">DŮM NA HRANĚ - Valašské Meziříčí, ulice Sokolská</subfield>
+    <subfield code="b">HOUSE ON THE EDGE – Valašské Meziříčí, Sokolská Street</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Vysoké učení technické v Brně. Fakulta architektury</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">
+Městský dům, s třemi hlavními funkcemi (bydlení, administrativa, vš koleje) a komerčním parterem doplněn výraznou budouvou kavárny-knihkupectví. Stojí na hranici historické části města sousedící s výstavbou ze 70.let 20. století, kde historické jádro bylo narušeno průtahem. Vertikální členění domu vychází z úzké historické parcelace.
+</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">
+Town house, with three main functions (housing, offices, student dormitories) and commercial parterre with significant building of café-bookstore. It stands on the edge of the historic city center adjacent to the construction of 70's 20th century, where the historic core was disrupted by draft-change wheel. The vertical structure of the house is based on the close historical allotments.
+</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Dům na hraně</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Valašské Meziříčí</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">House on the edge</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Horáková, Terezie</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Nový, Vítězslav</subfield>
+    <subfield code="e">referee</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Foretník, Jan</subfield>
+    <subfield code="e">advisor</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://hdl.handle.net/11012/10015</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-245087</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:245087</subfield>
+    <subfield code="p">global</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">bakalarske_prace</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Plný text je dostupný v Digitální knihovně VUT.</subfield>
+    <subfield code="b">Fulltext is available in the Brno University of Technology Digital Library.</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">vutbr</subfield>
+  </datafield>
+</record>
+</collection>

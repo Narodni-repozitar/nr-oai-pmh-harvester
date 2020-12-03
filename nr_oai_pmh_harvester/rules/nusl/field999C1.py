@@ -15,7 +15,7 @@ def funding_reference(el, **kwargs):
         for _ in el:
             res.append(get_funder(_))
     if isinstance(el, dict):
-        res = res.append(get_funder(el))
+        res.append(get_funder(el))
     return {
         "fundingReference": res
     }

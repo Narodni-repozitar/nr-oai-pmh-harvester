@@ -13,13 +13,23 @@ def title(el, **kwargs):
 
 def get_title(el, kwargs, field="title", first_lang_field="a", second_lang_field="b"):
     res = {}
+    if isinstance(el, (tuple, list)):
+        for _ in el:
+            res.update(add_title_dict(_, kwargs, res, first_lang_field, second_lang_field))
+    if isinstance(el, dict):
+        res = add_title_dict(el, kwargs, res, first_lang_field=first_lang_field,
+                       second_lang_field=second_lang_field)
+    return {field: [res]}
+
+
+def add_title_dict(el, kwargs, res, first_lang_field="a", second_lang_field="b"):
     first_lang = el.get(first_lang_field)
     if first_lang:
         res.update(get_title_dict(kwargs, first_lang))
     second_lang = el.get(second_lang_field)
     if second_lang:
         res["en"] = second_lang
-    return {field: res}
+    return res
 
 
 def get_title_dict(kwargs, value):

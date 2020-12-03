@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">187483</controlfield>
+  <controlfield tag="005">20200327143219.0</controlfield>
+  <controlfield tag="008">150522n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">stadnikova.zuzana@npu.cz</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-187483</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/187483/files/nusl-187483_1.pdf</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="2">
+    <subfield code="u">https://iispp.npu.cz/mis/publicDocumentDetail.htm?id=415139</subfield>
+    <subfield code="z">Elektronické umístění souboru</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:187483</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">base</subfield>
+    <subfield code="q">licensed</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Hájek, Pavel</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">68 s.</subfield>
+  </datafield>
+  <datafield tag="336" ind1=" " ind2=" ">
+    <subfield code="a">certifikovaná metodika</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">metodiky</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">narodni_pamatkovy_ustav</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Metodika naplňování systému Tritius - zámecké knihovny</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="b">Methodology of fulfillment of Tritius System - Castle Libraries</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Metodika podrobně popisuje způsob naplňování polí a podpol í systému Tritius – zámecké knihovny. Metodika je podrobným návodem k obsluze systému ve vazbě na Metodiku tvorby rozšířeného bibliografického popisu starých tisků se zaměřením na tisky 16. století v zámeckých knihovnách České republiky.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Tritius</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">zámecké knihovny</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">manuál</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">katalogizace</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2014</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+</record>
+</collection>

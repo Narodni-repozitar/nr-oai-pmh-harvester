@@ -7,4 +7,4 @@ def call_note(el, **kwargs):
 
 
 def note(el, **kwargs):
-    return {"note": el}
+    return {"note": [el]}

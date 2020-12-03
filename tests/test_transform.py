@@ -3,6 +3,8 @@ import pathlib
 from pprint import pprint
 
 import pytest
+from flask import current_app
+from invenio_records_rest.utils import obj_or_import_string
 from lxml import etree
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
@@ -13,7 +15,8 @@ from nr_oai_pmh_harvester.utils import transform_to_dict
                          ["416174", "253605", "260929", "253573", "263309", "18", "261117",
                           "253576", "1214", "2737", "11720", "19263", "19317", "19329", "19535",
                           "20925", "20926", "22069", "25735", "26388"])
-def test_uk_bachelor_thesis(app, db, file_name):
+def test_transform(app, db, file_name):
+    from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
     from nr_oai_pmh_harvester.parser import marcxml_parser
     from nr_oai_pmh_harvester.rules.nusl.field001 import control_number
     from nr_oai_pmh_harvester.rules.nusl.field020 import isbn
@@ -49,6 +52,9 @@ def test_uk_bachelor_thesis(app, db, file_name):
     from nr_oai_pmh_harvester.rules.nusl.field996 import accessibility
     from nr_oai_pmh_harvester.rules.nusl.field998 import provider
     from nr_oai_pmh_harvester.rules.nusl.field999C1 import funding_reference
+    from nr_oai_pmh_harvester.post_processors import add_date_defended
+    from nr_oai_pmh_harvester.post_processors import add_defended
+    from nr_oai_pmh_harvester.post_processors import add_item_relation_type
 
     this_directory = pathlib.Path(__file__).parent.absolute()
     response_path = this_directory / "data" / f"{file_name}.xml"
@@ -102,7 +108,7 @@ def test_uk_bachelor_thesis(app, db, file_name):
             "pre": nusl_oai
         },
         "/980__/a": {
-            "pre": resource_type
+            "pre": resource_type,
         },
         "/996__": {
             "pre": accessibility
@@ -177,5 +183,15 @@ def test_uk_bachelor_thesis(app, db, file_name):
                                                                '/8564_', '/909CO/p', '999c1',
                                                                '/999C2', 'FFT_0'})
     transformed = transformer.transform(parsed)
+    post_processed = add_date_defended(transformed)
+    post_processed = add_defended(post_processed)
+    post_processed = add_item_relation_type(post_processed)
+    model = nusl_handler(transformed)
+    draft_configs = current_app.config.get("RECORDS_DRAFT_ENDPOINTS")
+    config = draft_configs.get(model)
+    record_class = obj_or_import_string(config.get("record_class"))
+    schema = record_class.MARSHMALLOW_SCHEMA()
+    print("MODEL:", model, "\n\n")
     print(10 * "\n", "RECORD")
-    print(json.dumps(transformed, ensure_ascii=False))
+    print(json.dumps(post_processed, ensure_ascii=False, indent=4))
+    schema.load(post_processed)

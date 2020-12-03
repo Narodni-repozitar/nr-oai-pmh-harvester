@@ -13,6 +13,19 @@ def call_events(el, **kwargs):
 
 
 def events(el, **kwargs):
+    res = []
+    if isinstance(el, (list, tuple)):
+        for _ in el:
+            res.append(get_event(_))
+    if isinstance(el, dict):
+        res = [get_event(el)]
+    if res:
+        return {"events": res}
+    else:
+        return OAITransformer.PROCESSED
+
+
+def get_event(el):
     res = {}
     name = el.get("a")
     if name:
@@ -28,10 +41,7 @@ def events(el, **kwargs):
         place = parse_place(place)
         if place:
             res["location"] = place
-    if res:
-        return {"events": res}
-    else:
-        return OAITransformer.PROCESSED
+    return res
 
 
 def parse_place(place: str):

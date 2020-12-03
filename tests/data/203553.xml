@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">203553</controlfield>
+  <controlfield tag="005">20200327143242.0</controlfield>
+  <controlfield tag="008">160418n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">stazista.nusl@gmail.com</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-203553</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="2">
+    <subfield code="u">https://www.czso.cz/csu/czso/cri/scitani-lidu-domu-a-bytu-2011-hlavni-mesto-praha-analyza-vysledku-2011-h9s8zd7irf</subfield>
+    <subfield code="z">Elektronické umístění souboru</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/203553/files/nusl-203553_1.pdf</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:203553</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">base</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="q">licensed</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">analyzy</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH4435</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">sčítání lidu</subfield>
+    <subfield code="j">population census</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1562</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">cenzus</subfield>
+    <subfield code="j">census</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1464</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">ekonomicky aktivní obyvatelstvo</subfield>
+    <subfield code="j">economically active population</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH4413</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">geografie obyvatelstva</subfield>
+    <subfield code="j">geography of population</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH4417</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">geografie sídel</subfield>
+    <subfield code="j">settlement geography</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">154 s.</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">cesky_statisticky_urad</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Sčítání lidu, domů a bytů - Hlavní město Praha</subfield>
+    <subfield code="b">Population and Housing Census 2011 - the capital of Prague</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Český statistický úřad</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Analýza struktury obyvatelstva, domovního a bytového fondu a domácností, vývoj v kraji a jeho dílčích územních celcích od minulého sčítání (v části ukazatelů s návazností od roku 1961). Doplněno mezikrajským srovnáním, grafy a kartogramy.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">Analysis of population structure, housing stock and households, the development in the region and its territorial units of the last census (in part with seguence indicators since 1961). Completed by interregional comparisons, graphs and maps.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">978-80-250-2393-8</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Krajská správa Českého statistického úřadu v Hl. m. Praze</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">oddělení informačních služeb</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Český statistický úřad</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">Analýza výsledků</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="b">Analysis of the results</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2013</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+    <subfield code="b">eng</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+</record>
+</collection>

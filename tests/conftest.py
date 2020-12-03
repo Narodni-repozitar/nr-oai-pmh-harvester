@@ -40,6 +40,7 @@ def app():
         SERVER_NAME='127.0.0.1:5000',
         INVENIO_INSTANCE_PATH=instance_path,
         DEBUG=True,
+        SUPPORTED_LANGUAGES=["cs", "en"],
         SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://oarepo:oarepo@localhost/oarepo',
         OAREPO_OAI_PROVIDERS={
             "nusl": {

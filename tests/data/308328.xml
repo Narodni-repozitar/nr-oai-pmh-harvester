@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">308328</controlfield>
+  <controlfield tag="005">20170627130253.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2012-09-11</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Užívání návykových látek a souvislosti s poskytováním asistenčních služeb v zahraničí.</subfield>
+    <subfield code="b">Substance use and relations to the provision of assistance services abroad.</subfield>
+  </datafield>
+  <datafield tag="502" ind1=" " ind2=" ">
+    <subfield code="c">Univerzita Karlova</subfield>
+    <subfield code="b">Bc.</subfield>
+    <subfield code="d">2012</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Before traveling abroad, people in order to ensure their safe travel insurance agree. This insurance has its conditions and limits. Most clients with them before embarking on a journey familiar, since it does not allow that they could have something happen. The policy conditions and exclusions as travel insurance. Among others, these include the provision that the insurer is relieved of the obligation to provide indemnification in cases where the harmful event occurred in connection with the use or alcohol abuse or after application, toxic drugs or insured, or in connection with drug abuse insured when there is a clear causal relationship with the emergence of claims. Most people traveling abroad for holidays. During the holidays they want to relax from the usual worries and relax. Quite a few of them to induce well-being helped by the use of addictive substances. Travel agency arranging insurance often offer their clients the all- inclusive tours, which are a natural part of alcoholic beverages as well as the welcome drinks that also contain alcohol. Clients who do not have information on insurance exclusions, does not address, whether abroad or not to consume alcohol, especially when it offers them the travel agency itself. Effects of alcohol, changing environment, often in hot weather it is easier for...</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Před cestou do zahraničí si lidé v rámci zajištění svého bezpečí sjednávají cestovní pojištění. Toto pojištění má své podmínky a limity. Většina klientů se s nimi před nastoupením na cestu neseznámí, jelikož nepočítá s tím, že by se jim mohlo něco přihodit. Součástí pojistných podmínek jsou i výluky z cestovního pojištění. Mimo jiné mezi ně patří ustanovení, že pojistitel je zbaven povinnosti poskytnout pojistné plnění v případech, kdy škodná událost nastala v souvislosti s požíváním nebo po požití alkoholu nebo po aplikaci návykových, toxických či omamných látek pojištěným nebo v souvislosti se zneužitím léku pojištěným, když je zde zřejmá příčinná souvislost se vznikem pojistné události. Většina osob cestuje do zahraničí za účelem dovolené. Během ní si chtějí odpočinout od běžných starostí a relaxovat. Nemálo z nich si k navození pohody vypomáhá užíváním návykových látek. Cestovní kanceláře sjednávající toto pojištění často nabízejí svým klientům zájezdy tzv. all inclusive, kde jsou samozřejmou součástí alkoholické nápoje, stejně jako tzv. welcome drinky, které rovněž obsahují alkohol. Klienti, kteří nemají o pojistných výlukách informace, neřeší, zda budou v zahraničí konzumovat alkohol či nikoliv, zvláště když jim ho nabízí sama cestovní kancelář. Působením alkoholu, při změně prostředí, často za...</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="586" ind1=" " ind2=" ">
+    <subfield code="a">obhájeno</subfield>
+    <subfield code="b">successfully defended</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">návyková látka - cestovní pojištění</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">pojistná událost - zamítnutí pojistné události - asistenční služba</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">addictive substance - travel insurance - insured event - denied of insured event - assistance service</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Univerzita Karlova</subfield>
+    <subfield code="9">cze</subfield>
+    <subfield code="b">Psychiatrická klinika 1. LF a VFN v Praze</subfield>
+    <subfield code="g">1. lékařská fakulta</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Charles University</subfield>
+    <subfield code="9">eng</subfield>
+    <subfield code="b">Department of Psychiatry First Faculty of Medicine and General University Hospital in Prague</subfield>
+    <subfield code="g">First Faculty of Medicine</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Střelcová, Pavlína</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Popov, Petr</subfield>
+    <subfield code="e">advisor</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Randák, Dušan</subfield>
+    <subfield code="e">referee</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://hdl.handle.net/20.500.11956/44034</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-308328</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:308328</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">bakalarske_prace</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dostupné v digitálním repozitáři UK.</subfield>
+    <subfield code="b">Available in the Charles University Digital Repository.</subfield>
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">univerzita_karlova_v_praze</subfield>
+  </datafield>
+</record>
+</collection>

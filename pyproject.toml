@@ -33,6 +33,9 @@ tests = ["oarepo", "pytest", "pytest-cov"]
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.mappings"]
 "nusl" = "nr_oai_pmh_harvester.endpoint_handlers"
 
+[tool.poetry.plugins."oarepo_oai_pmh_harvester.post_processors"]
+"post_processors" = "nr_oai_pmh_harvester.post_processors"
+
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.rules"]
 "field001" = "nr_oai_pmh_harvester.rules.nusl.field001"
 "field020" = "nr_oai_pmh_harvester.rules.nusl.field020"
