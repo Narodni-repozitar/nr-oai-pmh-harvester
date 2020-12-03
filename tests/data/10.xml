@@ -1,0 +1,108 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">10</controlfield>
+        <controlfield tag="005">20170629111510.0</controlfield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">oai:vse.cz:vskp/4</subfield>
+        </datafield>
+        <datafield tag="041" ind1="0" ind2="7">
+            <subfield code="a">cze</subfield>
+        </datafield>
+        <datafield tag="046" ind1=" " ind2=" ">
+            <subfield code="k">2006-05-16</subfield>
+            <subfield code="j">2012-04-30</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Vzory pro návrh uživatelského rozhraní</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="b">Vysoká škola ekonomická v Praze</subfield>
+        </datafield>
+        <datafield tag="502" ind1=" " ind2=" ">
+            <subfield code="a">2006-09-13</subfield>
+            <subfield code="b">Bc.</subfield>
+            <subfield code="c">Vysoká škola ekonomická v Praze</subfield>
+            <subfield code="g">Bakalářský studijní program</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">Touto prací se chci zaměřit na oblast vzorů pro návrh uživatelského rozhraní. To je
+                soubor vzorů, jenž se snaží pomoci návrhářům desktopových aplikací (respektive internetových stránek)
+                správně sestavit a implementovat uživatelské rozhraní. Cílem bylo vyhledat a přeložit nejzákladnější (a
+                nejvyužívanější) vzory a seskupit je do určitých celků podle oblastí, na které se zaměřují. Vzorům pro
+                návrh uživatelského rozhraní se věnuje zatím jen několik málo subjektů, je tedy poměrně složité najít
+                ucelený soubor, jenž by zahrnoval uspokojivé kvantum těchto vzorů. Každý ze subjektů se navíc věnuje
+                trochu jiným oblastem a přistupuje k popisu řešení problému mírně jiným způsobem. Zájemce o toto téma je
+                tedy schopen najít uspokojivé množství informací, prozatím ale jen za cenu dlouhého vyhledávání a
+                získání výsledků ve větším množství různých forem zápisu. Proto jsem vybral jednu formu zápisu a vzory,
+                které byly zapsány jinak, jsem do této formy převedl. Výsledkem by měl být přehledný a jasně
+                srozumitelný soubor vybraných vzorů ? jenž sice určitě není úplný a vyčerpávající, přesto pokrývá dosti
+                velkou oblast základních existujících vzorů. Každý vzor je v mém podání prezentován ve čtyřech částech,
+                těmi jsou: základním shrnutí vzoru, vhodné podmínky pro jeho implementaci (problém), návrh řešení daného
+                problému a příklady správného (někdy i špatného) použití vzoru. V českém prostředí (speciálně na
+                internetu) je velice obtížné sehnat jakékoliv zdroje či zmínky o vzorech pro návrh uživatelského
+                rozhraní. Tuzemské subjekty se tomuto mladému tématu dostatečně nevěnují, proto jsem shledal prospěšným
+                přeložit základní množství vzorů do českého jazyka a prezentovat je v prostředí internetu pomocí webové
+                stránky, jenž je k této práci připojena jako příloha. Práce samotná sestává z úvodu do problematiky, kde
+                se zaměřuji na vznik vzorů, jejich vývoj, formy a hlavní současné představitele této oblasti. V dalších
+                částech jsou popsány skupiny, do nichž jsem vzory pro návrh seřadil ? pro každou skupinu následuje popis
+                vybraných kompletních vzorů - všechny vzory jsem do bakalářské práce nemohl zařadit - z důvodů jejich
+                velkého množství, ostatní jsou proto přítomny pouze na webové stránce, která je součástí přílohy. Ta je
+                připojena na konci dokumentu spolu s terminologickým slovníkem.
+            </subfield>
+            <subfield code="9">cze</subfield>
+        </datafield>
+        <datafield tag="650" ind1="1" ind2="7">
+            <subfield code="a">rozhraní</subfield>
+            <subfield code="j">interfaces</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH12457</subfield>
+            <subfield code="2">PSH</subfield>
+        </datafield>
+        <datafield tag="650" ind1="1" ind2="7">
+            <subfield code="a">webové stránky</subfield>
+            <subfield code="j">web sites</subfield>
+            <subfield code="0">http://psh.ntkcz.cz/skos/PSH13896</subfield>
+            <subfield code="2">PSH</subfield>
+        </datafield>
+        <datafield tag="656" ind1=" " ind2="7">
+            <subfield code="a">Aplikovaná informatika/Informatika</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="a">Vávra, Jan</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="i">Kašparová, Alena</subfield>
+            <subfield code="e">advisor</subfield>
+        </datafield>
+        <datafield tag="720" ind1=" " ind2=" ">
+            <subfield code="i">Osvaldová, Jana</subfield>
+            <subfield code="e">referee</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.vse.cz/vskp/eid/4</subfield>
+            <subfield code="z">Odkaz na původní záznam</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">http://www.nusl.cz/ntk/nusl-10</subfield>
+            <subfield code="z">PID NUŠL</subfield>
+        </datafield>
+        <datafield tag="909" ind1="C" ind2="O">
+            <subfield code="o">oai:invenio.nusl.cz:10</subfield>
+            <subfield code="p">openaire</subfield>
+            <subfield code="p">global</subfield>
+            <subfield code="p">opengrey</subfield>
+            <subfield code="p">licensed</subfield>
+            <subfield code="q">etds</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">bakalarske_prace</subfield>
+        </datafield>
+        <datafield tag="996" ind1=" " ind2=" ">
+            <subfield code="a">Dostupné v digitálním repozitáři VŠE.</subfield>
+            <subfield code="b">Available in the digital repository of the University of Economics, Prague.</subfield>
+            <subfield code="9">1</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">vysoka_skola_ekonomicka_v_praze</subfield>
+        </datafield>
+    </record>
+</collection>

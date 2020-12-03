@@ -8,7 +8,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/980__/a", phase="pre")
 def call_resource_type(el, **kwargs):
-    return resource_type(el, **kwargs)
+    return resource_type(el, **kwargs)  # pragma: no cover
 
 
 def resource_type(el, **kwargs):

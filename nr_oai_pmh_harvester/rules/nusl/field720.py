@@ -7,7 +7,7 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 @rule("nusl", "marcxml", "/720__", phase="pre")
 def call_people(el, **kwargs):
-    return people(el, **kwargs)
+    return people(el, **kwargs) # pragma: no cover
 
 
 def people(el, **kwargs):

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">189035</controlfield>
+  <controlfield tag="005">20200326134103.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2014</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Strategický koncept k transformaci nelékařských zdravotnických pracovníků v České republice </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Iga MZ ČR</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">Přeruš. str. :</subfield>
+  </datafield>
+  <datafield tag="598" ind1=" " ind2=" ">
+    <subfield code="a">Závěrečná zpráva o řešení grantu Interní grantové agentury MZ ČR</subfield>
+  </datafield>
+  <datafield tag="598" ind1=" " ind2=" ">
+    <subfield code="a">Doba řešení: 2011-2013</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">management, organizace a řízení zdravotnictví</subfield>
+    <subfield code="2">mednas</subfield>
+    <subfield code="7">nlk20040148144</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">nelékařská zdravotnická povolání</subfield>
+    <subfield code="2">czmesh</subfield>
+    <subfield code="7">D016390</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">rozhodování organizační</subfield>
+    <subfield code="2">czmesh</subfield>
+    <subfield code="7">D003659</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">řízení zdravotnických zařízení</subfield>
+    <subfield code="2">czmesh</subfield>
+    <subfield code="7">D058016</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">studium lékařství pregraduální</subfield>
+    <subfield code="2">czmesh</subfield>
+    <subfield code="7">D004504</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">metody pro podporu rozhodování</subfield>
+    <subfield code="2">czmesh</subfield>
+    <subfield code="7">D003661</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">veřejné zdravotnictví</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH13186</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">public health service</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Šamaj, Martin</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Mikšová, Zdeňka</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Fakultní nemocnice (Olomouc, Česko)</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://www.medvik.cz/link/MED00185225</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-189035</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:189035</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">base</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">grantove_zpravy</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dokument je dostupný v NLK.</subfield>
+    <subfield code="b">Available in the National Medical Library.</subfield>
+    <subfield code="9">0</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">narodni_lekarska_knihovna</subfield>
+  </datafield>
+</record>
+</collection>

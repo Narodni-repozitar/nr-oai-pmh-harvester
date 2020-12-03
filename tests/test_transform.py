@@ -1,20 +1,23 @@
 import json
 import pathlib
+import traceback
 from pprint import pprint
 
 import pytest
 from flask import current_app
 from invenio_records_rest.utils import obj_or_import_string
 from lxml import etree
+from marshmallow import ValidationError
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
+from pytest import skip
 
 from nr_oai_pmh_harvester.utils import transform_to_dict
 
 
 @pytest.mark.parametrize("file_name",
-                         ["416174", "253605", "260929", "253573", "263309", "18", "261117",
-                          "253576", "1214", "2737", "11720", "19263", "19317", "19329", "19535",
-                          "20925", "20926", "22069", "25735", "26388"])
+                         ['10', '18', '1214', '2737', '11720', '19263', '19317', '19329', '19535',
+                          '20925', '20926', '22069', '25735', '26388', '189035', '253573', '253576',
+                          '253605', '260929', '261117', '263309', '416174'])
 def test_transform(app, db, file_name):
     from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
     from nr_oai_pmh_harvester.parser import marcxml_parser
@@ -68,7 +71,7 @@ def test_transform(app, db, file_name):
         "/001": {
             "pre": control_number
         },
-        "/035": {
+        "/035__": {
             "pre": original_record_oai
         },
         "/04107": {
@@ -194,4 +197,14 @@ def test_transform(app, db, file_name):
     print("MODEL:", model, "\n\n")
     print(10 * "\n", "RECORD")
     print(json.dumps(post_processed, ensure_ascii=False, indent=4))
-    schema.load(post_processed)
+    try:
+        schema.load(post_processed)
+    except ValidationError:
+        exc = traceback.format_exc()
+        exc_array = exc.split("marshmallow.exceptions.ValidationError: ")
+        print(exc, "\n\n\n")
+        dict_expression = "dict_ = " + exc_array[-1]
+        exec(dict_expression + "\npprint(dict_)")
+        if "rulesExceptions" in dict_expression:
+            raise
+        skip()

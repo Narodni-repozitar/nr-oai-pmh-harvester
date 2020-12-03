@@ -5,7 +5,7 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 @rule("nusl", "marcxml", "/996__", phase="pre")
 def call_accessibility(el, **kwargs):
-    return accessibility(el, **kwargs)
+    return accessibility(el, **kwargs) # pragma: no cover
 
 
 def accessibility(el, **kwargs):
@@ -27,7 +27,7 @@ def accessibility(el, **kwargs):
         return {
             "accessRights": get_access_rights(slug=slug)
         }
-    return OAITransformer.PROCESSED
+    return OAITransformer.PROCESSED  # pragma: no cover
 
 
 def get_access_rights_dict():

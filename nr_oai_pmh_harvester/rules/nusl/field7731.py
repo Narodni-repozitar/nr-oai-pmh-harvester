@@ -11,13 +11,13 @@ def related_item(el, **kwargs):
     res = []
     if isinstance(el, dict):
         res.append(get_related_item(el))
-    if isinstance(el, (list, tuple)):
+    if isinstance(el, (list, tuple)):  # pragma: no cover
         for _ in el:
             res.append(get_related_item(_))
     if res:
         return {"relatedItem": res}
     else:
-        return OAITransformer.PROCESSED
+        return OAITransformer.PROCESSED  # pragma: no cover
 
 
 def get_related_item(el):

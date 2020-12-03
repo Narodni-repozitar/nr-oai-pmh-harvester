@@ -1,104 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <controlfield tag="001">261117</controlfield>
-        <controlfield tag="005">20200327143303.0</controlfield>
-        <controlfield tag="008">161021n||||||||xx#||||#|||z|#||||||cze||</controlfield>
-        <datafield tag="856" ind1="0" ind2=" ">
-            <subfield code="f">stazista.nusl@gmail.com</subfield>
-        </datafield>
-        <datafield tag="856" ind1="4" ind2="0">
-            <subfield code="u">http://www.nusl.cz/ntk/nusl-261117</subfield>
-            <subfield code="z">PID NUŠL</subfield>
-        </datafield>
-        <datafield tag="856" ind1="4" ind2="2">
-            <subfield code="u">https://www.czso.cz/csu/czso/cri/zivotni-pohoda-ceskych-obyvatel-2013-9o3rqgacqy
-            </subfield>
-            <subfield code="z">Elektronické umístění souboru</subfield>
-        </datafield>
-        <datafield tag="856" ind1="4" ind2=" ">
-            <subfield code="u">http://invenio.nusl.cz/record/261117/files/nusl-261117_1.pdf</subfield>
-            <subfield code="z">Plný text</subfield>
-        </datafield>
-        <datafield tag="909" ind1="C" ind2="O">
-            <subfield code="o">oai:invenio.nusl.cz:261117</subfield>
-            <subfield code="p">openaire</subfield>
-            <subfield code="p">global</subfield>
-            <subfield code="p">DRIVER</subfield>
-            <subfield code="p">base</subfield>
-            <subfield code="p">opengrey</subfield>
-            <subfield code="q">licensed</subfield>
-        </datafield>
-        <datafield tag="300" ind1=" " ind2=" ">
-            <subfield code="a">11 s.</subfield>
-        </datafield>
-        <datafield tag="980" ind1=" " ind2=" ">
-            <subfield code="a">statisticke_zpravy</subfield>
-        </datafield>
-        <datafield tag="996" ind1=" " ind2=" ">
-            <subfield code="9">1</subfield>
-        </datafield>
-        <datafield tag="998" ind1=" " ind2=" ">
-            <subfield code="a">cesky_statisticky_urad</subfield>
-        </datafield>
-        <datafield tag="245" ind1="0" ind2="0">
-            <subfield code="a">Životní pohoda českých obyvatel</subfield>
-            <subfield code="b">The welfare of the Czech population</subfield>
-        </datafield>
-        <datafield tag="650" ind1=" " ind2="7">
-            <subfield code="0">http://psh.ntkcz.cz/skos/PSH1498</subfield>
-            <subfield code="2">PSH</subfield>
-            <subfield code="a">životní úroveň</subfield>
-            <subfield code="j">living standard</subfield>
-        </datafield>
-        <datafield tag="650" ind1=" " ind2="7">
-            <subfield code="0">http://psh.techlib.cz/skos/PSH984</subfield>
-            <subfield code="2">PSH</subfield>
-            <subfield code="a">populace</subfield>
-            <subfield code="j">population</subfield>
-        </datafield>
-        <datafield tag="650" ind1="0" ind2="7">
-            <subfield code="0">http://psh.techlib.cz/skos/PSH13199</subfield>
-            <subfield code="2">PSH</subfield>
-            <subfield code="a">zdraví</subfield>
-            <subfield code="j">health</subfield>
-        </datafield>
-        <datafield tag="520" ind1=" " ind2=" ">
-            <subfield code="9">cze</subfield>
-            <subfield code="a">Stále častěji je v souvislosti s hodnocením životních podmínek domácností a jejich členů
-                kladen důraz na subjektivní názory respondentů. Jsou obyvatelé České republiky spokojeni se svým
-                životem? Cítí se v okolí svého bydliště bezpečně? Jaké jsou jejich vyhlídky do budoucna?
-            </subfield>
-        </datafield>
-        <datafield tag="520" ind1=" " ind2=" ">
-            <subfield code="9">eng</subfield>
-            <subfield code="a">Increasingly, emphasis is placed on the subjective opinions of respondents in connection
-                with the assessment of the living conditions of households and their members. Are the inhabitants of the
-                Czech Republic happy with their lives? Does she feel safe around her home? What are their prospects for
-                the future?
-            </subfield>
-        </datafield>
-        <datafield tag="540" ind1=" " ind2=" ">
-            <subfield code="9">cze</subfield>
-            <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
-        </datafield>
-        <datafield tag="540" ind1=" " ind2=" ">
-            <subfield code="9">eng</subfield>
-            <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
-        </datafield>
-        <datafield tag="720" ind1=" " ind2=" ">
-            <subfield code="a">Český statistický úřad</subfield>
-        </datafield>
-        <datafield tag="506" ind1=" " ind2=" ">
-            <subfield code="a">Public</subfield>
-        </datafield>
-        <datafield tag="046" ind1=" " ind2=" ">
-            <subfield code="k">2014</subfield>
-        </datafield>
-        <datafield tag="041" ind1="0" ind2="7">
-            <subfield code="a">cze</subfield>
-        </datafield>
-        <datafield tag="340" ind1=" " ind2=" ">
-            <subfield code="a">text/pdf</subfield>
-        </datafield>
-    </record>
+<record>
+  <controlfield tag="001">261117</controlfield>
+  <controlfield tag="005">20200327143303.0</controlfield>
+  <controlfield tag="008">161021n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">stazista.nusl@gmail.com</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-261117</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="2">
+    <subfield code="u">https://www.czso.cz/csu/czso/cri/zivotni-pohoda-ceskych-obyvatel-2013-9o3rqgacqy</subfield>
+    <subfield code="z">Elektronické umístění souboru</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/261117/files/nusl-261117_1.pdf</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:261117</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">base</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="q">licensed</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">11 s.</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">statisticke_zpravy</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">cesky_statisticky_urad</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Životní pohoda českých obyvatel</subfield>
+    <subfield code="b">The welfare of the Czech population</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1498</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">životní úroveň</subfield>
+    <subfield code="j">living standard</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.techlib.cz/skos/PSH984</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">populace</subfield>
+    <subfield code="j">population</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="7">
+    <subfield code="0">http://psh.techlib.cz/skos/PSH13199</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">zdraví</subfield>
+    <subfield code="j">health</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Stále častěji je v souvislosti s hodnocením životních podmínek domácností a jejich členů kladen důraz na subjektivní názory respondentů. Jsou obyvatelé České republiky spokojeni se svým životem? Cítí se v okolí  svého  bydliště bezpečně? Jaké jsou jejich vyhlídky do budoucna?</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">Increasingly, emphasis is placed on the subjective opinions of respondents in connection with the assessment of the living conditions of households and their members. Are the inhabitants of the Czech Republic happy with their lives? Does she feel safe around her home? What are their prospects for the future?</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Český statistický úřad</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2014</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+</record>
 </collection>

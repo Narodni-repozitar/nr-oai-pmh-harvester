@@ -6,7 +6,7 @@ from nr_oai_pmh_harvester.query import get_query_by_slug
 
 @rule("nusl", "marcxml", "/540__", phase="pre")
 def call_rights(el, **kwargs):
-    return rights(el, **kwargs)
+    return rights(el, **kwargs) # pragma: no cover
 
 
 def rights(el, **kwrgs):

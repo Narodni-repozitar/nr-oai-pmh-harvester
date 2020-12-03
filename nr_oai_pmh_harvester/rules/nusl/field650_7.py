@@ -9,7 +9,7 @@ from nr_oai_pmh_harvester.query import get_query_by_slug
 
 @rule("nusl", "marcxml", "/650_7", phase="pre")
 def call_subject(el, **kwargs):
-    return subject(el, **kwargs)
+    return subject(el, **kwargs)  # pragma: no cover
 
 
 def subject(el, **kwargs):
@@ -28,7 +28,7 @@ def subject(el, **kwargs):
     if res:
         return res
     else:
-        return OAITransformer.PROCESSED
+        return OAITransformer.PROCESSED  # pragma: no cover
 
 
 def get_subject_keyword(_, keywords, subjects):
@@ -50,7 +50,7 @@ def get_subject(el):
         "mednas": get_mednas
     }
     handler = type_dict.get(type_)
-    if not handler:
+    if not handler:  # pragma: no cover
         return
     res = handler(el)
     if res:
@@ -72,10 +72,10 @@ def get_czmesh(el):
     query = get_query_by_slug("subjects", slug)
     try:
         term = query.one_or_none()
-    except ProgrammingError:
+    except ProgrammingError:  # pragma: no cover
         db.session.commit()
         return
-    if not term:
+    if not term: # pragma: no cover
         return
     return get_taxonomy_json(code="subjects", slug=term.slug).paginated_data
 
@@ -85,7 +85,7 @@ def get_mednas(el):
     query = get_query_by_slug("subjects", slug)
     try:
         term = query.one_or_none()
-    except ProgrammingError:
+    except ProgrammingError:  # pragma: no cover
         db.session.commit()
         return
     return get_taxonomy_json(code="subjects", slug=term.slug).paginated_data

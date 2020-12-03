@@ -1,3 +1,4 @@
+import pycountry
 from dojson.utils import GroupableOrderedDict
 
 
@@ -15,3 +16,11 @@ def transform_to_dict(source):
     else:
         target = source
     return target
+
+
+def get_alpha2_lang(lang):
+    py_lang = pycountry.languages.get(alpha_3=lang) or pycountry.languages.get(
+        bibliographic=lang)
+    if not py_lang:
+        return "ukn"
+    return py_lang.alpha_2

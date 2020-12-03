@@ -6,7 +6,7 @@ from nr_oai_pmh_harvester.query import get_query_by_slug
 
 @rule("nusl", "marcxml", "/999C1", phase="pre")
 def call_funding_reference(el, **kwargs):
-    return funding_reference(el, **kwargs)
+    return funding_reference(el, **kwargs) # pragma: no cover
 
 
 def funding_reference(el, **kwargs):
@@ -82,6 +82,6 @@ def get_funder_from_id(funder_id: str):
         return
     query = get_query_by_slug(taxonomy_code="funders", slug=slug)
     term = query.one_or_none()
-    if not term:
+    if not term: # pragma: no cover
         return
     return get_taxonomy_json(code="funders", slug=term.slug).paginated_data

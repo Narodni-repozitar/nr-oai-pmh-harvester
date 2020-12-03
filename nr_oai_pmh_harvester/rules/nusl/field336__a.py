@@ -1,13 +1,10 @@
-from oarepo_taxonomies.utils import get_taxonomy_json
-
 from oarepo_oai_pmh_harvester.decorators import rule
-
-from nr_oai_pmh_harvester.query import get_query_by_slug
+from oarepo_taxonomies.utils import get_taxonomy_json
 
 
 @rule("nusl", "marcxml", "/336__/a", phase="pre")
 def call_certified_methodologies(el, **kwargs):
-    return certified_methodologies(el, **kwargs)
+    return certified_methodologies(el, **kwargs) # pragma: no cover
 
 
 def certified_methodologies(el, **kwargs):

@@ -11,7 +11,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/502__/c", phase="pre")
 def call_degree_grantor(el, **kwargs):
-    return degree_grantor(el, **kwargs)
+    return degree_grantor(el, **kwargs)  # pragma: no cover
 
 
 # TODO: https://www.postgresql.org/docs/9.6/functions-json.html, sepsat do Notion nebo článek
@@ -65,7 +65,8 @@ def get_institution_term(unit, reversed_grantor_array: Iterable = None, reversed
 
 
 def choose_term(terms, reversed_grantor_array, reversed_level):
-    parent_term = get_institution_term(reversed_grantor_array[reversed_level + 1], reversed_grantor_array, reversed_level+1)
+    parent_term = get_institution_term(reversed_grantor_array[reversed_level + 1],
+                                       reversed_grantor_array, reversed_level + 1)
     if not parent_term:
         return
     for term in terms:

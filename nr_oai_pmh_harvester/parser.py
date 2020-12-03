@@ -6,7 +6,7 @@ from nr_oai_pmh_harvester.utils import transform_to_dict
 
 @parser("marcxml")
 def marcxml_parser_caller(element):
-    return transform_to_dict(marcxml_parser(element))
+    return transform_to_dict(marcxml_parser(element)) # pragma: no cover
 
 
 def marcxml_parser(element):

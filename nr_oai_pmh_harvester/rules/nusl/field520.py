@@ -5,7 +5,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 
 @rule("nusl", "marcxml", "/520__", phase="pre")
 def call_abstract(el, **kwargs):
-    return abstract(el, **kwargs)
+    return abstract(el, **kwargs) # pragma: no cover
 
 
 def abstract(el, **kwargs):

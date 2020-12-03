@@ -3,13 +3,13 @@ from oarepo_oai_pmh_harvester.decorators import endpoint_handler
 
 @endpoint_handler("nusl", "marcxml")
 def call_nusl_handler(data):
-    return nusl_handler(data)
+    return nusl_handler(data)  # pragma: no cover
 
 
 def nusl_handler(data):
     resource_type_array = data.get("resourceType")
     resource_type_array = [_ for _ in resource_type_array if _["is_ancestor"] is False]
-    if len(resource_type_array) != 1:
+    if len(resource_type_array) != 1:  # pragma: no cover
         raise Exception("Something unexpected happen, nusl should have one resource type")
     resource_type = resource_type_array[0]
     slug = resource_type["links"]["self"].split("/")[-1]

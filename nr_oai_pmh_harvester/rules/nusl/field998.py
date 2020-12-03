@@ -5,12 +5,12 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 @rule("nusl", "marcxml", "/998__/a", phase="pre")
 def call_provider(el, **kwargs):
-    return provider(el, **kwargs)
+    return provider(el, **kwargs)  # pragma: no cover
 
 
 def provider(el, **kwargs):
     slug = provider_mapping().get(el)
-    if not slug:
+    if not slug:  # pragma: no cover
         return OAITransformer.PROCESSED
     return {
         "provider": get_taxonomy_json(code="institutions",
