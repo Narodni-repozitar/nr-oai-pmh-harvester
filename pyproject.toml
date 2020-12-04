@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "nr-oai-pmh-harvester"
-version = "1.0.0a1"
+version = "1.0.0a2"
 description = "Czech National Repository oai-pmh-harvester"
 license = "MIT"
 keywords = ["Czech", "National", "Respository", "Invenio", "harvester", "oai", "pmh"]
