@@ -2,17 +2,17 @@ from oarepo_oai_pmh_harvester.decorators import post_processor
 from oarepo_taxonomies.utils import get_taxonomy_json
 
 
-@post_processor("uk", "xoai")
+@post_processor("nusl", "marcxml")
 def call_add_date_defended(data):
     return add_date_defended(data) # pragma: no cover
 
 
-@post_processor("uk", "xoai")
+@post_processor("nusl", "marcxml")
 def call_add_defended(data):
     return add_defended(data) # pragma: no cover
 
 
-@post_processor("uk", "xoai")
+@post_processor("nusl", "marcxml")
 def call_add_item_relation_type(data):
     return add_item_relation_type(data) # pragma: no cover
 
