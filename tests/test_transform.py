@@ -15,8 +15,8 @@ from nr_oai_pmh_harvester.utils import transform_to_dict
 
 
 @pytest.mark.parametrize("file_name",
-                         ['10', '18', '1214', '2737', '11720', '19263', '19317', '19329', '19535',
-                          '20925', '20926', '22069', '25735', '26388', '189035', '253573', '253576',
+                         ['10', '18', '1214', '2737', '11720', '19263', '19317', '19329', '19456', '19535',
+                          '20925', '20926', '22069', '25735', '26388', '41957', '41978', '189035', '203578', '253573', '253576',
                           '253605', '260929', '261117', '263309', '416174'])
 def test_transform(app, db, file_name):
     from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
@@ -131,7 +131,7 @@ def test_transform(app, db, file_name):
         "/65007": {
             "pre": subject
         },
-        "/300__/a": {
+        "/300__": {
             "pre": extent
         },
         "/336__/a": {

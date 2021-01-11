@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">41957</controlfield>
+  <controlfield tag="005">20200327143045.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2008</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Projekt NUŠL a další projekty v ČR</subfield>
+    <subfield code="b">Project NRGL and the other projects in the Czech Republic</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Licence Creative Commons Uveďte autora-Zachovejte licenci 3.0 Česko</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">License: Creative Commons Attribution-ShareAlike 3.0 Czech Republic</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">digitální knihovny</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH6533</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">digital libraries</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">projekty</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH11945</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">projects</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">šedá literatura</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH14090</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">grey literature</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Národní uložiště šedé literatury</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">project</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">digital library</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">National Repository of Grey Literature</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Seminář ke zpřístupňování šedé literatury 2008</subfield>
+    <subfield code="c">Brno (CZ)</subfield>
+    <subfield code="d">2008-10-08</subfield>
+    <subfield code="g">Seminar on Providing Access to Grey Literature 2008</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Pejšová, Petra</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/41957/files/idr-34_1.pdf</subfield>
+    <subfield code="z">Prezentace</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/41957/files/idr-34_2.pdf</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-41957</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:41957</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">licensed</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">narodni_technicka_knihovna</subfield>
+  </datafield>
+</record>
+</collection>

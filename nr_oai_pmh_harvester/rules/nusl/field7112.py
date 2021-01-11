@@ -1,4 +1,6 @@
 from invenio_db import db
+from marshmallow import ValidationError
+
 from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from oarepo_taxonomies.utils import get_taxonomy_json
@@ -32,7 +34,14 @@ def get_event(el):
         res["nameOriginal"] = name
     alternate_name = el.get("g")
     if alternate_name:
-        res["alternateName"] = alternate_name
+        if isinstance(alternate_name, (tuple, list)):
+            alternate_name = list(alternate_name)
+        elif isinstance(alternate_name, str):
+            alternate_name = [alternate_name]
+        else:
+            raise ValidationError(
+                f"Bad format of alternate name: {alternate_name} is {type(alternate_name)}")
+        res["nameAlternate"] = alternate_name
     date = el.get("d")
     if date:
         res["date"] = date

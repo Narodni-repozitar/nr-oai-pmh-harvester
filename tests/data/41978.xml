@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">41978</controlfield>
+  <controlfield tag="005">20200327143046.0</controlfield>
+  <controlfield tag="008">110127n||||||||xx#||||#|||z|#||||||eng||</controlfield>
+  <datafield tag="024" ind1="8" ind2=" ">
+    <subfield code="a">nusl-41978</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2010</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Legal Issues in Grey Literature</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Národní technická knihovna</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">28:19 min</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">10:48</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">video/mp4</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Licence Creative Commons Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Česko</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Czech Republic</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">digitální knihovny</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">digital libraries</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH6533</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">copyrights</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">grey literature</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">Copyright laws</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">TextRelease</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">GL12</subfield>
+  </datafield>
+  <datafield tag="655" ind1=" " ind2="7">
+    <subfield code="a">Prezentace</subfield>
+    <subfield code="2">NUŠL typ dokumentu</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="d">2010-12-06 / 2010-12-07</subfield>
+    <subfield code="c">Praha (CZ)</subfield>
+    <subfield code="a">Twelfth International Conference on Grey Literature</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Polčák, Radim</subfield>
+  </datafield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">lubos.bittner@techlib.cz</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/41978/files/nusl-41978_1.mp4</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/41978/files/nusl-41978_2.mp4</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-41978</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:41978</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">licensed</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">narodni_technicka_knihovna</subfield>
+  </datafield>
+</record>
+</collection>

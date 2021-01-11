@@ -7,4 +7,4 @@ def call_date_publisher(el, **kwargs):
 
 
 def publisher(el, **kwargs):
-    return {"publisher": el}
+    return {"publisher": [el]}

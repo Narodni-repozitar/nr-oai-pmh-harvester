@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">203578</controlfield>
+  <controlfield tag="005">20200327143243.0</controlfield>
+  <controlfield tag="008">160420n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">978-80-250-2394-5</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2013</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Statistický lexikon obcí České Republiky 2013</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Český statistický úřad </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Ministerstvo vnitra ČR</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">900 s.</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Tradiční publikace se základními údaji ze sčítání lidu, domů a bytů 2011 za všechny obce, části obcí a základní sídelní jednotky těchto obcí, přepočtené na územní strukturu k 1.1.2013. Uvedeny jsou úřední názvy všech obcí a částí obcí a také příslušnost jednotlivých obcí ke správním obvodům obcí s rozšířenou působností, s pověřeným obecním úřadem, k matričním, stavebním a finančním úřadům. Doplněno přehledem všech územních změn v období od 2.1.2005 až do 1.1.2013.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">geografie sídel</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH4417</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">settlement geography</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">populační vývoj</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH4429</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">population development</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">veřejná správa</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH8857</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">public administration</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">obce</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1382</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">municipalities</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">organizace veřejné správy</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH8859</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">administrative organization</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Český statistický úřad </subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Ministerstvo vnitra ČR</subfield>
+  </datafield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">stazista.nusl@gmail.com</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">PID NUŠL</subfield>
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-203578</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="2">
+    <subfield code="z">Elektronické umístění souboru</subfield>
+    <subfield code="u">https://www.czso.cz/csu/czso/statisticky-lexikon-obci-2013-a8m6eyff20</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="z">Plný text</subfield>
+    <subfield code="u">http://invenio.nusl.cz/record/203578/files/nusl-203578_1.pdf</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:203578</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">base</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="q">licensed</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">statisticke_zpravy</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">cesky_statisticky_urad</subfield>
+  </datafield>
+</record>
+</collection>

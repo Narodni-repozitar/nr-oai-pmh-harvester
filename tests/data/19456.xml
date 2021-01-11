@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">19456</controlfield>
+  <controlfield tag="005">20200327100549.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2004</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Biomonitorování vlivu jaderné energetiky na životní prostředí - současný stav a perspektivy</subfield>
+    <subfield code="b">Biomonitoring of the effect of nuclear power energetics on the environment - present state and perspectives</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">7 s.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Jaderné elektrárny upoutaly pozornost veřejnosti z hlediska jejich vlivu na životní prostředí zejména po katastrofě v ukrajinském Černobylu. Byl to především negativní vliv radionuklidů uvolněných do ovzduší po havárii na zdravotní stav lidské populace v celé Evropě.V této souvislosti byla intenzivně studována migrace radionuklidů v ekosystémech a jejich případný přechod do potravního řetězce končícího člověkem.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">The long-term monitoring of effects of the atomic power plants, especially at the regional level and with irregular extreme events, is difficult despite the complex biological and ecological response. The system of bioindicators is proposed for the monitoring of effects of atomic power plants o biota. Suitable species and biotopes on border of its distribution are recommended as bioindicators predictors for monitoring of climatic change.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="650" ind1="1" ind2="7">
+    <subfield code="a">jaderné elektrárny</subfield>
+    <subfield code="j">nuclear power stations</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH2459</subfield>
+    <subfield code="2">PSH</subfield>
+  </datafield>
+  <datafield tag="650" ind1="1" ind2="7">
+    <subfield code="a">elektrárny</subfield>
+    <subfield code="j">power stations</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH2450</subfield>
+    <subfield code="2">PSH</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">Atomic power plants</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">environmental effects</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">risk assessment</subfield>
+  </datafield>
+  <datafield tag="655" ind1="7" ind2=" ">
+    <subfield code="a">Příspěvky z konference</subfield>
+    <subfield code="2">NUŠL typ dokumentu</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Hodnocení vlivů jaderné elektrárny Temelín na životní prostředí /1./</subfield>
+    <subfield code="c">České Budějovice (CZ)</subfield>
+    <subfield code="d">2004-10-14 / 2004-10-15</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Boháč, Jaroslav</subfield>
+  </datafield>
+  <datafield tag="773" ind1="1" ind2=" ">
+    <subfield code="z">80 7040 710 7</subfield>
+    <subfield code="t">Hodnocení vlivů jaderné elektrárny Temelín na životní prostředí</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="z">Odkaz na původní záznam</subfield>
+    <subfield code="u">http://hdl.handle.net/11104/0010060</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-19456</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:19456</subfield>
+    <subfield code="p">opengrey</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">licensed</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">0102721</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">prispevky_z_konference</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Dokument je dostupný v příslušném ústavu Akademie věd ČR.</subfield>
+    <subfield code="b">Fulltext is available at the institute of the Academy of Sciences.</subfield>
+    <subfield code="9">0</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">centrum_vyzkumu_globalni_zmeny</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="1">
+    <subfield code="a">SM/610/3/03</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="1">
+    <subfield code="a">CEZ:AV0Z6087904</subfield>
+  </datafield>
+  <datafield tag="999" ind1="C" ind2="2">
+    <subfield code="a">GA MŽP</subfield>
+  </datafield>
+</record>
+</collection>
