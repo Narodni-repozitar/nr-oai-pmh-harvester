@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">45994</controlfield>
+  <controlfield tag="005">20200327102325.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2007-04-20</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Statistická analýza marketingových dat</subfield>
+    <subfield code="b">Statistic analysis of marketing data</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">50 s, 4 s. příloh</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">SYSLOVÁ, Jana. Statistická analýza marketingových dat. Č. Budějovice, 2007. bakalářská práce (Bc.). JIHOČESKÁ UNIVERZITA V ČESKÝCH BUDĚJOVICÍCH. Ekonomická fakulta</subfield>
+  </datafield>
+  <datafield tag="502" ind1=" " ind2=" ">
+    <subfield code="a">2007-05-28</subfield>
+    <subfield code="b">Bc.</subfield>
+    <subfield code="c">JIHOČESKÁ UNIVERZITA V ČESKÝCH BUDĚJOVICÍCH</subfield>
+    <subfield code="g">Bachelor</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Bakalářská práce pomocí statistických analýz vyhodnocuje data z cestovního ruchu. dotazováni byli návštěvníci Jihočeského kraje v letní sezóně 2006.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">This work analyses marketing data from tourist trade sphere. Statistical units are visitors of South Bohemia from season 2006. There were several points of research such as duration of stay, ways of travel organization, goals for visiting the region or quality assessment of services. Research data was analysed by percent occurrences, contingent tables and Cluster analysis. People who assessed quality of services were divided into four groups by the help of Cluster analysis. In light of utilizable resources were informants divided into five groups. This work investigate also relations between outcomes such as relation between average day costs and ways of residence organization, choosing of accomodation in dependance on travel organization and so on. The most frequent reason for visiting region is getting to know attractive tourist places. Following are tourism, sport, health and relaxation. In light of tourist trade is South Bohemia rated very well. Visitors were the most satisfied with catering services, care of sights and quality of tourist trade employees. Reversely quality of traffic ways should improve markedly. Foreign visitors also feel lack of plain local marking and transparent informations about region.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Shluková analýza</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">statistická analýza</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">cestovní ruch</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">marketingová data</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">Cluster analysis Statistical analysis Tourist trade Marketing data</subfield>
+  </datafield>
+  <datafield tag="656" ind1=" " ind2="7">
+    <subfield code="a">Ekonomika a management/Účetnictví a finanční řízení podniku</subfield>
+    <subfield code="2">AKVO</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">SYSLOVÁ, Jana</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.jcu.cz/vskp/7981</subfield>
+    <subfield code="z">Odkaz na původní záznam</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-45994</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:45994</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">base</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">7981</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">bakalarske_prace</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Plný text není k dispozici.</subfield>
+    <subfield code="b">Fulltext is not available.</subfield>
+    <subfield code="9">0</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">jihoceska_univerzita_v_ceskych_budejovicich</subfield>
+  </datafield>
+</record>
+</collection>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">371413</controlfield>
+  <controlfield tag="005">20200327143341.0</controlfield>
+  <controlfield tag="008">180223n||||||||xx#||||#|||z|#||||||cze||</controlfield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">statisticke_zpravy</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Základní statistické údaje o kultuře v České republice</subfield>
+  </datafield>
+  <datafield tag="856" ind1="0" ind2=" ">
+    <subfield code="f">brozova@nipos-mk.cz</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-371413</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="2">
+    <subfield code="u">https://statistikakultury.cz/wp-content/uploads/2017/07/Statistika_kultury_2013_I.KULTURNI-DEDICTVI.pdf</subfield>
+    <subfield code="z">Elektronické umístění souboru</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/371413/files/nusl-371413_1.pdf</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">cze</subfield>
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="9">eng</subfield>
+    <subfield code="a">V publikaci jsou zveřejněny vybrané údaje ze statistického zjišťování za rok 2013. Předmětem zjišťování je činnost muzeí, galerií, památníků a památkových objektů. Nejvýznamnější šetřené ukazatele se vztahují k rozsahu sbírek, návštěvnosti, pořádání výstav, expozic, vzdělávacích programů, odborných konferencí a seminářů a v neposlední řadě k zaměstnanosti a hospodářským výsledkům činnosti</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">kultura a společnost</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">kulturní dědictví</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">návštěvnost</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">culture and society</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">cultural heritage</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">attendance</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH142</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">galerie</subfield>
+    <subfield code="j">art galleries</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH143</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">muzea</subfield>
+    <subfield code="j">museums</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH159</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">památníky</subfield>
+    <subfield code="j">memorials</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH183</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">památkové objekty</subfield>
+    <subfield code="j">ancient monuments</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH1577</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="a">statistická data</subfield>
+    <subfield code="j">statistical data</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Public</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">40 stran</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">narodni_informacni_a_poradenske_stredisko_pro_kulturu</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Základní statistické údaje o kultuře v České republice 2013</subfield>
+    <subfield code="b">Basic Statistical Data about the Activities of Cultural Facilities in the Czech Republic</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="b">Galleries, museums, monuments and historical monuments</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="0">
+    <subfield code="n">1. díl</subfield>
+    <subfield code="p">Kulturní dědictví – muzea, galerie a památkové objekty</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">978-80-7068-281-4</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2014</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:371413</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">base</subfield>
+    <subfield code="p">opengrey</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Národní informační a poradenské středisko pro kulturu - Centrum informací a statistik kultury</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Lindnerová, Vladimíra</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Šílová, Hana</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Národní informační a poradenské středisko pro kulturu - Centrum informací a statistik kultury</subfield>
+  </datafield>
+</record>
+</collection>

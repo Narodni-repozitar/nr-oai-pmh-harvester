@@ -18,7 +18,7 @@ def keyword(el, **kwargs):
         elif isinstance(el, dict) and isinstance(en_keywords, dict):
             res.append({"cs": el["a"], "en": en_keywords["a"]})
         else:
-            return {"keywords": "Keywords must be fixed in draft mode"}
+            return {"keywords": {'error': "Keywords must be fixed in draft mode"}}
     else:
         if isinstance(el, (tuple, list)):
             for cz in el:

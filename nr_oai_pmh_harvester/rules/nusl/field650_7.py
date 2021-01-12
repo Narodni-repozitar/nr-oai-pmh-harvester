@@ -88,7 +88,8 @@ def get_mednas(el):
     except ProgrammingError:  # pragma: no cover
         db.session.commit()
         return
-    return get_taxonomy_json(code="subjects", slug=term.slug).paginated_data
+    if term:
+        return get_taxonomy_json(code="subjects", slug=term.slug).paginated_data
 
 
 def get_keyword(el):

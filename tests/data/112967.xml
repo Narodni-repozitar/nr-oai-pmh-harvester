@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">112967</controlfield>
+  <controlfield tag="005">20200327143106.0</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">978‑80‑86504‑25‑4</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">2227-2585</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">2227-2593 (online)</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2012</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">New Library Buildings in Europe</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">Documentation 2012</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Národní technická knihovna</subfield>
+  </datafield>
+  <datafield tag="340" ind1=" " ind2=" ">
+    <subfield code="a">text/pdf</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">This book brings together information about the latest, mostly academic library building projects from across Europe. New attractive buildings and huge renovation projects are presented in this tenth volume of the series established by Professor Elmar Mittler (former Director of the State and University Library Göttingen), who was the first chairman of the LIBER Architecture Group. The publication of this book coincides with the 16th LIBER Architecture Group Seminar, which takes place in Prague in April 2012. In addition to hearing about the latest developments in planning and design and offering visits to new library buildings, the Seminar provides an opportunity to debate ideas and meet colleagues from institutions across Europe. We believe that the projects in this book could help you in pursuing your own project.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Dílo je chráněno podle autorského zákona č. 121/2000 Sb.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Licence Creative Commons Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Česko</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">This work is protected under the Copyright Act No. 121/2000 Coll.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Czech Republic</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="598" ind1=" " ind2=" ">
+    <subfield code="a">This book will be also available on the LIBER Architecture Group web site http://147.88.230.242/liber-lag/lagepub.htm and on the Seminar web page http://liber-lag2012.techlib.cz/en/889-new-library-buildings/ All the projects published in this book will be also accessible in a searchable database that will be opened in the autumn this year at the http://www.liber-lag.org/ Budget permitting, the preceding nine volumes will be added gradually to the database.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">architektura</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH117</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">architecture</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">knihovny</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH6536</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">libraries</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">budovy knihoven</subfield>
+    <subfield code="0">http://psh.ntkcz.cz/skos/PSH144</subfield>
+    <subfield code="2">PSH</subfield>
+    <subfield code="j">library buildings</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">architektura knihoven</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">LIBER LAG</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">library architecture</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">LIBER LAG</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">výstavba NTK</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">NTK construction</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">Svobodová, Mahulena</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Niederer, Ulrich</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="i">Svoboda, Martin</subfield>
+    <subfield code="6">https://orcid.org/0000-0002-8255-348X</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-112967</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://invenio.nusl.cz/record/112967/files/idr-388_1.pdf</subfield>
+    <subfield code="z">Plný text</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:112967</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">DRIVER</subfield>
+    <subfield code="p">opengrey</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">monografie</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">narodni_technicka_knihovna</subfield>
+  </datafield>
+</record>
+</collection>

@@ -15,9 +15,13 @@ from nr_oai_pmh_harvester.utils import transform_to_dict
 
 
 @pytest.mark.parametrize("file_name",
-                         ['10', '18', '1214', '2737', '11720', '19263', '19317', '19329', '19456', '19535',
-                          '20925', '20926', '22069', '25735', '26388', '41957', '41978', '189035', '203578', '253573', '253576',
-                          '253605', '260929', '261117', '263309', '416174'])
+                         ['10', '18', '1214', '2737', '11720', '19263', '19317', '19329', '19456',
+                          '19535',
+                          '20925', '20926', '22069', '25735', '26388', '41957', '41978', '45994',
+                          '51857', '78394', '80749', '89592', '112967', '120757', '151768', '189035',
+                          '203578',
+                          '253573', '253576',
+                          '253605', '260929', '261117', '263309', '371413','416174'])
 def test_transform(app, db, file_name):
     from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
     from nr_oai_pmh_harvester.parser import marcxml_parser
@@ -31,7 +35,7 @@ def test_transform(app, db, file_name):
     from nr_oai_pmh_harvester.rules.nusl.field24500 import title
     from nr_oai_pmh_harvester.rules.nusl.field24630 import title_alternate_2
     from nr_oai_pmh_harvester.rules.nusl.field24633 import title_alternate
-    from nr_oai_pmh_harvester.rules.nusl.field260__b import publisher
+    from nr_oai_pmh_harvester.rules.nusl.field260 import publisher
     from nr_oai_pmh_harvester.rules.nusl.field300 import extent
     from nr_oai_pmh_harvester.rules.nusl.field336__a import certified_methodologies
     from nr_oai_pmh_harvester.rules.nusl.field4900 import series
@@ -104,6 +108,9 @@ def test_transform(app, db, file_name):
         "/720__": {
             "pre": people
         },
+        "/7201_": {
+            "pre": people
+        },
         "/85640": {
             "pre": original_record_id
         },
@@ -140,7 +147,7 @@ def test_transform(app, db, file_name):
         "/999C1": {
             "pre": funding_reference
         },
-        "/260__/b": {
+        "/260__": {
             "pre": publisher
         },
         "/540__": {

@@ -7,6 +7,7 @@ from sqlalchemy.orm.exc import MultipleResultsFound
 from nr_oai_pmh_harvester.query import find_in_json_list
 
 from oarepo_oai_pmh_harvester.decorators import rule
+from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
 
 @rule("nusl", "marcxml", "/502__/c", phase="pre")
@@ -31,6 +32,8 @@ def degree_grantor(el, **kwargs):
                 "degreeGrantor": get_taxonomy_json(code="institutions",
                                                    slug=term.slug).paginated_data
             }
+        else:
+            return OAITransformer.PROCESSED
 
 
 def get_institution_term(unit, reversed_grantor_array: Iterable = None, reversed_level: int = None):

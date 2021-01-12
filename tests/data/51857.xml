@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="001">51857</controlfield>
+  <controlfield tag="005">20200326232710.0</controlfield>
+  <datafield tag="041" ind1="0" ind2="7">
+    <subfield code="a">cze</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2009-07-31</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Deníky Josefa Taschka (1914-1920)</subfield>
+    <subfield code="b">The Diaries of Josef Taschek (1914-1920)</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">147 s.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">TALÍŘ, Vladimír. Deníky Josefa Taschka (1914-1920). Č. Budějovice, 2009. bakalářská práce (Bc.). JIHOČESKÁ UNIVERZITA V ČESKÝCH BUDĚJOVICÍCH. Filozofická fakulta</subfield>
+  </datafield>
+  <datafield tag="502" ind1=" " ind2=" ">
+    <subfield code="a">2009-09-07</subfield>
+    <subfield code="b">Bc.</subfield>
+    <subfield code="c">JIHOČESKÁ UNIVERZITA V ČESKÝCH BUDĚJOVICÍCH</subfield>
+    <subfield code="g">Bachelor</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Téma vzájemných česko-německých vztahů v českých zemích zůstává i přes narůstající zájem historiků, zejména v posledních dvou desetiletích, stále oblastí, obsahující mnoho neznámých míst. Tato okolnost se citelně dotýká i vzájemného soužití mezi českými a německými obyvateli v Českých Budějovicích. Město se do roku 1945 nacházelo v těsné hranici s oblastí souvislého německého osídlení, tvořícího v jižních Čechách široký pás od podhůří Šumavy k Novohradským horám a rakouskému Waldviertelu, a od 2. pol. 19. stol. se samo muselo začít vyrovnávat s radikalizací veřejného života, způsobeného sílícím nacionalismem na české i německé straně. Od poslední čtvrtiny 19. stol. se vedoucí osobností českobudějovických Němců stal obchodník Josef Taschek, který zastával ve městě purkmistrovský úřad od roku 1903 až do vzniku samostatné Československé republiky v roce 1918. Vzhledem k omezenému množství pramenů, týkajících se života místní německé společnosti, představují jeho deníky, uložené ve Státním okresním archivu v Českých Budějovicích, velmi cenný doklad, jehož část se autor předkládané bakalářské práce rozhodl interpretovat a představit v kontextu soudobých událostí.</subfield>
+    <subfield code="9">cze</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">A theme of mutual Czech-German relations in Bohemia remains in spite of a growing interest of historiographers, especially in two last decades, an area which includes a lot of unknown spaces all the time. These conditions concern a bilateral coexistence between Czech and German inhabitants in České Budějovice, too. The town had bordered on a zone of a continuous German settlement, creating a broad belt from Šumava's foothills to Novohradské Hory in South Bohemia and an Austrian region of Waldviertel by the year 1945. The town itself had to begin facing a public life's radicalization, causing by a strengthening nationalism on both the Czech and the German side. A merchant Josef Taschek who held a portreeve's office from 1903 to a proclamation of the independent Czech state in the year 1918, became a leading individuality at the German camp from the last quarter of the 19th century. His daily-notes are deposited in the State Archive in České Budějovice and represent, according to a stint of archive sources for a life of a local German society, very valuable testament whose part an author of the construed bachelor work has decided to dispark and explicate in the event's context of that time.</subfield>
+    <subfield code="9">eng</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Josef Taschek</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">deník</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">edice</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">česko-německé vztahy</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">první čtvrtina 20. století</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">Josef Taschek</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">a diary</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">an edition</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">the Czech-German relations</subfield>
+  </datafield>
+  <datafield tag="653" ind1="0" ind2=" ">
+    <subfield code="a">the first quarter of the 20th century</subfield>
+  </datafield>
+  <datafield tag="656" ind1=" " ind2="7">
+    <subfield code="a">Historické vědy/Historie</subfield>
+    <subfield code="2">AKVO</subfield>
+  </datafield>
+  <datafield tag="720" ind1=" " ind2=" ">
+    <subfield code="a">TALÍŘ, Vladimír</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.jcu.cz/vskp/13832</subfield>
+    <subfield code="z">Odkaz na původní záznam</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.nusl.cz/ntk/nusl-51857</subfield>
+    <subfield code="z">PID NUŠL</subfield>
+  </datafield>
+  <datafield tag="909" ind1="C" ind2="O">
+    <subfield code="o">oai:invenio.nusl.cz:51857</subfield>
+    <subfield code="p">openaire</subfield>
+    <subfield code="p">global</subfield>
+    <subfield code="p">base</subfield>
+  </datafield>
+  <datafield tag="970" ind1=" " ind2=" ">
+    <subfield code="a">13832</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">bakalarske_prace</subfield>
+  </datafield>
+  <datafield tag="996" ind1=" " ind2=" ">
+    <subfield code="a">Plný text je dostupný v digitálním repozitáři JČU.</subfield>
+    <subfield code="b">Fulltext is available in the Digital Repository of University of South Bohemia.</subfield>
+    <subfield code="9">1</subfield>
+  </datafield>
+  <datafield tag="998" ind1=" " ind2=" ">
+    <subfield code="a">jihoceska_univerzita_v_ceskych_budejovicich</subfield>
+  </datafield>
+</record>
+</collection>

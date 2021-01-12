@@ -20,8 +20,8 @@ def call_add_item_relation_type(data):
 def add_date_defended(data):
     resource_type = data.get("resourceType")
     resource_type = [_ for _ in resource_type if _["links"]["self"].split("/")[-1] == "theses-etds"]
-    if len(resource_type) > 0:
-        data["dateDefended"] = data["dateIssued"]
+    if len(resource_type) > 0 and "dateIssued" in data:
+        data["dateDefended"] = data.get("dateIssued", "")
     return data
 
 

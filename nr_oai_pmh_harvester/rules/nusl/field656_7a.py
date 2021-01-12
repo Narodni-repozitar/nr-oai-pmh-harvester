@@ -51,4 +51,18 @@ def choose_term(terms, programme: str = None):
                 res += get_taxonomy_json("studyfields", slug=terms[0].slug).paginated_data
         else:
             res += get_taxonomy_json("studyfields", slug=terms[0].slug).paginated_data
+    # res = fix_dict(res)
     return {"studyField": res}
+
+
+# def fix_dict(res):
+#     new_res = []
+#     for _ in res:
+#         if "aliases" in _:
+#             aliases = _["aliases"]
+#             if isinstance(aliases, dict):
+#                 new_aliases = [v for v in aliases.values()]
+#                 _["aliases"] = new_aliases
+#         new_res.append(_)
+#     return new_res
+

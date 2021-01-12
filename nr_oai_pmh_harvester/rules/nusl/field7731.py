@@ -37,7 +37,7 @@ def get_related_item(el):
         if item_volume_issue_parsed:
             res.update(item_volume_issue_parsed)
         else:
-            return "Warning: bad record"
+            res.update({"itemIssue": item_volume_issue, "error": "Bad format"})
     if res:
         return res
 
