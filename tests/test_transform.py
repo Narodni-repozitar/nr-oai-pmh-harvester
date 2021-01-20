@@ -8,6 +8,7 @@ from flask import current_app
 from invenio_records_rest.utils import obj_or_import_string
 from lxml import etree
 from marshmallow import ValidationError
+
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from pytest import skip
 
@@ -18,11 +19,12 @@ from nr_oai_pmh_harvester.utils import transform_to_dict
                          ['10', '18', '1214', '2737', '11720', '19263', '19317', '19329', '19456',
                           '19535',
                           '20925', '20926', '22069', '25735', '26388', '41957', '41978', '45994',
-                          '51857', '78394', '80749', '89592', '112967', '120757', '151768', '189035',
+                          '51857', '78394', '80749', '89592', '112967', '120757', '151768',
+                          '189035',
                           '203578',
                           '253573', '253576',
-                          '253605', '260929', '261117', '263309', '371413','416174'])
-def test_transform(app, db, file_name):
+                          '253605', '260929', '261117', '263309', '371413', '416174'])
+def test_transform_nusl(app, db, file_name):
     from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
     from nr_oai_pmh_harvester.parser import marcxml_parser
     from nr_oai_pmh_harvester.rules.nusl.field001 import control_number
@@ -197,6 +199,125 @@ def test_transform(app, db, file_name):
     post_processed = add_defended(post_processed)
     post_processed = add_item_relation_type(post_processed)
     model = nusl_handler(transformed)
+    draft_configs = current_app.config.get("RECORDS_DRAFT_ENDPOINTS")
+    config = draft_configs.get(model)
+    record_class = obj_or_import_string(config.get("record_class"))
+    schema = record_class.MARSHMALLOW_SCHEMA()
+    print("MODEL:", model, "\n\n")
+    print(10 * "\n", "RECORD")
+    print(json.dumps(post_processed, ensure_ascii=False, indent=4))
+    try:
+        schema.load(post_processed)
+    except ValidationError:
+        exc = traceback.format_exc()
+        exc_array = exc.split("marshmallow.exceptions.ValidationError: ")
+        print(exc, "\n\n\n")
+        dict_expression = "dict_ = " + exc_array[-1]
+        exec(dict_expression + "\npprint(dict_)")
+        if "rulesExceptions" in dict_expression:
+            raise
+        skip()
+
+
+@pytest.mark.parametrize("file_name",
+                         ["20_500_11956-111006"])
+def test_transform_uk(app, db, file_name):
+    from nr_oai_pmh_harvester.parser import xml_to_dict_xoai
+    from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
+    from nr_oai_pmh_harvester.post_processors import add_date_defended, add_defended, \
+        add_item_relation_type
+    from nr_oai_pmh_harvester.rules.uk.dc_contributor_advisor import advisor
+    from nr_oai_pmh_harvester.rules.uk.dc_contributor_referee import referee
+    from nr_oai_pmh_harvester.rules.uk.dc_creator import creator
+    from nr_oai_pmh_harvester.rules.uk.dc_date_issued import date_issued
+    from nr_oai_pmh_harvester.rules.uk.dc_identifier_uri import original_record_id
+    from nr_oai_pmh_harvester.rules.uk.dc_description_abstract import abstract
+    from nr_oai_pmh_harvester.rules.uk.dc_description_department_cs_CZ_value import degree_grantor
+    from nr_oai_pmh_harvester.rules.uk.dc_description_faculty_cs_CZ_value import degree_grantor_2
+    from nr_oai_pmh_harvester.rules.uk.dc_language_iso import language
+    from nr_oai_pmh_harvester.rules.uk.dc_publisher_cs_CZ_value import publisher
+    from nr_oai_pmh_harvester.rules.uk.dc_subject import subject
+    from nr_oai_pmh_harvester.rules.uk.dc_title import title
+    from nr_oai_pmh_harvester.rules.uk.dc_type_cs_CZ_value import resourceType
+    from nr_oai_pmh_harvester.rules.uk.dcterms_dateAccepted_value import date_defended
+    from nr_oai_pmh_harvester.rules.uk.thesis_grade_cs_cs_CZ_value import defended
+
+    this_directory = pathlib.Path(__file__).parent.absolute()
+    response_path = this_directory / "data" / f"{file_name}.xml"
+    with open(str(response_path), "r") as f:
+        tree = etree.parse(f)
+        root = tree.getroot()
+
+    parsed = transform_to_dict(xml_to_dict_xoai(list(list(root)[1])[0]))
+    pprint(parsed)
+    rules = {
+        "/dc/contributor/advisor/value": {
+            'pre': advisor
+        },
+        "/dc/contributor/referee/value": {
+            'pre': referee
+        },
+        "/dc/creator/value": {
+            'pre': creator
+        },
+        "/dc/date/issued/value": {
+            'pre': date_issued
+        },
+        "/dc/identifier/uri/value": {
+            'pre': original_record_id
+        },
+        "/dc/description/abstract": {
+            'pre': abstract
+        },
+        "/dc/description/department/cs_CZ/value": {
+            'pre': degree_grantor
+        },
+        "/dc/description/faculty/cs_CZ/value": {
+            'pre': degree_grantor_2
+        },
+        "/dc/language/iso/value": {
+            'pre': language
+        },
+        "/dc/publisher/cs_CZ/value": {
+            'pre': publisher
+        },
+        "/dc/subject": {
+            'pre': subject
+        },
+        "/dc/title": {
+            'pre': title
+        },
+        "/dc/type/cs_CZ/value": {
+            'pre': resourceType
+        },
+        "/dcterms/dateAccepted/value": {
+            'pre': date_defended
+        },
+    }
+    transformer = OAITransformer(rules=rules,
+                                 unhandled_paths={
+                                     '/dc/date/accessioned',
+                                     '/dc/date/available',
+                                     '/dc/identifier/repId',
+                                     '/dc/identifier/aleph',
+                                     '/dc/description/provenance',
+                                     '/dc/description/department/en_US/value',
+                                     '/dc/description/faculty/en_US/value',
+                                     '/dc/language/cs_CZ/value',
+                                     '/dcterms/created',
+                                     '/thesis/degree',
+                                 }
+                                 )
+    transformed = transformer.transform(parsed)
+
+    # POST PROCESSORS
+    post_processed = add_date_defended(transformed)
+    post_processed = add_defended(post_processed)
+    post_processed = add_item_relation_type(post_processed)
+
+    # ENDPOINT HANDLER
+    model = nusl_handler(transformed)
+
     draft_configs = current_app.config.get("RECORDS_DRAFT_ENDPOINTS")
     config = draft_configs.get(model)
     record_class = obj_or_import_string(config.get("record_class"))

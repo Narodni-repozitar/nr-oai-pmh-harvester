@@ -8,6 +8,13 @@ def test_query(app, db):
     assert term[0].slug == '62156489'
 
 
+def test_query_2(app, db):
+    sqlalchemy_query = find_in_json_list("institutions", "aliases",
+                                         "Katedra experimentální biologie rostlin")
+    term = sqlalchemy_query.one_or_none()
+    assert term[0].slug == '62156489'
+
+
 def test_get_query_by_slug(app, db):
     query = get_query_by_slug("subjects", "PSH120")
     terms = query.all()

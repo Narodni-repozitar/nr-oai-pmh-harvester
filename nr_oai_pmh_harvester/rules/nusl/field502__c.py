@@ -1,5 +1,6 @@
 from typing import Iterable
 
+from flask_taxonomies.models import TaxonomyTerm
 from flask_taxonomies.proxies import current_flask_taxonomies
 from oarepo_taxonomies.utils import get_taxonomy_json
 from sqlalchemy.orm.exc import MultipleResultsFound
@@ -37,6 +38,12 @@ def degree_grantor(el, **kwargs):
 
 
 def get_institution_term(unit, reversed_grantor_array: Iterable = None, reversed_level: int = None):
+    if isinstance(unit, (list, tuple)) and len(unit) == 1:
+        unit = unit[0]
+    elif isinstance(unit, str):
+        pass
+    else:
+        TypeError(f'Unit has bad type: "{type(unit)}"')
     if not reversed_grantor_array:
         reversed_grantor_array = [unit]
     if reversed_level is None:
@@ -67,11 +74,41 @@ def get_institution_term(unit, reversed_grantor_array: Iterable = None, reversed
     return term
 
 
+def get_parent_terms(term, res: list = None):
+    if not res:
+        res = [term]
+    if term.parent:
+        parent_term = term.parent
+        res.append(parent_term)
+        if parent_term.parent:
+            get_parent_terms(parent_term, res=res)
+    return res
+
+
 def choose_term(terms, reversed_grantor_array, reversed_level):
-    parent_term = get_institution_term(reversed_grantor_array[reversed_level + 1],
-                                       reversed_grantor_array, reversed_level + 1)
-    if not parent_term:
-        return
+    searched_term_slug_tree = []
+    if len(reversed_grantor_array) > 1:
+        reversed_grantor_array = reversed_grantor_array[1:]
+        for i, name in enumerate(reversed_grantor_array):
+            if i != 0:
+                reversed_grantor_array = reversed_grantor_array[1:]
+            term = get_institution_term(name, reversed_grantor_array)
+            if term:
+                searched_term_slug_tree.append(term.slug)
+
     for term in terms:
-        if term.parent.id == parent_term.id:
-            return term
+        parent_terms = get_parent_terms(term)
+        for _ in parent_terms:
+            if _.slug in searched_term_slug_tree:
+                return term
+    raise Exception("Rigt term could not have been choosen due to ambiguity")
+
+
+
+    # parent_term = get_institution_term(reversed_grantor_array[reversed_level + 1],
+    #                                    reversed_grantor_array, reversed_level + 1)
+    # if not parent_term:
+    #     return
+    # for term in terms:
+    #     if term.parent.id == parent_term.id:
+    #         return term

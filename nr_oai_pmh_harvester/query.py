@@ -11,6 +11,13 @@ def find_in_json_list(taxonomy_code: str, field: str, value: str):
     return sqlalchemy_query
 
 
+def find_in_json(taxonomy_code: str, field: str, value: str):
+    sqlalchemy_query = current_flask_taxonomies.list_taxonomy(taxonomy_code)
+    sqlalchemy_query = current_flask_taxonomies.apply_term_query(sqlalchemy_query,
+                                                                 f'{field}:{value}', taxonomy_code)
+    return sqlalchemy_query
+
+
 def get_query_by_slug(taxonomy_code: str, slug: str):
     slug = f"*.{slug.lower()}"
     sqlalchemy_query = current_flask_taxonomies.list_taxonomy(f'{taxonomy_code}')
