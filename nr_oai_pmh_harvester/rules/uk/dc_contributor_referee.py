@@ -1,6 +1,4 @@
-from oarepo_taxonomies.utils import get_taxonomy_json
-
-from nr_oai_pmh_harvester.query import get_query_by_slug
+from nr_oai_pmh_harvester.rules.utils.contributor import get_contributor
 from oarepo_oai_pmh_harvester.decorators import rule
 
 
@@ -10,10 +8,4 @@ def call_referee(el, **kwargs):
 
 
 def referee(el, **kwargs):
-    query = get_query_by_slug(taxonomy_code="contributor-type", slug="referee")
-    term = query.one_or_none()
-    if term:
-        taxonomy_json = get_taxonomy_json(code="contributor-type", slug=term.slug).paginated_data
-    else:
-        taxonomy_json = []
-    return {"contributor": [{"name": el, "role": taxonomy_json}]}
+    return get_contributor(el, "referee")

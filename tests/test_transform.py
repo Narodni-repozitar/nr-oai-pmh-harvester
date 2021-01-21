@@ -8,6 +8,7 @@ from flask import current_app
 from invenio_records_rest.utils import obj_or_import_string
 from lxml import etree
 from marshmallow import ValidationError
+from oarepo_taxonomies.utils import get_taxonomy_json
 
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from pytest import skip
@@ -220,7 +221,7 @@ def test_transform_nusl(app, db, file_name):
 
 
 @pytest.mark.parametrize("file_name",
-                         ["20_500_11956-111006"])
+                         ["20_500_11956-111006", "20_500_11956-26955"])
 def test_transform_uk(app, db, file_name):
     from nr_oai_pmh_harvester.parser import xml_to_dict_xoai
     from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
@@ -241,6 +242,14 @@ def test_transform_uk(app, db, file_name):
     from nr_oai_pmh_harvester.rules.uk.dc_type_cs_CZ_value import resourceType
     from nr_oai_pmh_harvester.rules.uk.dcterms_dateAccepted_value import date_defended
     from nr_oai_pmh_harvester.rules.uk.thesis_grade_cs_cs_CZ_value import defended
+    from nr_oai_pmh_harvester.rules.uk.uk_degree_program_cs_cs_CZ_value import study_field
+    from nr_oai_pmh_harvester.rules.uk.uk_degree_discipline_cs_cs_CZ_value import study_field_2
+    from nr_oai_pmh_harvester.rules.uk.uk_file_availability_value import accessibility
+    from nr_oai_pmh_harvester.rules.uk.uk_grantor_cs_CZ_value import degree_grantor_3
+    from nr_oai_pmh_harvester.rules.uk.uk_publication_place_cs_CZ_value import publication_place
+    from nr_oai_pmh_harvester.rules.uk.others_identifier import original_record_oai
+    from nr_oai_pmh_harvester.post_processors import check_taxonomy
+    from nr_oai_pmh_harvester.post_processors import add_access_rights
 
     this_directory = pathlib.Path(__file__).parent.absolute()
     response_path = this_directory / "data" / f"{file_name}.xml"
@@ -293,30 +302,79 @@ def test_transform_uk(app, db, file_name):
         "/dcterms/dateAccepted/value": {
             'pre': date_defended
         },
+        "/thesis/grade/cs/cs_CZ/value": {
+            'pre': defended
+        },
+        "/uk/degree-program/cs/cs_CZ/value": {
+            'pre': study_field
+        },
+        "/uk/degree-discipline/cs/cs_CZ/value": {
+            'pre': study_field_2
+        },
+        "/uk/file-availability/value": {
+            'pre': accessibility
+        },
+        "/uk/grantor/cs_CZ/value": {
+            'pre': degree_grantor_3
+        },
+        "/uk/publication-place/cs_CZ/value": {
+            'pre': publication_place
+        },
+        "/uk/publication/place/cs_CZ/value": {
+            'pre': publication_place
+        },
+        "/others/identifier": {
+            'pre': original_record_oai
+        },
     }
     transformer = OAITransformer(rules=rules,
                                  unhandled_paths={
                                      '/dc/date/accessioned',
                                      '/dc/date/available',
+                                     '/dc/date/embargoEndDate',
                                      '/dc/identifier/repId',
                                      '/dc/identifier/aleph',
                                      '/dc/description/provenance',
                                      '/dc/description/department/en_US/value',
                                      '/dc/description/faculty/en_US/value',
                                      '/dc/language/cs_CZ/value',
+                                     '/dc/unhandled',
                                      '/dcterms/created',
                                      '/thesis/degree',
+                                     '/thesis/grade/en',
+                                     '/thesis/grade/code',
+                                     '/uk/thesis/type',
+                                     '/uk/taxonomy',
+                                     '/uk/faculty-name',
+                                     '/uk/faculty-abbr',
+                                     '/uk/degree-program/en',
+                                     '/uk/degree-discipline/en',
+                                     '/uk/abstract',
+                                     '/bundles/bundle',
+                                     '/others/handle',
+                                     '/others/lastModifyDate',
+                                     '/others/owningCollection',
+                                     '/repository',
                                  }
                                  )
     transformed = transformer.transform(parsed)
+
+    # CONSTANT FIELDS
+    transformed.update(
+        {
+            "provider": get_taxonomy_json(code="institutions", slug="00216208").paginated_data,
+            "entities": get_taxonomy_json(code="institutions", slug="00216208").paginated_data
+        })
 
     # POST PROCESSORS
     post_processed = add_date_defended(transformed)
     post_processed = add_defended(post_processed)
     post_processed = add_item_relation_type(post_processed)
+    post_processed = check_taxonomy(post_processed)
+    post_processed = add_access_rights(post_processed)
 
     # ENDPOINT HANDLER
-    model = nusl_handler(transformed)
+    model = nusl_handler(post_processed)
 
     draft_configs = current_app.config.get("RECORDS_DRAFT_ENDPOINTS")
     config = draft_configs.get(model)

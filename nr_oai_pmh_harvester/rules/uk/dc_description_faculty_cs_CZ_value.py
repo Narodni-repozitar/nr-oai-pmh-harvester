@@ -1,6 +1,6 @@
 from oarepo_taxonomies.utils import get_taxonomy_json
 
-from nr_oai_pmh_harvester.rules.nusl.field502__c import get_institution_term
+from nr_oai_pmh_harvester.rules.utils.degree_grantor import get_institution_term
 from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 

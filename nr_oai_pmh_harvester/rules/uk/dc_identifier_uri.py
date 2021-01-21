@@ -7,12 +7,8 @@ def call_original_record_id(el, **kwargs):
 
 
 def original_record_id(el, **kwargs):
-    if isinstance(el, (tuple, list)):
-        id_ = el[-1]
-    elif isinstance(el, str):
-        id_ = el
-    else:
-        raise Exception("Bad format")
+    id_ = el[0][0]
+    assert isinstance(id_, str)
     return {
         "recordIdentifiers": {
             "originalRecord": id_

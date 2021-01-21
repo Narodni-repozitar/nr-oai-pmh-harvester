@@ -20,4 +20,5 @@ def resourceType(el, **kwargs):
     }
     slug = rt_dict.get(el)
     if slug:
-        return {"resource": get_taxonomy_json(code="resourceType", slug=slug)}
+        slug = "theses_etds." + slug
+        return {"resourceType": get_taxonomy_json(code="resourceType", slug=slug).paginated_data}

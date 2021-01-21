@@ -4,6 +4,7 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 from nr_oai_pmh_harvester.query import find_in_json
 from nr_oai_pmh_harvester.rules.utils import filter_language, remove_country_from_lang_codes
+from nr_oai_pmh_harvester.rules.utils.subject import fix_mesh
 from oarepo_oai_pmh_harvester.decorators import rule
 
 
@@ -27,7 +28,7 @@ def subject(el, **kwargs):
             keywords.append(remove_country_from_lang_codes(word_dict))
 
     return {
-        "subject": subjects,
+        "subject": fix_mesh(subjects),
         "keywords": keywords
     }
 

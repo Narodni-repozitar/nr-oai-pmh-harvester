@@ -4,23 +4,23 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 
 @post_processor("nusl", "marcxml")
 def call_add_date_defended(data):
-    return add_date_defended(data) # pragma: no cover
+    return add_date_defended(data)  # pragma: no cover
 
 
 @post_processor("nusl", "marcxml")
 def call_add_defended(data):
-    return add_defended(data) # pragma: no cover
+    return add_defended(data)  # pragma: no cover
 
 
 @post_processor("nusl", "marcxml")
 def call_add_item_relation_type(data):
-    return add_item_relation_type(data) # pragma: no cover
+    return add_item_relation_type(data)  # pragma: no cover
 
 
 def add_date_defended(data):
     resource_type = data.get("resourceType")
     resource_type = [_ for _ in resource_type if _["links"]["self"].split("/")[-1] == "theses-etds"]
-    if len(resource_type) > 0 and "dateIssued" in data:
+    if len(resource_type) > 0 and "dateIssued" in data and "dateDefended" not in data:
         data["dateDefended"] = data.get("dateIssued", "")
     return data
 
@@ -63,3 +63,29 @@ def add_item_relation_type(data):
                 for _ in data["relatedItem"]:
                     _["itemRelationType"] = taxonomy_json
             return data
+
+
+def check_taxonomy(data):
+    for k, v in data.items():
+        if isinstance(v, list) and len([_ for _ in v if "links" in _]):
+            data[k] = remove_duplicates(v)
+    return data
+
+
+def remove_duplicates(value: list):
+    parents = set(
+        [_.get("links", {}).get("parent") for _ in value if _.get("links", {}).get("parent")])
+    new_value = []
+    for _ in value:
+        if not _["is_ancestor"]:
+            if not _["links"]["self"] in parents:
+                new_value.append(_)
+        else:
+            new_value.append(_)
+    return new_value
+
+
+def add_access_rights(data: dict):
+    if 'accessRights' not in data:
+        data['accessRights'] = get_taxonomy_json(code="accessRights", slug="c_abf2").paginated_data
+    return data

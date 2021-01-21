@@ -7,4 +7,11 @@ def call_creator(el, **kwargs):
 
 
 def creator(el, **kwargs):
-    return {"creator": [{"name": el}]}
+    el = el[0]
+    res = []
+    if isinstance(el, (list, tuple)):
+        for _ in el:
+            res.append({"name": _})
+    if isinstance(el, str):
+        res.append({"name": el})
+    return {"creator": res}
