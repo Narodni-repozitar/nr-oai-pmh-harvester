@@ -33,3 +33,10 @@ def find_in_title(field: str, taxonomy_code: str, first_lang: str = "cs", second
                                                                  f'title.{second_lang}:"{field}"',
                                                                  taxonomy_code)
     return sqlalchemy_query
+
+
+def find_in_title_jsonb(value: str, taxonomy_code: str, lang: str = "cs"):
+    json_ = '{"title": {"%s": "%s"}}' % (lang, value)
+    sqlalchemy_query = current_flask_taxonomies.list_taxonomy(taxonomy_code)
+    sqlalchemy_query = sqlalchemy_query.filter(TaxonomyTerm.extra_data.op("@>")(json_))
+    return sqlalchemy_query

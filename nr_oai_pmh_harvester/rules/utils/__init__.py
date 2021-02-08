@@ -16,6 +16,8 @@ def filter_language(el, res: list = None):
         l = len(el)
         for item in el:
             result = filter_language(item, res=res)
+            if not result:
+                continue
             if isinstance(result, (str, int, float)) and l > 1:
                 list_.append(result)
             else:

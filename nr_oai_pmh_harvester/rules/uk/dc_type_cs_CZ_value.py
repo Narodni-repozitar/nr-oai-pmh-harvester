@@ -3,7 +3,7 @@ from oarepo_taxonomies.utils import get_taxonomy_json
 from oarepo_oai_pmh_harvester.decorators import rule
 
 
-@rule("nusl", "xoai", "/dc/type/cs_CZ/value", phase="pre")
+@rule("uk", "xoai", "/dc/type/cs_CZ/value", phase="pre")
 def call_resourceType(el, **kwargs):
     return resourceType(el, **kwargs)  # pragma: no cover
 

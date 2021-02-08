@@ -1,11 +1,13 @@
 import json
 import pathlib
 import traceback
+import uuid
 from pprint import pprint
 
 import pytest
 from flask import current_app
 from invenio_records_rest.utils import obj_or_import_string
+from invenio_search import current_search_client
 from lxml import etree
 from marshmallow import ValidationError
 from oarepo_taxonomies.utils import get_taxonomy_json
@@ -221,8 +223,14 @@ def test_transform_nusl(app, db, file_name):
 
 
 @pytest.mark.parametrize("file_name",
-                         ["20_500_11956-111006", "20_500_11956-26955"])
-def test_transform_uk(app, db, file_name):
+                         ["20_500_11956-111006", "20_500_11956-26955", "20_500_11956-103772",
+                          "20_500_11956-120544", "20_500_11956-26946", "20_500_11956-123581",
+                          "20_500_11956-3256", "20_500_11956-37506", "20_500_11956-3265",
+                          "20_500_11956-15756", "20_500_11956-17164", "20_500_11956-22764",
+                          "20_500_11956-26677", "20_500_11956-36990", "20_500_11956-40528",
+                          "20_500_11956-41059", "20_500_11956-41309"
+                          ])
+def test_transform_uk(app, db, file_name, valid_uk_record):
     from nr_oai_pmh_harvester.parser import xml_to_dict_xoai
     from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
     from nr_oai_pmh_harvester.post_processors import add_date_defended, add_defended, \
@@ -350,6 +358,9 @@ def test_transform_uk(app, db, file_name):
                                      '/uk/degree-program/en',
                                      '/uk/degree-discipline/en',
                                      '/uk/abstract',
+                                     '/uk/thesis/defenceStatus',
+                                     '/uk/departmentExternal',
+                                     '/uk/embargo/reason',
                                      '/bundles/bundle',
                                      '/others/handle',
                                      '/others/lastModifyDate',
@@ -385,7 +396,15 @@ def test_transform_uk(app, db, file_name):
     print(json.dumps(post_processed, ensure_ascii=False, indent=4))
     try:
         schema.load(post_processed)
+        # current_search_client.index(index="test_index", id=uuid.uuid4(),
+        #                             body=valid_uk_record)
+        # current_search_client.index(index="test_index", id=uuid.uuid4(),
+        #                             body=post_processed)
     except ValidationError:
+        # current_search_client.index(index="test_index", id=uuid.uuid4(),
+        #                             body=valid_uk_record)
+        # current_search_client.index(index="test_index", id=uuid.uuid4(),
+        #                             body=post_processed)
         exc = traceback.format_exc()
         exc_array = exc.split("marshmallow.exceptions.ValidationError: ")
         print(exc, "\n\n\n")

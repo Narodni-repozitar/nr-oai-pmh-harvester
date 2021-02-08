@@ -1,18 +1,38 @@
-from oarepo_oai_pmh_harvester.decorators import post_processor
 from oarepo_taxonomies.utils import get_taxonomy_json
 
+from oarepo_oai_pmh_harvester.decorators import post_processor
 
-@post_processor("nusl", "marcxml")
+
+@post_processor(provider_parser_list=[
+    {"provider": "nusl", "parser": "marcxml"},
+    {"provider": "uk", "parser": "xoai"},
+])
 def call_add_date_defended(data):
     return add_date_defended(data)  # pragma: no cover
 
 
-@post_processor("nusl", "marcxml")
+@post_processor(provider_parser_list=[
+    {"provider": "nusl", "parser": "marcxml"},
+    {"provider": "uk", "parser": "xoai"},
+])
 def call_add_defended(data):
     return add_defended(data)  # pragma: no cover
 
 
-@post_processor("nusl", "marcxml")
+@post_processor("uk", "xoai")
+def call_check_taxonomy(data):
+    return check_taxonomy(data)
+
+
+@post_processor("uk", "xoai")
+def call_add_access_rights(data):
+    return add_access_rights(data)
+
+
+@post_processor(provider_parser_list=[
+    {"provider": "nusl", "parser": "marcxml"},
+    {"provider": "uk", "parser": "xoai"},
+])
 def call_add_item_relation_type(data):
     return add_item_relation_type(data)  # pragma: no cover
 

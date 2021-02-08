@@ -1,7 +1,7 @@
 from oarepo_oai_pmh_harvester.decorators import rule
 
 
-@rule("nusl", "xaoi", "/dc/publisher/cs_CZ/value", phase="pre")
+@rule("uk", "xoai", "/dc/publisher/cs_CZ/value", phase="pre")
 def call_publisher(el, **kwargs):
     return publisher(el, **kwargs)  # pragma: no cover
 

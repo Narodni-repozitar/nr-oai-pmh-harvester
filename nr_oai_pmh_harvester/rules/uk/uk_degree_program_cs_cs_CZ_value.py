@@ -2,7 +2,7 @@ from nr_oai_pmh_harvester.rules.utils.study_field import get_study_field
 from oarepo_oai_pmh_harvester.decorators import rule
 
 
-@rule("nusl", "xoai", "/uk/degree-program/cs/cs_CZ/value", phase="pre")
+@rule("uk", "xoai", "/uk/degree-program/cs/cs_CZ/value", phase="pre")
 def call_study_field(el, **kwargs):
     return study_field(el, **kwargs)  # pragma no cover
 

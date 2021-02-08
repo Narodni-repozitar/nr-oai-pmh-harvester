@@ -2,7 +2,7 @@ from nr_oai_pmh_harvester.rules.utils import filter_language, remove_country_fro
 from oarepo_oai_pmh_harvester.decorators import rule
 
 
-@rule("nusl", "xoai", "/dc/title", phase="pre")
+@rule("uk", "xoai", "/dc/title", phase="pre")
 def call_title(el, **kwargs):
     return title(el, **kwargs)  # pragma: no cover
 

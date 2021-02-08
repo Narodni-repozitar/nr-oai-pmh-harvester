@@ -4,7 +4,7 @@ from oarepo_oai_pmh_harvester.decorators import rule
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
 
-@rule("nusl", "xoai", "/uk/file-availability/value", phase="pre")
+@rule("uk", "xoai", "/uk/file-availability/value", phase="pre")
 def call_accessibility(el, **kwargs):
     return accessibility(el, **kwargs)  # pragma no cover
 

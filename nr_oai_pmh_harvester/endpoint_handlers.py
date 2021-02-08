@@ -1,7 +1,10 @@
 from oarepo_oai_pmh_harvester.decorators import endpoint_handler
 
 
-@endpoint_handler("nusl", "marcxml")
+@endpoint_handler(provider_parser_list=[
+    {"provider": "nusl", "parser": "marcxml"},
+    {"provider": "uk", "parser": "xoai"},
+])
 def call_nusl_handler(data):
     return nusl_handler(data)  # pragma: no cover
 

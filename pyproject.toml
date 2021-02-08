@@ -11,7 +11,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 #oarepo-oai-pmh-harvester = "^2.0.0-alpha.13"
-oarepo-oai-pmh-harvester = {path = "/home/semtex/GoogleDrive/Projekty/Pracovní/oarepo/oarepo-oai-pmh-harvester", develop = true}
+oarepo-oai-pmh-harvester = { path = "/home/semtex/GoogleDrive/Projekty/Pracovní/oarepo/oarepo-oai-pmh-harvester", develop = true }
 oarepo = { version = "^3.3", optional = true }
 pytest = { version = "^5.0.0", optional = true }
 pytest-cov = { version = "^2.10.1", optional = true }
@@ -75,4 +75,26 @@ tests = ["oarepo", "pytest", "pytest-cov"]
 "field24633" = "nr_oai_pmh_harvester.rules.nusl.field24633"
 "field85640" = "nr_oai_pmh_harvester.rules.nusl.field85640"
 "field85642u" = "nr_oai_pmh_harvester.rules.nusl.field85642u"
-
+"uk_publication_place_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.uk_publication_place_cs_CZ_value"
+"dc_language_iso" = "nr_oai_pmh_harvester.rules.uk.dc_language_iso"
+"uk_publication_place_cs_CZ_value_2" = "nr_oai_pmh_harvester.rules.uk.uk_publication_place_cs_CZ_value_2"
+"dc_identifier_uri" = "nr_oai_pmh_harvester.rules.uk.dc_identifier_uri"
+"dc_description_abstract" = "nr_oai_pmh_harvester.rules.uk.dc_description_abstract"
+"dc_contributor_advisor" = "nr_oai_pmh_harvester.rules.uk.dc_contributor_advisor"
+"dc_publisher_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.dc_publisher_cs_CZ_value"
+"dc_type_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.dc_type_cs_CZ_value"
+"dc_subject" = "nr_oai_pmh_harvester.rules.uk.dc_subject"
+"uk_degree_discipline_cs_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.uk_degree_discipline_cs_cs_CZ_value"
+"dc_contributor_referee" = "nr_oai_pmh_harvester.rules.uk.dc_contributor_referee"
+"dc_creator" = "nr_oai_pmh_harvester.rules.uk.dc_creator"
+"uk_file_availability_value" = "nr_oai_pmh_harvester.rules.uk.uk_file_availability_value"
+"dc_description_department_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.dc_description_department_cs_CZ_value"
+"uk_grantor_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.uk_grantor_cs_CZ_value"
+"dc_title" = "nr_oai_pmh_harvester.rules.uk.dc_title"
+"dc_date_issued" = "nr_oai_pmh_harvester.rules.uk.dc_date_issued"
+"dc_description_faculty_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.dc_description_faculty_cs_CZ_value"
+"dc_publisher_cs_CS_value" = "nr_oai_pmh_harvester.rules.uk.dc_publisher_cs_CS_value"
+"others_identifier" = "nr_oai_pmh_harvester.rules.uk.others_identifier"
+"dcterms_dateAccepted_value" = "nr_oai_pmh_harvester.rules.uk.dcterms_dateAccepted_value"
+"uk_degree_program_cs_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.uk_degree_program_cs_cs_CZ_value"
+"thesis_grade_cs_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.thesis_grade_cs_cs_CZ_value"
