@@ -11,9 +11,9 @@ def test_query(app, db):
 
 def test_query_2(app, db):
     sqlalchemy_query = find_in_json_list("institutions", "aliases",
-                                         "Katedra experimentální biologie rostlin")
+                                         "Mendelova univerzita")
     term = sqlalchemy_query.one_or_none()
-    assert term[0].slug == '62156489'
+    assert term.slug == '62156489'
 
 
 def test_get_query_by_slug(app, db):

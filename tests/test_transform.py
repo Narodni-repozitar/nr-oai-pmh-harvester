@@ -228,7 +228,9 @@ def test_transform_nusl(app, db, file_name):
                           "20_500_11956-3256", "20_500_11956-37506", "20_500_11956-3265",
                           "20_500_11956-15756", "20_500_11956-17164", "20_500_11956-22764",
                           "20_500_11956-26677", "20_500_11956-36990", "20_500_11956-40528",
-                          "20_500_11956-41059", "20_500_11956-41309"
+                          "20_500_11956-41059", "20_500_11956-41309", "20_500_11956-42672",
+                          "20_500_11956-72554", "20_500_11956-73228", "20_500_11956-95481",
+                          "20_500_11956-117501", "20_500_11956-36432", "20_500_11956-68753"
                           ])
 def test_transform_uk(app, db, file_name, valid_uk_record):
     from nr_oai_pmh_harvester.parser import xml_to_dict_xoai
@@ -258,6 +260,7 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
     from nr_oai_pmh_harvester.rules.uk.others_identifier import original_record_oai
     from nr_oai_pmh_harvester.post_processors import check_taxonomy
     from nr_oai_pmh_harvester.post_processors import add_access_rights
+    from nr_oai_pmh_harvester.error_handler import error_handler
 
     this_directory = pathlib.Path(__file__).parent.absolute()
     response_path = this_directory / "data" / f"{file_name}.xml"
@@ -298,6 +301,9 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
         "/dc/publisher/cs_CZ/value": {
             'pre': publisher
         },
+        "/dc/publisher/cs_CS/value": {
+            'pre': publisher
+        },
         "/dc/subject": {
             'pre': subject
         },
@@ -325,10 +331,16 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
         "/uk/grantor/cs_CZ/value": {
             'pre': degree_grantor_3
         },
+        "/uk/grantor/cs_CS/value": {
+            'pre': degree_grantor_3
+        },
         "/uk/publication-place/cs_CZ/value": {
             'pre': publication_place
         },
         "/uk/publication/place/cs_CZ/value": {
+            'pre': publication_place
+        },
+        "/uk/publication/place/cs_CS/value": {
             'pre': publication_place
         },
         "/others/identifier": {
@@ -366,7 +378,8 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
                                      '/others/lastModifyDate',
                                      '/others/owningCollection',
                                      '/repository',
-                                 }
+                                 },
+                                 error_handler=error_handler
                                  )
     transformed = transformer.transform(parsed)
 
@@ -396,15 +409,7 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
     print(json.dumps(post_processed, ensure_ascii=False, indent=4))
     try:
         schema.load(post_processed)
-        # current_search_client.index(index="test_index", id=uuid.uuid4(),
-        #                             body=valid_uk_record)
-        # current_search_client.index(index="test_index", id=uuid.uuid4(),
-        #                             body=post_processed)
     except ValidationError:
-        # current_search_client.index(index="test_index", id=uuid.uuid4(),
-        #                             body=valid_uk_record)
-        # current_search_client.index(index="test_index", id=uuid.uuid4(),
-        #                             body=post_processed)
         exc = traceback.format_exc()
         exc_array = exc.split("marshmallow.exceptions.ValidationError: ")
         print(exc, "\n\n\n")

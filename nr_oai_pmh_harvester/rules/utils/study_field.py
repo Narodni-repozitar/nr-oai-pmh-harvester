@@ -27,7 +27,9 @@ def choose_term(terms, programme: str = None, akvo: str = None, is_program: bool
         res += get_taxonomy_json("studyfields", slug=term.slug).paginated_data
     if l > 1:
         if is_program:
-            terms = [term for term in terms if not term.parent_slug]
+            new_terms = [term for term in terms if not term.parent_slug]
+            if new_terms:
+                terms = new_terms
         if akvo:
             for term in terms:
                 extra_data = term.extra_data

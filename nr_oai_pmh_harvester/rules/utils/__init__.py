@@ -1,7 +1,7 @@
 import re
 
 
-def filter_language(el, res: list = None):
+def filter_language(el, res: dict = None):
     if not res:
         res = {}
     if isinstance(el, dict):
@@ -25,6 +25,8 @@ def filter_language(el, res: list = None):
         if list_:
             return list_
     if isinstance(el, (str, int, float)):
+        return el
+    if el is None:
         return el
     return res
 

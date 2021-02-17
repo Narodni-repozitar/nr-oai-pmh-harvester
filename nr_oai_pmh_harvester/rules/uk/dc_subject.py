@@ -1,3 +1,4 @@
+import traceback
 from typing import Union, List
 
 from flask_taxonomies.query import TaxonomyQueryNotSupported
@@ -20,6 +21,7 @@ def subject(el, **kwargs):
     reformated_el = reformat(filtred_el)
     res = get_subject_or_keyword(reformated_el)
     return res
+
 
 
 def get_subject_or_keyword(reformated_el):
@@ -78,6 +80,7 @@ def reformat(el):
 def get_subject_by_title(value: str, lang: str, ) -> Union[None, List]:
     value = value.strip()
     value = value.replace('"', '')
+    value = value.replace('\\', '')
     if len(lang) != 2:
         lang = lang[:2]
     if len(value) == 0 or not value:

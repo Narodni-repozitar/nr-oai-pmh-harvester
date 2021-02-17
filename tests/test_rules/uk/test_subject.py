@@ -2,8 +2,6 @@ import pathlib
 from datetime import datetime
 from pprint import pprint
 
-import pytest
-
 from nr_oai_pmh_harvester.rules.utils import filter_language
 
 
@@ -63,44 +61,13 @@ def test_subject_3(app, db):
     ]
     res = subject(el)
     assert res == {
-        'subject': [{
-            'title': {
-                'cs': 'Polytematický strukturovaný heslář',
-                'en': 'Polythematic Structured Subject Heading System'
-            }, 'is_ancestor': True,
-            'links': {'self': 'http://127.0.0.1:5000/api/2.0/taxonomies/subjects/psh'}
-        }, {
-            'title': {'cs': 'biologie', 'en': 'biology'},
-            'altLabel': {'cs': 'biomatematika', 'en': 'biomathematics'},
-            'relatedURI': ['http://psh.techlib.cz/skos/PSH573'], 'is_ancestor': True,
-            'links': {
-                'self': 'http://127.0.0.1:5000/api/2.0/taxonomies/subjects/psh/psh573',
-                'parent': 'http://127.0.0.1:5000/api/2.0/taxonomies/subjects/psh'
-            }
-        }, {
-            'title': {'cs': 'cytologie', 'en': 'cytology'},
-            'altLabel': {'cs': 'buněčná biologie', 'en': 'cellular biology'},
-            'relatedURI': ['http://psh.techlib.cz/skos/PSH630'], 'is_ancestor': True,
-            'links': {
-                'self': 'http://127.0.0.1:5000/api/2.0/taxonomies/subjects/psh/psh573'
-                        '/psh630',
-                'parent': 'http://127.0.0.1:5000/api/2.0/taxonomies/subjects/psh/psh573'
-            }
-        }, {
-            'title': {'cs': 'apoptóza', 'en': 'apoptosis'},
-            'altLabel': {'cs': 'programová smrt buňky'},
-            'relatedURI': ['http://psh.techlib.cz/skos/PSH13698'], 'is_ancestor': False,
-            'links': {
-                'self': 'http://127.0.0.1:5000/api/2.0/taxonomies/subjects/psh/psh573'
-                        '/psh630/psh13698',
-                'parent':
-                    'http://127.0.0.1:5000/api/2.0/taxonomies/subjects/psh/psh573'
-                    '/psh630'
-            }
-        }], 'keywords': [{
-            'en': 'Quaternary benzo[c]fenanthridine alkaloids',
-            'cs': 'Kvartérní benzo[c]fenantridinové alkaloidy'
-        }, {'en': 'sanguinarine', 'cs': 'sanguinarin'}]
+        'keywords': [{
+            'cs': 'Kvartérní benzo[c]fenantridinové alkaloidy',
+            'en': 'Quaternary benzo[c]fenanthridine alkaloids'
+        },
+            {'cs': 'sanguinarin', 'en': 'sanguinarine'},
+            {'cs': 'apoptosa', 'en': 'apoptosis'}],
+        'subject': []
     }
 
 
@@ -168,6 +135,42 @@ def test_filter_language_2():
                   'moment tensor',
                   'source mechanisms',
                   'geomechanical model']
+    }
+
+
+def test_filter_language_3():
+    el = {
+        'cs_CZ': [{
+            'value': ['komparative Phonetik', None, 'l ʃ d t', None, 'Tschechisch',
+                      'Deutsch', 'sprachliche Akkommodation', 'Palatalisation',
+                      'Velarisation', 'Dentalisation', 'akustische Analyse']
+        }], 'en_US': [{
+            'value': ['comparative phonetics', None, 'l ʃ d t', None,
+                      'Czech', 'German', 'speech accommodation',
+                      'palatalization', 'velarization', 'dentalization',
+                      'acoustic analysis']
+        }]
+    }
+    res = filter_language(el)
+    assert res == {
+        'cs_CZ': ['komparative Phonetik',
+                  'l ʃ d t',
+                  'Tschechisch',
+                  'Deutsch',
+                  'sprachliche Akkommodation',
+                  'Palatalisation',
+                  'Velarisation',
+                  'Dentalisation',
+                  'akustische Analyse'],
+        'en_US': ['comparative phonetics',
+                  'l ʃ d t',
+                  'Czech',
+                  'German',
+                  'speech accommodation',
+                  'palatalization',
+                  'velarization',
+                  'dentalization',
+                  'acoustic analysis']
     }
 
 

@@ -10,8 +10,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-#oarepo-oai-pmh-harvester = "^2.0.0-alpha.13"
-oarepo-oai-pmh-harvester = { path = "/home/semtex/GoogleDrive/Projekty/Pracovní/oarepo/oarepo-oai-pmh-harvester", develop = true }
+oarepo-oai-pmh-harvester = "^2.0.0-alpha.13"
+#oarepo-oai-pmh-harvester = { path = "/home/semtex/GoogleDrive/Projekty/Pracovní/oarepo/oarepo-oai-pmh-harvester", develop = true }
 oarepo = { version = "^3.3", optional = true }
 pytest = { version = "^5.0.0", optional = true }
 pytest-cov = { version = "^2.10.1", optional = true }
@@ -28,6 +28,9 @@ oarepo-references = "^1.8.3"
 [tool.poetry.extras]
 tests = ["oarepo", "pytest", "pytest-cov"]
 
+[tool.poetry.plugins."invenio_config.module"]
+restoration = "nr_oai_pmh_harvester.config"
+
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.parsers"]
 "parsers" = "nr_oai_pmh_harvester.parser"
 
@@ -36,6 +39,9 @@ tests = ["oarepo", "pytest", "pytest-cov"]
 
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.post_processors"]
 "post_processors" = "nr_oai_pmh_harvester.post_processors"
+
+[tool.poetry.plugins."oarepo_oai_pmh_harvester.error_handlers"]
+"error_handler" = "nr_oai_pmh_harvester.error_handler"
 
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.rules"]
 "field001" = "nr_oai_pmh_harvester.rules.nusl.field001"
@@ -76,8 +82,9 @@ tests = ["oarepo", "pytest", "pytest-cov"]
 "field85640" = "nr_oai_pmh_harvester.rules.nusl.field85640"
 "field85642u" = "nr_oai_pmh_harvester.rules.nusl.field85642u"
 "uk_publication_place_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.uk_publication_place_cs_CZ_value"
-"dc_language_iso" = "nr_oai_pmh_harvester.rules.uk.dc_language_iso"
 "uk_publication_place_cs_CZ_value_2" = "nr_oai_pmh_harvester.rules.uk.uk_publication_place_cs_CZ_value_2"
+"uk_publication_place_cs_CS_value" = "nr_oai_pmh_harvester.rules.uk.uk_publication_place_cs_CS_value"
+"dc_language_iso" = "nr_oai_pmh_harvester.rules.uk.dc_language_iso"
 "dc_identifier_uri" = "nr_oai_pmh_harvester.rules.uk.dc_identifier_uri"
 "dc_description_abstract" = "nr_oai_pmh_harvester.rules.uk.dc_description_abstract"
 "dc_contributor_advisor" = "nr_oai_pmh_harvester.rules.uk.dc_contributor_advisor"
@@ -90,6 +97,7 @@ tests = ["oarepo", "pytest", "pytest-cov"]
 "uk_file_availability_value" = "nr_oai_pmh_harvester.rules.uk.uk_file_availability_value"
 "dc_description_department_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.dc_description_department_cs_CZ_value"
 "uk_grantor_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.uk_grantor_cs_CZ_value"
+"uk_grantor_cs_CS_value" = "nr_oai_pmh_harvester.rules.uk.uk_grantor_cs_CS_value"
 "dc_title" = "nr_oai_pmh_harvester.rules.uk.dc_title"
 "dc_date_issued" = "nr_oai_pmh_harvester.rules.uk.dc_date_issued"
 "dc_description_faculty_cs_CZ_value" = "nr_oai_pmh_harvester.rules.uk.dc_description_faculty_cs_CZ_value"
