@@ -57,7 +57,7 @@ OAREPO_OAI_PROVIDERS = {
                                     '/others/lastModifyDate',
                                     '/others/owningCollection',
                                     '/repository', ],
-                "default_endpoint": "thesis",
+                "default_endpoint": "theses",
             }
         ]
     },
