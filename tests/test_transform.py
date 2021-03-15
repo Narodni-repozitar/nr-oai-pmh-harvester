@@ -1,21 +1,18 @@
 import json
 import pathlib
 import traceback
-import uuid
 from pprint import pprint
 
 import pytest
 from flask import current_app
 from invenio_records_rest.utils import obj_or_import_string
-from invenio_search import current_search_client
 from lxml import etree
 from marshmallow import ValidationError
 from oarepo_taxonomies.utils import get_taxonomy_json
-
-from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from pytest import skip
 
 from nr_oai_pmh_harvester.utils import transform_to_dict
+from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
 
 @pytest.mark.parametrize("file_name",
