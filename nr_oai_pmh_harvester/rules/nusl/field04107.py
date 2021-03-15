@@ -26,7 +26,7 @@ def get_language_list(el):
     for v in el.values():
         lang_taxonomy = get_language_taxonomy(v)
         if lang_taxonomy:
-            res.extend(res)
+            res.extend(lang_taxonomy)
     return res
 
 
