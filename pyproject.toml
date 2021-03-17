@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "nr-oai-pmh-harvester"
-version = "1.0.0a5"
+version = "1.0.0a6"
 description = "Czech National Repository oai-pmh-harvester"
 license = "MIT"
 keywords = ["Czech", "National", "Respository", "Invenio", "harvester", "oai", "pmh"]
@@ -11,12 +11,14 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 oarepo-oai-pmh-harvester = "^2.0.0-alpha.13"
+oarepo-taxonomies = "^3.0.0a1"
 xmltodict = "^0.12.0"
-oarepo-taxonomies = "^2.5.2"
-oarepo-references = "^1.8.3"
+dojson = "^1.4.0"
+pycountry = "^20.7.3"
 
 [tool.poetry.dev-dependencies]
 oarepo = "^3.3"
+oarepo-references = "^1.8.3"
 pytest = "^5.0.0"
 pytest-cov = "^2.10.1"
 nr-taxonomies = { git = "https://github.com/Narodni-repozitar/nr-taxonomies.git", branch = "master" }
