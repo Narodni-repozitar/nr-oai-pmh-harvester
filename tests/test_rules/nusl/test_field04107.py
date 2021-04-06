@@ -1,3 +1,7 @@
+import pytest
+
+
+@pytest.mark.skip(reason="Potřebuje databazi s taxonomii. Nahradit nějakým mockem")
 def test_language(app, db):
     from nr_oai_pmh_harvester.rules.nusl.field04107 import language
     res = language({'a': 'cze'})
@@ -6,6 +10,7 @@ def test_language(app, db):
                          'alias': 'ces',
                          'alpha2': 'cs',
                          'is_ancestor': False,
+                         'level': 1,
                          'links': {
                              'self': 'http://127.0.0.1:5000/api/2.0/taxonomies/languages/cze'
                          },

@@ -42,7 +42,8 @@ def app():
         DEBUG=True,
         # SQLALCHEMY_ECHO=True,
         SUPPORTED_LANGUAGES=["cs", "en"],
-        SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://oarepo:oarepo@localhost/oarepo',
+        # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://oarepo:oarepo@localhost/oarepo',
+        OAREPO_COMMUNITIES_ENDPOINTS=[],
         OAREPO_OAI_PROVIDERS={
             "nusl": {
                 "description": "NUŠL",

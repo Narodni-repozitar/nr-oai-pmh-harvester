@@ -1,7 +1,9 @@
+import pytest
 from flask_taxonomies.models import TaxonomyTerm
 from flask_taxonomies.proxies import current_flask_taxonomies
 
 
+@pytest.mark.skip(reason="Potřebuje PostgreSQL")
 def test_query(app, db):
     sqlalchemy_query = current_flask_taxonomies.list_taxonomy('countries')
     sqlalchemy_query = current_flask_taxonomies.apply_term_query(sqlalchemy_query,

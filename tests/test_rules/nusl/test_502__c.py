@@ -1,6 +1,6 @@
 import pytest
 
-
+@pytest.mark.skip(reason="Potřebuje databazi s taxonomii. Nahradit nějakým mockem")
 def test_degree_grantor_6(app, db, input_data):
     from nr_oai_pmh_harvester.rules.nusl.field502__c import degree_grantor
 
