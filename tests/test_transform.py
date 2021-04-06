@@ -15,6 +15,7 @@ from nr_oai_pmh_harvester.utils import transform_to_dict
 from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
 
+@pytest.mark.skip(reason="Potřebuje databazi s taxonomii. Nahradit nějakým mockem")
 @pytest.mark.parametrize("file_name",
                          ['10', '18', '1214', '2737', '11720', '19263', '19317', '19329', '19456',
                           '19535',
@@ -219,6 +220,7 @@ def test_transform_nusl(app, db, file_name):
         skip()
 
 
+@pytest.mark.skip(reason="Potřebuje databazi s taxonomii. Nahradit nějakým mockem")
 @pytest.mark.parametrize("file_name",
                          ["20_500_11956-111006", "20_500_11956-26955", "20_500_11956-103772",
                           "20_500_11956-120544", "20_500_11956-26946", "20_500_11956-123581",
