@@ -1,3 +1,4 @@
+# TODO: přemístit do k8s configu
 OAREPO_OAI_PROVIDERS = {
     "nusl": {
         "description": "NUŠL",
