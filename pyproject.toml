@@ -1,12 +1,14 @@
 [tool]
 [tool.poetry]
-name = "nr-oai-pmh-harvester"
-version = "1.0.0a6"
+name = "techlib-nr-oai-pmh-harvester"
+version = "1.0.0a7"
 description = "Czech National Repository oai-pmh-harvester"
 license = "MIT"
 keywords = ["Czech", "National", "Respository", "Invenio", "harvester", "oai", "pmh"]
+classifiers = ["Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Topic :: Internet :: WWW/HTTP :: Dynamic Content", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Development Status :: 3 - Alpha"]
 authors = ["Daniel Kopecký <Daniel.Kopecky@techlib.cz>"]
 readme = "README.md"
+packages = [{ include = "nr_oai_pmh_harvester" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -45,6 +47,7 @@ restoration = "nr_oai_pmh_harvester.config"
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.error_handlers"]
 "error_handler" = "nr_oai_pmh_harvester.error_handler"
 
+# TODO: přidat prefixy institucí
 [tool.poetry.plugins."oarepo_oai_pmh_harvester.rules"]
 "field001" = "nr_oai_pmh_harvester.rules.nusl.field001"
 "field020" = "nr_oai_pmh_harvester.rules.nusl.field020"
