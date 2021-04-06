@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "techlib-nr-oai-pmh-harvester"
-version = "1.0.0a7"
+version = "1.0.0a8"
 description = "Czech National Repository oai-pmh-harvester"
 license = "MIT"
 keywords = ["Czech", "National", "Respository", "Invenio", "harvester", "oai", "pmh"]
@@ -23,11 +23,13 @@ oarepo = "^3.3"
 oarepo-references = "^1.8.3"
 pytest = "^5.0.0"
 pytest-cov = "^2.10.1"
-nr-taxonomies = { git = "https://github.com/Narodni-repozitar/nr-taxonomies.git", branch = "master" }
-nr-common = { git = "https://github.com/Narodni-repozitar/nr-common.git", branch = "master" }
-nr-theses = { git = "https://github.com/Narodni-repozitar/nr-theses.git", branch = "master" }
-nr-Nresults = { git = "https://github.com/Narodni-repozitar/nr-Nresults.git", branch = "master" }
-nr-events = { git = "https://github.com/Narodni-repozitar/nr-events.git", branch = "master" }
+techlib-nr-common = "^3.0.0a39"
+techlib-nr-theses = "^1.0.0a1"
+techlib-nr-Nresults = "^1.0.0a12"
+techlib-nr-events = "^1.0.0a13"
+oarepo-communities = "^1.4.2"
+oarepo-records-draft = "^5.5.4"
+oarepo-multilingual = "^2.5.0"
 
 [tool.poetry.extras]
 tests = ["oarepo", "pytest", "pytest-cov"]
