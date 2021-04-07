@@ -13,6 +13,11 @@ def provider(el, **kwargs):
     if not slug:  # pragma: no cover
         return OAITransformer.PROCESSED
     return {
+        "_administration": {
+            "state": "new",
+            "primaryCommunity": slug,
+            "communities": []
+        },
         "provider": get_taxonomy_json(code="institutions",
                                       slug=slug).paginated_data
     }

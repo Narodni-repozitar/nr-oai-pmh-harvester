@@ -8,11 +8,10 @@ from flask import current_app
 from invenio_records_rest.utils import obj_or_import_string
 from lxml import etree
 from marshmallow import ValidationError
-from oarepo_taxonomies.utils import get_taxonomy_json
+from oarepo_oai_pmh_harvester.transformer import OAITransformer
 from pytest import skip
 
 from nr_oai_pmh_harvester.utils import transform_to_dict
-from oarepo_oai_pmh_harvester.transformer import OAITransformer
 
 
 @pytest.mark.skip(reason="Potřebuje databazi s taxonomii. Nahradit nějakým mockem")
@@ -235,7 +234,7 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
     from nr_oai_pmh_harvester.parser import xml_to_dict_xoai
     from nr_oai_pmh_harvester.endpoint_handlers import nusl_handler
     from nr_oai_pmh_harvester.post_processors import add_date_defended, add_defended, \
-        add_item_relation_type
+        add_item_relation_type, add_administration, add_provider
     from nr_oai_pmh_harvester.rules.uk.dc_contributor_advisor import advisor
     from nr_oai_pmh_harvester.rules.uk.dc_contributor_referee import referee
     from nr_oai_pmh_harvester.rules.uk.dc_creator import creator
@@ -383,11 +382,11 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
     transformed = transformer.transform(parsed)
 
     # CONSTANT FIELDS
-    transformed.update(
-        {
-            "provider": get_taxonomy_json(code="institutions", slug="00216208").paginated_data,
-            "entities": get_taxonomy_json(code="institutions", slug="00216208").paginated_data
-        })
+    # transformed.update(
+    #     {
+    #         "provider": get_taxonomy_json(code="institutions", slug="00216208").paginated_data,
+    #         "entities": get_taxonomy_json(code="institutions", slug="00216208").paginated_data
+    #     })
 
     # POST PROCESSORS
     post_processed = add_date_defended(transformed)
@@ -395,6 +394,8 @@ def test_transform_uk(app, db, file_name, valid_uk_record):
     post_processed = add_item_relation_type(post_processed)
     post_processed = check_taxonomy(post_processed)
     post_processed = add_access_rights(post_processed)
+    post_processed = add_provider(post_processed)
+    post_processed = add_administration(post_processed)
 
     # ENDPOINT HANDLER
     model = nusl_handler(post_processed)

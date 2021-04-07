@@ -37,6 +37,35 @@ def call_add_item_relation_type(data):
     return add_item_relation_type(data)  # pragma: no cover
 
 
+@post_processor("uk", "xoai")
+def call_add_provider(data):
+    return add_provider(data)
+
+
+def add_administration(data):
+    if "_administration" not in data:
+        data["_administration"] = {
+            "state": 'new',
+            "primaryCommunity": "00216208",
+            "communities": []
+        }
+    return data
+
+
+@post_processor("uk", "xoai")
+def call_add_administration(data):
+    return add_administration(data)
+
+
+def add_provider(data):
+    ins_tax_dict = get_taxonomy_json(code="institutions", slug="00216208").paginated_data
+    if "provider" not in data:
+        data["provider"] = ins_tax_dict
+    if "entities" not in data:
+        data["entities"] = ins_tax_dict
+    return data
+
+
 def add_date_defended(data):
     resource_type = data.get("resourceType")
     resource_type = [_ for _ in resource_type if _["links"]["self"].split("/")[-1] == "theses-etds"]
