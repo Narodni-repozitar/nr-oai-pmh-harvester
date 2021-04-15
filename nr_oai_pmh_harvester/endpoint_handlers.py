@@ -36,4 +36,4 @@ def get_model_by_slug(slug):
         "preservation-procedures": "nresults",
         "specialized-maps": "nresults",
     }
-    return mapping.get(slug, "common")
+    return mapping.get(slug, "common") + "-community"
