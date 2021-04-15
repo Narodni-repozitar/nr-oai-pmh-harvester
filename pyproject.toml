@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "techlib-nr-oai-pmh-harvester"
-version = "1.0.0a9"
+version = "1.0.0a10"
 description = "Czech National Repository oai-pmh-harvester"
 license = "MIT"
 keywords = ["Czech", "National", "Respository", "Invenio", "harvester", "oai", "pmh"]
@@ -30,6 +30,7 @@ techlib-nr-events = "^1.0.0a13"
 oarepo-communities = "^1.4.2"
 oarepo-records-draft = "^5.5.4"
 oarepo-multilingual = "^2.5.0"
+techlib-nr-generic = "^1.0.0-alpha.5"
 
 [tool.poetry.extras]
 tests = ["oarepo", "pytest", "pytest-cov"]

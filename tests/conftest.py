@@ -18,10 +18,10 @@ from invenio_records_rest import InvenioRecordsREST
 from invenio_records_rest.utils import PIDConverter
 from invenio_search import InvenioSearch, current_search_client
 from lxml import etree
-from nr_common.ext import NRCommon
 from nr_events import NREvents
 from nr_nresults import NRNresults
 from nr_theses import NRTheses
+from oarepo_communities.converters import CommunityPIDConverter
 from oarepo_oai_pmh_harvester.ext import OArepoOAIClient
 from oarepo_records_draft.ext import RecordsDraft
 from oarepo_taxonomies.ext import OarepoTaxonomies
@@ -81,11 +81,12 @@ def app():
     InvenioRecordsREST(app)
     InvenioPIDStore(app)
     app.url_map.converters['pid'] = PIDConverter
+    app.url_map.converters['commpid'] = CommunityPIDConverter
     OarepoTaxonomies(app)
     OArepoOAIClient(app)
     OARepoValidate(app)
     RecordsDraft(app)
-    NRCommon(app)
+    # NRCommon(app)
     NRTheses(app)
     NRNresults(app)
     NREvents(app)

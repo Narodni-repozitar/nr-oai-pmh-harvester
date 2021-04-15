@@ -10,7 +10,7 @@ def call_error_handler_uk(el, path, phase, results):
 
 def error_handler(el, path, phase, results):
     exc = traceback.format_exc()
-    if not "rulesExceptions" in results[-1]:
+    if "rulesExceptions" not in results[-1]:
         results[-1]["rulesExceptions"] = []
     results[-1]["rulesExceptions"].append(
         {"path": path, "element": str(el), "phase": phase, "exception": exc})
